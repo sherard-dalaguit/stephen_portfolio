@@ -48,7 +48,8 @@ export const navBarLinks = [
 
 export const projects = [
   {
-    title: "SWEOverflow",
+    id: 1,
+    title: "DevExchange",
     subheader: "StackOverflow Clone App",
     des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
     img: "/DevExchange_3.png",
@@ -57,6 +58,7 @@ export const projects = [
     deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/"
   },
   {
+    id: 2,
     title: "LumiNotes",
     subheader: "Productivity & Note-Taking App",
     des: "Modeled after Notion, LumiNotes offers customizable tools and integrations to help users organize tasks and capture notes seamlessly, streamlining their daily workflow.",
@@ -66,6 +68,7 @@ export const projects = [
     deployedLink: "https://luminotes.vercel.app/"
   },
   {
+    id: 3,
     title: "TeamSync",
     subheader: "Real-Time Team Messaging Platform",
     des: "Inspired by Slack, TeamSync facilitates seamless collaboration and communication among team members through instant messaging and integrated project management features.",

@@ -7,9 +7,10 @@ const Projects = () => {
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				My <span className="text-[#d1b3ff]">Personal Projects</span>
 			</h1>
-			<section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-items-stretch w-full">
-				{projects.map(({title, subheader, des, img, iconLists, githubLink, deployedLink }) => (
+			<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 xl:gap-12 gap-8 justify-items-stretch w-full">
+				{projects.map(({id, title, subheader, des, img, iconLists, githubLink, deployedLink }) => (
 					<ProjectItems
+						key={id}
 						title={title}
 						subheader={subheader}
 						des={des}
