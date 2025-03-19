@@ -84,6 +84,10 @@ const FloatingDockMobile = ({
               >
                 <Link
                   href={item.href}
+                  {...(item.href.startsWith("#")
+                    ? {} // Internal link: no target added
+                    : { target: "_blank", rel: "noopener noreferrer" }
+                  )}
                   className="h-12 w-12 rounded-full bg-gray-50 dark:bg-neutral-900 flex items-center justify-center"
                 >
                   <div className="h-5 w-5">{item.icon}</div>
@@ -206,7 +210,13 @@ function IconContainer({
   const [hovered, setHovered] = useState(false);
 
   return (
-    <Link href={href}>
+    <Link
+      href={href}
+          {...(href.startsWith("#")
+        ? {} // Internal link: no target added
+        : { target: "_blank", rel: "noopener noreferrer" }
+      )}
+    >
       <motion.div
         ref={ref}
         style={{ width, height }}

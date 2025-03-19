@@ -1,6 +1,5 @@
 import {TextGenerateEffect} from "@/components/ui/text-generate-effect";
 import {Spotlight} from "@/components/ui/spotlight-new";
-import {cn} from "@/lib/utils";
 import {FlipWords} from "@/components/ui/flip-words";
 import { IconAward } from "@tabler/icons-react";
 import {SparklesCore} from "@/components/ui/sparkles";
@@ -12,20 +11,6 @@ const Hero = () => {
 	return (
 		<div className="w-screen min-h-screen pb-20 pt-36 dark:bg-black">
 			<Spotlight/>
-
-			{/*<div className="h-screen w-full dark:bg-black bg-white bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">*/}
-			{/*	<div*/}
-			{/*		className={cn(*/}
-			{/*			"absolute inset-0",*/}
-			{/*			// "[background-size:80px_80px]",*/}
-			{/*			"[background-size:100px_100px]",*/}
-			{/*			"[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",*/}
-			{/*			"dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",*/}
-			{/*		)}*/}
-			{/*	/>*/}
-			{/*	/!* Radial gradient for the container to give a faded look *!/*/}
-			{/*	<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>*/}
-			{/*</div>*/}
 
 			<div className="h-[70vh] flex justify-center relative z-10">
 				<div className="md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center justify-center">
@@ -74,8 +59,6 @@ const Hero = () => {
 
 				</div>
 			</div>
-
-			<p className="mt-500">hello</p>
 		</div>
 	)
 }
