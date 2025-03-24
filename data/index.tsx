@@ -77,4 +77,14 @@ export const projects = [
     githubLink: "https://github.com/sherard-dalaguit/TeamSync",
     deployedLink: "https://team-sync-brown.vercel.app/",
   },
+  {
+    id: 4,
+    title: "ICSearch",
+    subheader: "Custom Information Retrieval Search Engine",
+    des: "Python Search Engine that retrieves relevant information from a collection of documents using the Vector Space Model and Cosine Similarity.",
+    img: "/ICSearch.png",
+    iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
+    githubLink: "https://github.com/sherard-dalaguit/TeamSync",
+    deployedLink: "",
+  },
 ];
