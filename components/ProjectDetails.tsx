@@ -17,7 +17,7 @@ export const ProjectItems = ({
 	img: string;
 	iconLists: string[];
 	githubLink: string;
-	deployedLink: string;
+	deployedLink?: string;
 }) => {
 	return (
 		<CardContainer className="inter-var">
@@ -58,21 +58,23 @@ export const ProjectItems = ({
           <CardItem
             translateZ={20}
             as={Link}
-            href={deployedLink}
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-          >
-            Live Site
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as={Link}
             href={githubLink}
             target="__blank"
             className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
             View Code
           </CardItem>
+					{deployedLink && (
+          <CardItem
+            translateZ={20}
+            as={Link}
+            href={deployedLink}
+            target="__blank"
+            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+          >
+            Live Site
+          </CardItem>
+					)}
         </div>
 
       </CardBody>
