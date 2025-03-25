@@ -4,6 +4,7 @@ import {FlipWords} from "@/components/ui/flip-words";
 import { IconAward } from "@tabler/icons-react";
 import {SparklesCore} from "@/components/ui/sparkles";
 import MagicButton from "@/components/ui/MagicButton";
+import Link from "next/link";
 
 const Hero = () => {
 	const words = ["Full-Stack Developer", "Software Engineer", "Computer Science Student"];
@@ -53,9 +54,9 @@ const Hero = () => {
 						</div>
 					</div>
 
-					<a href="/#projects">
+					<Link href="/#projects">
 						<MagicButton title="Show my work" icon={<IconAward />} position="right" />
-					</a>
+					</Link>
 
 				</div>
 			</div>
