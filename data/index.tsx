@@ -42,7 +42,7 @@ export const navBarLinks = [
   {
     title: 'Resume',
     icon: <IconFileDescription className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-    href: 'https://drive.google.com/file/d/12AT0ElkXK5N9rlcNo_fclBMmLn8Nn-bo/view',
+    href: 'https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view',
   }
 ]
 
@@ -80,11 +80,21 @@ export const projects = [
   {
     id: 4,
     title: "ICSearch",
-    subheader: "Custom Information Retrieval Search Engine",
-    des: "Python Search Engine that retrieves relevant information from a collection of documents using the Vector Space Model and Cosine Similarity.",
+    subheader: "Information Retrieval Search Engine",
+    des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
     img: "/ICSearch.png",
     iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
-    githubLink: "https://github.com/sherard-dalaguit/TeamSync",
+    githubLink: "https://github.com/sherard-dalaguit/ICSearch",
+    deployedLink: "",
+  },
+  {
+    id: 5,
+    title: "Sleepify",
+    subheader: "Sleep-Tracker App",
+    des: "A web application, build in Angular & Ionic, that helps people understand and visualize their sleep habits by tracking their sleep patterns and levels of tiredness each day.",
+    img: "/Sleepify.png",
+    iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
+    githubLink: "https://github.com/sherard-dalaguit/Sleepify",
     deployedLink: "",
   },
 ];
