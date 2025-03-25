@@ -42,7 +42,7 @@ export const navBarLinks = [
   {
     title: 'Resume',
     icon: <IconFileDescription className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-    href: 'https://drive.google.com/file/d/192B1GdGXjombyfjweBDObl5J_W-belzW/view',
+    href: 'https://drive.google.com/file/d/12AT0ElkXK5N9rlcNo_fclBMmLn8Nn-bo/view',
   }
 ]
 
