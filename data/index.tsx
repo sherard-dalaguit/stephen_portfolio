@@ -1,12 +1,42 @@
 import {
-	IconBrandGithub,
-	IconBrandLinkedin,
-	IconCode,
-	IconFileDescription,
-	IconHome,
-	IconMail,
-	IconUser
+  IconBrandCpp,
+  IconBrandCss3,
+  IconBrandFirebase,
+  IconBrandGithub,
+  IconBrandHtml5,
+  IconBrandJavascript,
+  IconBrandLinkedin,
+  IconBrandMongodb,
+  IconBrandNextjs,
+  IconBrandNodejs,
+  IconBrandPython,
+  IconBrandReact,
+  IconBrandTypescript,
+  IconCode,
+  IconFileDescription,
+  IconHome,
+  IconMail,
+  IconUser, IconApi, IconBrandGit, IconSql
 } from "@tabler/icons-react";
+
+export const skills = [
+  { name: 'JavaScript', icon: <IconBrandJavascript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'TypeScript', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'HTML', icon: <IconBrandHtml5 className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'CSS', icon: <IconBrandCss3 className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'React', icon: <IconBrandReact className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Next.js', icon: <IconBrandNextjs className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Node.js', icon: <IconBrandNodejs className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'MongoDB', icon: <IconBrandMongodb className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Firebase', icon: <IconBrandFirebase className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'RESTful APIs', icon: <IconApi className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Git', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'GitHub', icon: <IconBrandGithub className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Java', icon: <IconCode className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Python', icon: <IconBrandPython className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'C/C++', icon: <IconBrandCpp className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'SQL', icon: <IconSql className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+];
 
 export const navBarLinks = [
 	{
