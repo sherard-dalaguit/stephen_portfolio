@@ -12,8 +12,8 @@ export default function Home() {
           <Navbar />
         </div>
         <Hero />
-        <Projects />
         <AboutMe />
+        <Projects />
         <Footer />
       </div>
     </main>
