@@ -16,7 +16,18 @@ import {
   IconFileDescription,
   IconHome,
   IconMail,
-  IconUser, IconApi, IconBrandGit, IconSql
+  IconUser,
+  IconApi,
+  IconBrandGit,
+  IconSql,
+  IconBrandSlack,
+  IconBrandFigma,
+  IconBrandTrello,
+  IconListCheck,
+  IconBrandAws,
+  IconBrandGithubCopilot,
+  IconBrandNotion,
+  IconBrandZoom
 } from "@tabler/icons-react";
 
 export const skills = [
@@ -30,13 +41,24 @@ export const skills = [
   { name: 'MongoDB', icon: <IconBrandMongodb className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Firebase', icon: <IconBrandFirebase className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'RESTful APIs', icon: <IconApi className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'AWS', icon: <IconBrandAws className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Git', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'GitHub', icon: <IconBrandGithub className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Java', icon: <IconCode className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Python', icon: <IconBrandPython className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'C/C++', icon: <IconBrandCpp className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'SQL', icon: <IconSql className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
+
+export const tools = [
+  { name: 'Slack', icon: <IconBrandSlack className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Trello', icon: <IconBrandTrello className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Jira', icon: <IconListCheck className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Figma', icon: <IconBrandFigma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'GitHub', icon: <IconBrandGithub className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Copilot', icon: <IconBrandGithubCopilot className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Notion', icon: <IconBrandNotion className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Zoom', icon: <IconBrandZoom className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+]
 
 export const navBarLinks = [
 	{
