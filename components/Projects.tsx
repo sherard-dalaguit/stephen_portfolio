@@ -3,7 +3,7 @@ import {projects} from "@/data";
 
 const Projects = () => {
 	return (
-		<div id="projects" className="max-w-screen-xl mx-auto w-full px-4">
+		<div id="projects" className="max-w-screen-xl mx-auto w-full py-40 px-4">
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				My <span className="text-[#d1b3ff]">Personal Projects</span>
 			</h1>
