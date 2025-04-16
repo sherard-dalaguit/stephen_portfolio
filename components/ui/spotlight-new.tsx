@@ -71,7 +71,7 @@ export const Spotlight = ({
       <motion.div
         animate={{ x: [0, -xOffset, 0] }}
         transition={{ duration, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
-        className="absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
+        className="hidden md:block absolute top-0 right-0 w-screen h-screen z-40 pointer-events-none"
       >
         <div
           style={{

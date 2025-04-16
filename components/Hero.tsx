@@ -5,6 +5,7 @@ import { IconAward } from "@tabler/icons-react";
 import {SparklesCore} from "@/components/ui/sparkles";
 import MagicButton from "@/components/ui/MagicButton";
 import Link from "next/link";
+import {cn} from "@/lib/utils";
 
 const Hero = () => {
 	const words = ["Full-Stack Developer", "Software Engineer", "Computer Science Student"];
@@ -12,6 +13,21 @@ const Hero = () => {
 	return (
 		<div className="w-screen min-h-screen pb-20 pt-36 dark:bg-black">
 			<Spotlight/>
+
+			<div
+				className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+				<div
+					className={cn(
+						"absolute inset-0",
+						"[background-size:80px_80px]",
+						"[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
+						"dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
+					)}
+				/>
+				{/* Radial gradient for the container to give a faded look */}
+				<div
+					className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+			</div>
 
 			<div className="h-[70vh] flex justify-center relative z-10">
 				<div className="md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center justify-center">
@@ -55,7 +71,7 @@ const Hero = () => {
 					</div>
 
 					<Link href="/#projects">
-						<MagicButton title="Show my work" icon={<IconAward />} position="right" />
+						<MagicButton title="Show my work" icon={<IconAward/>} position="right"/>
 					</Link>
 
 				</div>
