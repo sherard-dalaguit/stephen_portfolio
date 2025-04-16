@@ -1,15 +1,18 @@
 import {SpotlightReverse} from "@/components/ui/spotlight-reverse";
 import MagicButton from "@/components/ui/MagicButton";
 import {IconLocationFilled} from "@tabler/icons-react";
+import Image from "next/image";
 
 const Footer = () => {
 	return (
 		<footer className="w-full py-50 px-20" id="contact">
 			<SpotlightReverse/>
-			<div className="w-full absolute left-0 -bottom-72 min-h-96">
-				<img
+			<div className="w-full absolute left-0 -bottom-72 min-h-96 pointer-events-none">
+				<Image
 					src="/footer-grid.svg"
 					alt="grid"
+					width={1000}
+					height={1000}
 					className="w-full h-full opacity-70"
 				/>
 			</div>
