@@ -12,13 +12,15 @@ const Hero = () => {
 
 	return (
 		<div className="w-screen min-h-screen pb-20 pt-36 dark:bg-black">
-			<Spotlight/>
+			<div className="relative z-10" style={{ transform: "translateY(-120px)" }}>
+				<Spotlight/>
+			</div>
 
 			<div
 				className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
 				<div
 					className={cn(
-						"absolute inset-0",
+						"absolute inset-0 z-0",
 						"[background-size:100px_100px]",
 						"[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
 						"dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
