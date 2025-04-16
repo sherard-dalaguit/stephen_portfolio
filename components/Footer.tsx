@@ -6,6 +6,13 @@ const Footer = () => {
 	return (
 		<footer className="w-full py-50 px-20" id="contact">
 			<SpotlightReverse/>
+			<div className="w-full absolute left-0 -bottom-72 min-h-96">
+				<img
+					src="/footer-grid.svg"
+					alt="grid"
+					className="w-full h-full opacity-70"
+				/>
+			</div>
 
 			<div className="flex flex-col items-center max-w-screen-xl mx-auto w-full px-4">
 				<h1 className="text-center font-bold text-[36px] md:text-4xl lg:text-5xl">
