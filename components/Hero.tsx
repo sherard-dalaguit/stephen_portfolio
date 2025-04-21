@@ -16,10 +16,8 @@ const Hero = () => {
 				<Spotlight/>
 			</div>
 
-			<div
-				className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-				<div
-					className={cn(
+			<div className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+				<div className={cn(
 						"absolute inset-0 z-0",
 						"[background-size:100px_100px]",
 						"[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
@@ -27,25 +25,35 @@ const Hero = () => {
 					)}
 				/>
 				{/* Radial gradient for the container to give a faded look */}
-				<div
-					className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
+				<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
 			</div>
 
 			<div className="h-[70vh] flex justify-center relative z-10">
 				<div className="md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center justify-center">
 					<TextGenerateEffect
-						className="text-center text-[44px] md:text-7xl lg:text-8xl xl:text-9xl"
+						className="font-bold text-center text-[44px] md:text-7xl lg:text-8xl xl:text-9xl"
+						duration={1.6}
 						words="Sherard Dalaguit"
 					/>
 
-					<div className="flex flex-row gap-2 text-lg md:text-xl lg:text-2xl xl:text-3xl">
+					<div className="flex flex-row gap-2 text-md md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">
 						<div className="hidden sm:block">
 							<FlipWords words={words}/> |
 						</div>
 						<p className="text-[#d1b3ff] text-center ml-2.5 md:tracking-wider mb-4">
 							SWE & CS @ UC Irvine
 						</p>
+						{/*<TextGenerateEffect*/}
+						{/*	className="text-center ml-2.5 md:tracking-wider mb-4"*/}
+						{/*	words="Remote Software Engineer | Trusted By 50+ Clients Across Startups, Nonprofits, & SaaS Platforms."*/}
+						{/*/>*/}
 					</div>
+					{/*<div className="flex flex-row gap-2 text-md md:text-lg lg:text-xl xl:text-2xl lg:max-w-5xl">*/}
+					{/*	<TextGenerateEffect*/}
+					{/*		className="text-center ml-2.5 md:tracking-wider mb-4"*/}
+					{/*		words="Remote Software Engineer with 50+ delivered freelance & client projects for startups, nonprofits, and SaaS platforms."*/}
+					{/*	/>*/}
+					{/*</div>*/}
 
 					<div className="w-[40rem] h-40 mt-4 relative">
 						{/* Gradients */}
