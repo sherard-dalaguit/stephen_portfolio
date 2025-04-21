@@ -37,11 +37,9 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       <div className="max-w-7xl mx-auto pt-20 px-4 md:px-8 lg:px-10">
         <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
           Client <span className="text-[#d1b3ff]">Work</span>
-          {/*My <span className="text-[#d1b3ff]">Experience</span>*/}
         </h1>
         <p className="mt-8 text-center text-lg lg:text-xl">
-          {/*I&apos;ve been working as a Freelance Software Engineer for the past 3 years. <br />*/}
-          I&apos;ve been working as a Freelance Software Engineer for the past few months. <br />
+          I&apos;ve been working as a Freelance Software Engineer for the past few years. <br />
           Here&apos;s a timeline of my journey so far.
         </p>
       </div>

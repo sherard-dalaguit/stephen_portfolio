@@ -1,13 +1,12 @@
 "use client";
 import { useEffect } from "react";
 import { motion, stagger, useAnimate } from "motion/react";
-import { cn } from "@/lib/utils";
 
 export const TextGenerateEffect = ({
   words,
   className,
   filter = true,
-  duration = 1.15,
+  duration = 1,
 }: {
   words: string;
   className?: string;
@@ -25,7 +24,7 @@ export const TextGenerateEffect = ({
       },
       {
         duration: duration ? duration : 1,
-        delay: stagger(0.2),
+        delay: stagger(0.1),
       }
     );
   }, [scope.current]);
@@ -51,7 +50,7 @@ export const TextGenerateEffect = ({
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={className}>
       <div className="my-4">
         <div className=" dark:text-white text-black leading-snug tracking-wide">
           {renderWords()}
