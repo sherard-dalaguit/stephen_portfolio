@@ -2,6 +2,7 @@ import {services} from "@/data";
 import Image from "next/image";
 import MagicButton from "@/components/ui/MagicButton";
 import {IconMail} from "@tabler/icons-react";
+import FAQ from "@/components/FAQ";
 
 const ServiceItems = ({
 	title,
@@ -66,7 +67,7 @@ const Services = () => {
 				Simple pricing that makes sense for your business. No hidden fees.
 			</h1>
 
-			<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-stretch w-full mt-24">
+			<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-center w-full mt-24">
 				{services.map(({id, title, subheader, price, description, details}) => {
 					return (
 						<ServiceItems
@@ -81,6 +82,7 @@ const Services = () => {
 				})}
 			</section>
 
+			<FAQ />
 		</div>
 	)
 }
