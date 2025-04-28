@@ -32,11 +32,11 @@ const TestimonialItems = ({
 
 const Testimonials = () => {
   return (
-		<div id="testimonials" className="rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-40 py-40 relative">
+		<div id="testimonials" className="rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-20 xl:mx-40 py-40 relative">
 			<h1 className="text-center font-bold text-[40px] py-10 md:text-5xl lg:text-6xl mb-20">
 				Client <span className="text-[#d1b3ff]">Testimonials</span>
 			</h1>
-			<section className="columns-2 md:columns-3 lg:columns-5 gap-4 justify-center px-4">
+			<section className="columns-2 md:columns-3 xl:columns-5 gap-4 justify-center px-4">
 				{testimonials.map(({quote, name, title}) => {
 					return (
 						<div key={name} className="mb-4 break-inside-avoid">
