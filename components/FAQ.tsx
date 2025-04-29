@@ -9,7 +9,7 @@ import {FAQDetails} from "@/data";
 
 const FAQ = () => {
   return (
-    <Accordion type="multiple" className="max-w-screen-lg mx-auto w-full pt-50 pb-20 px-4">
+    <Accordion type="multiple" className="max-w-screen-lg mx-auto w-full pt-80 pb-20 px-4">
       <h1 className="font-bold text-[20px] md:text-3xl lg:text-4xl">
         Frequently asked questions
       </h1>
