@@ -111,6 +111,12 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@media (min-width: 2000px) {
+  .manual-3xl-grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
