@@ -49,7 +49,7 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
 			<DialogContent className="w-[60vw] h-[60vh] max-w-none max-h-none">
 
 				<DialogHeader>
-          <DialogTitle className="font-bold text-[32px] md:text-4xl lg:text-5xl">
+          <DialogTitle className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl">
 						{steps[step].title}
 					</DialogTitle>
 
@@ -59,13 +59,13 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
         </DialogHeader>
 
 				<div className="flex flex-row items-center justify-between w-full h-full px-[2vw]">
-					<h1 className="text-md md:text-lg lg:text-xl mr-8">
+					<h1 className="text-md md:text-lg lg:text-xl mr-14">
 						{steps[step].content}
 					</h1>
 					<Image
 						src={steps[step].img}
-						width={500}
-						height={500}
+						width={550}
+						height={550}
 						alt="case-study"
 						className="rounded-lg"
 					/>
