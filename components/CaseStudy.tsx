@@ -46,7 +46,7 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
 				</div>
       </DialogTrigger>
 
-			<DialogContent className="w-[60vw] h-[60vh] max-w-none max-h-none">
+			<DialogContent className="w-[90vw] h-[90vh] lg:w-[70vw] lg:h-[70vh] max-w-none max-h-none">
 
 				<DialogHeader>
           <DialogTitle className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl">
@@ -58,20 +58,31 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
 					</DialogDescription>
         </DialogHeader>
 
-				<div className="flex flex-row items-center justify-between w-full h-full px-[2vw]">
-					<h1 className="text-md md:text-lg lg:text-xl mr-14">
-						{steps[step].content}
-					</h1>
-					<Image
-						src={steps[step].img}
-						width={550}
-						height={550}
-						alt="case-study"
-						className="rounded-lg"
-					/>
+				<div className="flex flex-col lg:flex-row items-center justify-between w-full h-full px-[2vw]">
+					<div className="w-full lg:w-1/2 md:pr-8">
+						<div className="max-h-[30vh] overflow-y-auto md:max-h-none md:overflow-visible">
+							<h1 className="text-md md:text-lg lg:text-xl lg:mr-14">
+								{steps[step].content.split('\n').map((line, i) => (
+									<span key={i} className="block">
+										{line}
+										<br />
+									</span>
+								))}
+							</h1>
+						</div>
+					</div>
+					<div className="mt-4 md:mt-0 w-full lg:w-1/2 flex justify-end">
+						<Image
+							src={steps[step].img}
+							width={550}
+							height={550}
+							alt="case-study"
+							className="rounded-lg w-full object-cover"
+						/>
+					</div>
 				</div>
 
-				<DialogFooter className="mt-auto flex justify-between items-center w-full">
+				<DialogFooter className="mt-auto flex flex-row justify-between items-center w-full">
 					<button
 						onClick={() => setStep((s) => Math.max(0, s - 1))}
 						disabled={step === 0}
