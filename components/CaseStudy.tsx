@@ -11,10 +11,13 @@ import {
 import MagicButton from "@/components/ui/MagicButton";
 import {IconBriefcase} from "@tabler/icons-react";
 import {useState} from "react";
+import Image from "next/image";
 
 interface Step {
   title: string;
   description: string;
+	img: string;
+	content: string;
 }
 
 interface CaseStudyProps {
@@ -54,6 +57,19 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
 						{steps[step].description}
 					</DialogDescription>
         </DialogHeader>
+
+				<div className="flex flex-row items-center justify-between w-full h-full px-[2vw]">
+					<h1 className="text-md md:text-lg lg:text-xl mr-8">
+						{steps[step].content}
+					</h1>
+					<Image
+						src={steps[step].img}
+						width={500}
+						height={500}
+						alt="case-study"
+						className="rounded-lg"
+					/>
+				</div>
 
 				<DialogFooter className="mt-auto flex justify-between items-center w-full">
 					<button
