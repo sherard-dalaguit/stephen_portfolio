@@ -21,10 +21,11 @@ interface Step {
 }
 
 interface CaseStudyProps {
+	btnName?: string;
   steps: Step[];
 }
 
-const CaseStudy = ({ steps }: CaseStudyProps) => {
+const CaseStudy = ({ btnName, steps }: CaseStudyProps) => {
 	const [step, setStep] = useState(0);
 	const [open, setOpen] = useState(false);
 
@@ -39,14 +40,14 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
       <DialogTrigger asChild>
 				<div className="z-0">
         	<MagicButton
-						title="Case Study"
+						title={btnName || "Case Study"}
 						icon={<IconBriefcase />}
           	position="right"
 					/>
 				</div>
       </DialogTrigger>
 
-			<DialogContent className="w-[90vw] h-[90vh] lg:w-[70vw] lg:h-[70vh] max-w-none max-h-none">
+			<DialogContent className="w-[90vw] h-[90vh] xl:w-[70vw] xl:h-[70vh] max-w-none max-h-none">
 
 				<DialogHeader>
           <DialogTitle className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl">
@@ -58,10 +59,10 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
 					</DialogDescription>
         </DialogHeader>
 
-				<div className="flex flex-col lg:flex-row items-center justify-between w-full h-full px-[2vw]">
-					<div className="w-full lg:w-1/2 md:pr-8">
-						<div className="max-h-[30vh] overflow-y-auto md:max-h-none md:overflow-visible">
-							<h1 className="text-md md:text-lg lg:text-xl lg:mr-14">
+				<div className="flex flex-col xl:flex-row items-center justify-between w-full h-full px-[2vw]">
+					<div className="w-full xl:w-1/2 xl:pr-8">
+						<div className="max-h-[30vh] overflow-y-auto lg:max-h-none lg:overflow-visible">
+							<h1 className="text-md md:text-lg lg:text-xl xl:mr-14">
 								{steps[step].content.split('\n').map((line, i) => (
 									<span key={i} className="block">
 										{line}
@@ -71,7 +72,7 @@ const CaseStudy = ({ steps }: CaseStudyProps) => {
 							</h1>
 						</div>
 					</div>
-					<div className="mt-4 md:mt-0 w-full lg:w-1/2 flex justify-end">
+					<div className="mt-4 md:mt-0 w-full md:w-[50vw] xl:w-1/2 flex justify-end">
 						<Image
 							src={steps[step].img}
 							width={550}

@@ -22,7 +22,7 @@ const Footer = () => {
 					Interested in <span className="text-[#d1b3ff]">networking</span> or <span
 					className="text-[#d1b3ff]">collaborating</span> on tech projects?
 				</h1>
-				<p className="text-white-200 md:mt-10 my-5 text-center">Feel free to reach out! I&apos;m eager to network and
+				<p className="text-white-200 md:mt-10 my-5 lg:text-lg text-center">Feel free to reach out! I&apos;m eager to network and
 					explore opportunities to grow together.</p>
 				<a href="mailto:sherard.softwaredev@gmail.com">
 					<MagicButton title="Let's get in touch" icon={<IconLocationFilled width={15}/>} position="right"/>
