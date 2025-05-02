@@ -17,8 +17,8 @@ const Footer = () => {
 				/>
 			</div>
 
-			<div className="flex flex-col items-center max-w-screen-xl mx-auto w-full px-4">
-				<h1 className="text-center font-bold text-[36px] md:text-4xl lg:text-5xl">
+			<div className="flex flex-col items-center max-w-screen-xl mx-auto w-full md:px-4">
+				<h1 className="text-center font-bold text-4xl md:text-5xl lg:text-6xl">
 					Interested in <span className="text-[#d1b3ff]">networking</span> or <span
 					className="text-[#d1b3ff]">collaborating</span> on tech projects?
 				</h1>
