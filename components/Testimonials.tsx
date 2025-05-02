@@ -37,8 +37,8 @@ const Testimonials = () => {
 				Client <span className="text-[#d1b3ff]">Testimonials</span>
 			</h1>
 			<h1 className="mx-auto mt-8 text-center text-lg lg:text-xl mb-20">
-				I've worked with dozens of <span className="text-[#d1b3ff]">founders</span> and <span className="text-[#d1b3ff]">companies</span> over the past few years. <br />
-				Here's what they have to say about me.
+				I&apos;ve worked with dozens of <span className="text-[#d1b3ff]">founders</span> and <span className="text-[#d1b3ff]">companies</span> over the past few years. <br />
+				Here&apos;s what they have to say about me.
 			</h1>
 			<section className="columns-1 md:columns-3 xl:columns-5 gap-4 justify-center md:px-4">
 				{testimonials.map(({quote, name, title}) => {
