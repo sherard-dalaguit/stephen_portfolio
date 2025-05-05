@@ -216,6 +216,12 @@ function IconContainer({
         ? {} // Internal link: no target added
         : { target: "_blank", rel: "noopener noreferrer" }
       )}
+      onClick={e => {
+        if (href === "#") {
+          e.preventDefault();
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }}
     >
       <motion.div
         ref={ref}
