@@ -111,6 +111,10 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 @media (min-width: 2000px) {
   .manual-3xl-grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
