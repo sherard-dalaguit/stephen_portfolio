@@ -32,8 +32,8 @@ const TestimonialItems = ({
 
 const Testimonials = () => {
   return (
-		<div id="testimonials" className="rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-8 md:mx-20 xl:mx-40 py-40 relative">
-			<h1 className="text-center font-bold text-[40px] pt-10 md:text-5xl lg:text-6xl">
+		<div id="testimonials" className="rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-8 md:mx-20 xl:mx-40 pt-20 pb-40 relative">
+			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				Client <span className="text-[#d1b3ff]">Testimonials</span>
 			</h1>
 			<h1 className="mx-auto mt-8 text-center text-lg lg:text-xl mb-20">

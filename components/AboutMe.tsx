@@ -3,7 +3,7 @@ import Tools from "@/components/Tools";
 
 const AboutMe = () => {
 	return (
-		<div id="about" className="max-w-screen-xl mx-auto w-full pb-40 px-8 md:px-20">
+		<div id="about" className="max-w-screen-xl mx-auto w-full pt-20 pb-40 px-8 md:px-20">
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
