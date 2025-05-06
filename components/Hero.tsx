@@ -68,9 +68,11 @@ const Hero = () => {
 							initial={{opacity: 0}}
 							animate={{opacity: 1}}
 							transition={{duration: 1.6}}
+							className="flex flex-row items-center"
 						>
+							<p className="hidden sm:block mb-4">| </p>
 							<p className="text-[#d1b3ff] text-center ml-2.5 md:tracking-wider mb-4">
-								| SWE & CS @ UC Irvine
+								SWE & CS @ UC Irvine
 							</p>
 						</motion.div>
 					</div>
