@@ -10,7 +10,10 @@ const Tools = () => {
         {tools.map((tool, index) => (
           <div key={index} className="break-inside-avoid flex flex-row items-center w-full h-18 rounded-xl border-zinc-700 bg-[linear-gradient(180deg,#27272a,#18181b)]">
             <span className="mx-4">{tool.icon}</span>
-            <h1 className="text-lg">{tool.name}</h1>
+            <div className="flex flex-col">
+              <h1 className="text-lg">{tool.name}</h1>
+              <h1 className="text-sm text-gray-400">{tool.des}</h1>
+            </div>
           </div>
         ))}
       </div>

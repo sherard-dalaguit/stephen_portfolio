@@ -20,9 +20,8 @@ import {
   IconBrandAws,
   IconBrandGithubCopilot,
   IconBrandNotion,
-  IconBrandZoom,
   IconBriefcase,
-  IconMessages, IconBrandTailwind, IconBrandPrisma
+  IconMessages, IconBrandTailwind, IconBrandPrisma, IconShieldLockFilled
 } from "@tabler/icons-react";
 import React from "react";
 import Image from "next/image";
@@ -37,20 +36,20 @@ export const skills = [
   { name: 'MongoDB', des: 'NoSQL Database', icon: <IconBrandMongodb className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Prisma', des: 'ORM Tool', icon: <IconBrandPrisma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Firebase', des: 'BaaS Platform', icon: <IconBrandFirebase className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Auth.js', des: 'User Auth', icon: <IconShieldLockFilled className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'AWS', des: 'Cloud Platform', icon: <IconBrandAws className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Figma', des: 'Design Tool', icon: <IconBrandFigma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
 
 export const tools = [
-  { name: 'Slack', icon: <IconBrandSlack className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Trello', icon: <IconBrandTrello className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Jira', icon: <IconListCheck className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Figma', icon: <IconBrandFigma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'GitHub', icon: <IconBrandGithub className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Copilot', icon: <IconBrandGithubCopilot className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Notion', icon: <IconBrandNotion className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Zoom', icon: <IconBrandZoom className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Slack', des: 'Messaging Platform', icon: <IconBrandSlack className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Trello', des: 'Project Management', icon: <IconBrandTrello className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Jira', des: 'Issue Tracker', icon: <IconListCheck className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Notion', des: 'Note-taking App', icon: <IconBrandNotion className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'IntelliJ IDEA', des: 'Favorite IDE', icon: <IconCode className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'GitHub', des: 'Version Control', icon: <IconBrandGithub className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Copilot', des: 'AI Assistant', icon: <IconBrandGithubCopilot className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Figma', des: 'Design Tool', icon: <IconBrandFigma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ]
 
 export const navBarLinks = [
@@ -560,7 +559,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Senior Freelance Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>
             Successfully delivered 30+ full-stack and frontend software projects to a diverse set of global clients
             across industries such as e-commerce, SaaS, and health-tech, maintaining a 100% job success score.
@@ -625,7 +624,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Lead Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Achieved efficient indexing of 55,392 documents using Python, JSON parsing, and inverted indexing,
             delivering average query speeds under 40 ms.
           </li>
@@ -678,7 +677,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Full-Stack Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Designed and implemented a remote management platform that reduced emergency housing response times by
             40% and decreased operational costs by 25%.
           </li>
@@ -734,7 +733,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Full-Stack Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Delivered a proof‑of‑concept GUI for a defense analytics platform using Python’s Tkinter, making complex
             data accessible to non‑technical users.
           </li>
@@ -787,7 +786,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Full-Stack Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Developed a responsive, remote-accessible environmental education platform using React, TypeScript, and
             TailwindCSS, increasing user engagement by 35%.
           </li>
@@ -843,7 +842,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Front-End Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Transformed an internal dashboard at Google with a responsive front‑end built in TypeScript and
             TailwindCSS, improving engineer productivity by 20 %.
           </li>
@@ -896,7 +895,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Full-Stack Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Developed and launched a full‑stack website for FitFlow using Next.js, TypeScript, and TailwindCSS,
             enabling early user onboarding.
           </li>
@@ -949,7 +948,7 @@ export const timeline = [
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-4">
           Full-Stack Software Engineer
         </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8">
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>
             Engineered a swipe-based job-matching platform using React, TailwindCSS, and Node.js, facilitating seamless connections between job seekers and recruiters.
           </li>

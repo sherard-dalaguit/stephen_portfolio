@@ -11,7 +11,7 @@ const AboutMe = () => {
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
-			<div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-y-8 lg:gap-x-6 mx-auto max-w-[80vw] xl:max-w-[70vw] mt-4">
+			<div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-y-8 lg:gap-x-6 mx-auto max-w-[80vw] xl:max-w-[67vw] mt-4">
 				<div className="flex flex-row h-full my-4">
 					<div className="w-[200px h-[200px] flex-shtrink-0 relative">
 						<Image
@@ -40,7 +40,7 @@ const AboutMe = () => {
 
 						<h1 className="text-sm lg:text-md text-zinc-400 mt-2">
 							{/*Building real products for real clients, not just more projects*/}
-							Computer Science & Software Engineering Student<br /> at the University of California, Irvine
+							Computer Science & Software Engineering<br /> at the University of California, Irvine
 						</h1>
 
 						<div className="flex flex-row items-center mt-4">
@@ -95,7 +95,7 @@ const AboutMe = () => {
 				</ul>
 			</div>
 			<Skills/>
-			{/*<Tools/>*/}
+			<Tools/>
 		</div>
 	)
 }
