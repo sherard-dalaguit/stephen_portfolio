@@ -2,7 +2,7 @@ import {skills} from "@/data";
 
 const Skills = () => {
   return (
-    <section id="skills" className="max-w-screen-xl mx-auto py-15 xl:px-20">
+    <section id="skills" className="max-w-screen-xl mx-auto pt-8 pb-15 xl:px-20">
       <h1 className="text-center font-bold text-[32px] md:text-3xl lg:text-4xl mb-8">
         Current <span className="text-[#d1b3ff]">Technologies</span>
       </h1>
