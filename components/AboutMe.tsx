@@ -39,7 +39,8 @@ const AboutMe = () => {
 						</div>
 
 						<h1 className="text-sm lg:text-md text-zinc-400 mt-2">
-							Building real products for real clients, not just more projects
+							{/*Building real products for real clients, not just more projects*/}
+							Computer Science & Software Engineering Student<br /> at the University of California, Irvine
 						</h1>
 
 						<div className="flex flex-row items-center mt-4">
