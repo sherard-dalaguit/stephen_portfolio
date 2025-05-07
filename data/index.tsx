@@ -21,7 +21,10 @@ import {
   IconBrandGithubCopilot,
   IconBrandNotion,
   IconBriefcase,
-  IconMessages, IconBrandTailwind, IconBrandPrisma, IconShieldLockFilled
+  IconMessages,
+  IconBrandTailwind,
+  IconBrandPrisma,
+  IconShieldLock
 } from "@tabler/icons-react";
 import React from "react";
 import Image from "next/image";
@@ -36,7 +39,7 @@ export const skills = [
   { name: 'MongoDB', des: 'NoSQL Database', icon: <IconBrandMongodb className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Prisma', des: 'ORM Tool', icon: <IconBrandPrisma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Firebase', des: 'BaaS Platform', icon: <IconBrandFirebase className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Auth.js', des: 'User Auth', icon: <IconShieldLockFilled className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Auth.js', des: 'User Auth', icon: <IconShieldLock className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'AWS', des: 'Cloud Platform', icon: <IconBrandAws className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
