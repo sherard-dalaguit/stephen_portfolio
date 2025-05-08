@@ -14,15 +14,15 @@ const TestimonialItems = ({
 }) => {
 	return (
 		<div className="relative justify-between shrink-0 rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]">
-			<h1 className="relative z-20 text-md leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
+			<h1 className="relative z-20 text-md xl:text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
 				{quote}
 			</h1>
 
 			<div className="relative z-20 mt-6 flex flex-col gap-1">
-				<h1 className="text-md leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
+				<h1 className="text-md xl:text-lg leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
 					{name}
 				</h1>
-				<h1 className="text-md leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
+				<h1 className="text-md xl:text-lg leading-[1.6] font-normal text-neutral-500 dark:text-gray-400">
 					{title}
 				</h1>
 			</div>
@@ -40,7 +40,7 @@ const Testimonials = () => {
 				I&apos;ve worked with dozens of <span className="text-[#d1b3ff]">founders</span> and <span className="text-[#d1b3ff]">companies</span> over the past few years. <br />
 				Here&apos;s what they have to say about me.
 			</h1>
-			<section className="columns-1 md:columns-3 xl:columns-5 gap-4 justify-center md:px-4">
+			<section className="columns-1 md:columns-3 xl:columns-4 gap-4 justify-center md:px-4">
 				{testimonials.map(({quote, name, title}) => {
 					return (
 						<div key={name} className="mb-4 break-inside-avoid">

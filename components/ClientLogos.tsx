@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const ClientLogos = () => {
 	return (
-		<div className="pb-28 mb-24 mx-6 md:mx-20">
+		<div className="pb-28 mb-4 mx-6 md:mx-20">
 			<h1 className="text-center text-md md:text-lg lg:text-xl mb-4">
 				Past clients include:
 			</h1>

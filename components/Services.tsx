@@ -59,7 +59,7 @@ const ServiceItems = ({
 
 const Services = () => {
 	return (
-		<div id="services" className="w-[75vw] mx-auto py-20 px-4">
+		<div id="services" className="max-w-screen-xl mx-auto w-full py-20 px-4">
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				The right partner for <span className="text-[#d1b3ff]">your next project</span>
 			</h1>
@@ -67,7 +67,7 @@ const Services = () => {
 				Simple pricing that makes sense for your business. No hidden fees.
 			</h1>
 
-			<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-stretch mt-24">
+			<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 justify-items-stretch w-full mt-24">
 				{services.map(({id, title, subheader, price, description, details}) => {
 					return (
 						<ServiceItems
