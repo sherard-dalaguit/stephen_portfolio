@@ -212,9 +212,9 @@ function IconContainer({
   return (
     <Link
       href={href}
-          {...(href.startsWith("#")
-        ? {} // Internal link: no target added
-        : { target: "_blank", rel: "noopener noreferrer" }
+          {...(href.startsWith("http")
+        ? { target: "_blank", rel: "noopener noreferrer" }
+        : {}
       )}
       onClick={e => {
         if (href === "#") {
