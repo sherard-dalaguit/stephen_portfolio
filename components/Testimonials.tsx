@@ -18,7 +18,7 @@ const TestimonialItems = ({
 	return (
 		<div className="relative justify-between shrink-0 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]">
 			<h1 className="relative z-20 text-md xl:text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
-				"{quote}"
+				&apos;{quote}&apos;
 			</h1>
 
 			<div className="relative z-20 mt-6 flex flex-col gap-1">
