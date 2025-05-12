@@ -3,7 +3,7 @@
 import {testimonials} from "@/data";
 import React from "react";
 import MagicButton from "@/components/ui/MagicButton";
-import {IconMessages, IconStarFilled} from "@tabler/icons-react";
+import {IconMessages, IconStar, IconStarFilled, IconStarHalfFilled} from "@tabler/icons-react";
 import Link from "next/link";
 
 const TestimonialItems = ({
@@ -17,15 +17,26 @@ const TestimonialItems = ({
 	title: string;
 	stars: number;
 }) => {
+	const hasHalfStar = stars % 1 !== 0;
 	return (
 		<div className="relative justify-between shrink-0 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]">
 			<div className="flex flex-row">
-			{Array.from({length: stars}).map((_, index) => (
-				<IconStarFilled
-					key={index}
-					className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]"
-				/>
-			))}</div>
+				{Array.from({length: stars}).map((_, index) => (
+					<IconStarFilled
+						key={index}
+						className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]"
+					/>
+				))}
+				{hasHalfStar && (
+					<IconStarHalfFilled	className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]" />
+				)}
+				{Array.from({length: 5 - stars}).map((_, index) => (
+					<IconStar
+						key={index}
+						className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]"
+					/>
+				))}
+			</div>
 
 			<h1 className="relative z-20 text-md xl:text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
 				“{quote}”
