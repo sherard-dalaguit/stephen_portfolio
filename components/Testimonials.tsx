@@ -3,22 +3,32 @@
 import {testimonials} from "@/data";
 import React from "react";
 import MagicButton from "@/components/ui/MagicButton";
-import {IconMessages} from "@tabler/icons-react";
+import {IconMessages, IconStarFilled} from "@tabler/icons-react";
 import Link from "next/link";
 
 const TestimonialItems = ({
 	quote,
 	name,
 	title,
+	stars,
 } : {
 	quote: string;
 	name: string;
 	title: string;
+	stars: number;
 }) => {
 	return (
 		<div className="relative justify-between shrink-0 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] rounded-2xl border border-b-0 border-zinc-200 bg-[linear-gradient(180deg,#fafafa,#f5f5f5)] px-8 py-6 dark:border-zinc-700 dark:bg-[linear-gradient(180deg,#27272a,#18181b)]">
+			<div className="flex flex-row">
+			{Array.from({length: stars}).map((_, index) => (
+				<IconStarFilled
+					key={index}
+					className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]"
+				/>
+			))}</div>
+
 			<h1 className="relative z-20 text-md xl:text-lg leading-[1.6] font-normal text-neutral-800 dark:text-gray-100">
-				&apos;{quote}&apos;
+				“{quote}”
 			</h1>
 
 			<div className="relative z-20 mt-6 flex flex-col gap-1">
@@ -49,9 +59,9 @@ const Testimonials = ({ limit } : { limit?: number }) => {
 			</h1>
 			<div className="relative w-full overflow-hidden">
 				<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 items-stretch md:px-4">
-					{testimonialsToShow.map(({id, quote, name, title}) => (
+					{testimonialsToShow.map(({id, quote, name, title, stars}) => (
 						<div key={id} className="flex flex-col">
-							<TestimonialItems quote={quote} name={name} title={title}/>
+							<TestimonialItems quote={quote} name={name} title={title} stars={stars}/>
 						</div>
 					))}
 				</section>
