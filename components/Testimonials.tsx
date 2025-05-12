@@ -39,7 +39,7 @@ const Testimonials = ({ limit } : { limit?: number }) => {
 		: testimonials;
 
   return (
-		<div id="testimonials" className="max-w-[70vw] flex flex-col rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-auto pt-20 pb-40">
+		<div id="testimonials" className="max-w-[80vw] 2xl:max-w-[70vw] flex flex-col rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-auto pt-20 pb-40">
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				Client <span className="text-[#d1b3ff]">Testimonials</span>
 			</h1>
@@ -49,8 +49,8 @@ const Testimonials = ({ limit } : { limit?: number }) => {
 			</h1>
 			<div className="relative w-full overflow-hidden">
 				<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 items-stretch md:px-4">
-					{testimonialsToShow.map(({quote, name, title}) => (
-						<div key={name} className="flex flex-col">
+					{testimonialsToShow.map(({id, quote, name, title}) => (
+						<div key={id} className="flex flex-col">
 							<TestimonialItems quote={quote} name={name} title={title}/>
 						</div>
 					))}
