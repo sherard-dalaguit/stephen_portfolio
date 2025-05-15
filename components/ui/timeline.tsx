@@ -7,7 +7,7 @@ import {
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import MagicButton from "@/components/ui/MagicButton";
-import {IconBriefcase} from "@tabler/icons-react";
+import {IconArrowBack, IconBriefcase, IconHome} from "@tabler/icons-react";
 import Link from "next/link";
 
 interface TimelineEntry {
@@ -50,6 +50,16 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
           Here&apos;s a timeline of my journey so far.
         </p>
       </div>
+
+      {limit == null && (
+        <Link href="/#experience" className="mt-8">
+          <MagicButton
+            title="Return Home"
+            icon={<IconHome />}
+            position="right"
+          />
+        </Link>
+      )}
 
       <div ref={ref} className="relative max-w-7xl mx-auto">
         {dataToShow.map((item, index) => {
