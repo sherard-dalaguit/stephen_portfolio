@@ -3,7 +3,7 @@
 import {testimonials} from "@/data";
 import React from "react";
 import MagicButton from "@/components/ui/MagicButton";
-import {IconMessages, IconStar, IconStarFilled, IconStarHalfFilled} from "@tabler/icons-react";
+import {IconHome, IconMessages, IconStar, IconStarFilled, IconStarHalfFilled} from "@tabler/icons-react";
 import Link from "next/link";
 
 const TestimonialItems = ({
@@ -61,13 +61,25 @@ const Testimonials = ({ limit } : { limit?: number }) => {
 
   return (
 		<div id="testimonials" className="max-w-[80vw] 2xl:max-w-[70vw] flex flex-col rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-auto pt-20 pb-40">
-			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
-				Client <span className="text-[#d1b3ff]">Testimonials</span>
-			</h1>
-			<h1 className="mx-auto mt-8 text-center text-lg lg:text-xl mb-20">
-				I&apos;ve worked with dozens of <span className="text-[#d1b3ff]">founders</span> and <span className="text-[#d1b3ff]">companies</span> over the past few years. <br />
-				Here&apos;s what they have to say about me.
-			</h1>
+			<div className="mb-20 mx-auto flex flex-col items-center justify-center">
+				<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
+					Client <span className="text-[#d1b3ff]">Testimonials</span>
+				</h1>
+				<h1 className="mx-auto mt-8 text-center text-lg lg:text-xl">
+					I&apos;ve worked with dozens of <span className="text-[#d1b3ff]">founders</span> and <span className="text-[#d1b3ff]">companies</span> over the past few years. <br />
+					Here&apos;s what they have to say about me.
+				</h1>
+				{limit == null && (
+					<Link href="/#testimonials" className="mt-8">
+						<MagicButton
+							title="Return Home"
+							icon={<IconHome/>}
+							position="right"
+						/>
+					</Link>
+				)}
+			</div>
+
 			<div className="relative w-full overflow-hidden">
 				<section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 xl:gap-6 items-stretch md:px-4">
 					{testimonialsToShow.map(({id, quote, name, title, stars}) => (
