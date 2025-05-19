@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import {IconBrandGithub, IconBrandLinkedin, IconFileDescription, IconMail, IconMapPinFilled} from "@tabler/icons-react";
 import React from "react";
+import Statistics from "@/components/Statistics";
 
 const AboutMe = () => {
 	return (
@@ -12,8 +13,8 @@ const AboutMe = () => {
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
 			<div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-y-8 lg:gap-x-6 mx-auto max-w-[80vw] xl:max-w-[67vw] mt-4">
-				<div className="flex flex-row h-full my-4">
-					<div className="w-[200px h-[200px] flex-shtrink-0 relative">
+				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4">
+					<div className="w-[200px] h-[200px] flex-shrink-0 relative mb-6">
 						<Image
 							src="/sherard.jpg"
 							alt="selfie"
@@ -23,7 +24,7 @@ const AboutMe = () => {
 						/>
 					</div>
 
-					<div className="flex flex-col md:pl-8 mt-4">
+					<div className="flex flex-col md:pl-8 mt-2">
 						<h1 className="text-xl md:text-2xl lg:text-3xl font-bold mt-4">
 							Sherard Dalaguit
 						</h1>
@@ -59,7 +60,7 @@ const AboutMe = () => {
 								<IconBrandGithub className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
 							<Link
-								href="mailto:sherard.softwaredev@gmail.com"
+								href="mailto:sherarddalaguit.dev@gmail.com"
 							>
 								<IconMail className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
@@ -94,6 +95,7 @@ const AboutMe = () => {
 					</li>
 				</ul>
 			</div>
+			{/*<Statistics />*/}
 			<Skills/>
 			<Tools/>
 		</div>
