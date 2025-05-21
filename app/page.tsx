@@ -3,9 +3,6 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/AboutMe";
-import Testimonials from "@/components/Testimonials";
-import Experience from "@/components/Experience";
-import Services from "@/components/Services";
 
 export default function Home() {
   return (
@@ -16,10 +13,7 @@ export default function Home() {
         </div>
         <Hero />
         <AboutMe />
-        {/*<Experience />*/}
-        {/*<Testimonials />*/}
         <Projects />
-        {/*<Services />*/}
         <Footer />
       </div>
     </main>
