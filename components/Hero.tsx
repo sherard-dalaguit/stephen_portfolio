@@ -54,12 +54,6 @@ const Hero = () => {
 						words="Sherard Dalaguit"
 					/>
 
-					{/*<div className="max-w-sm md:max-w-3xl flex flex-row gap-2 text-md md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">*/}
-					{/*	<TextGenerateEffect*/}
-					{/*		className="text-center ml-2.5 md:tracking-wider mb-4"*/}
-					{/*		words="Remote Senior Software Engineer | Trusted By 70+ Clients Across Startups, Nonprofits, & SaaS Platforms."*/}
-					{/*	/>*/}
-					{/*</div>*/}
 					<div className="flex flex-row gap-2 text-lg md:text-xl lg:text-2xl xl:text-3xl">
 						<div className="hidden sm:block">
 							<FlipWords words={words}/>
@@ -71,7 +65,7 @@ const Hero = () => {
 							className="flex flex-row items-center"
 						>
 							<p className="hidden sm:block mb-4">| </p>
-							<p className="text-[#d1b3ff] text-center ml-2.5 md:tracking-wider mb-4">
+							<p className="text-center ml-2.5 md:tracking-wider mb-4">
 								SWE & CS @ UC Irvine
 							</p>
 						</motion.div>

@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import {IconBrandGithub, IconBrandLinkedin, IconFileDescription, IconMail, IconMapPinFilled} from "@tabler/icons-react";
 import React from "react";
-import Statistics from "@/components/Statistics";
 
 const AboutMe = () => {
 	return (
@@ -40,7 +39,6 @@ const AboutMe = () => {
 						</div>
 
 						<h1 className="text-sm lg:text-md text-zinc-400 mt-2">
-							{/*Building real products for real clients, not just more projects*/}
 							Computer Science & Software Engineering<br /> at the University of California, Irvine
 						</h1>
 
@@ -65,7 +63,6 @@ const AboutMe = () => {
 								<IconMail className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
 							<Link
-								// href="https://drive.google.com/file/d/1f9vg2bMf66h4X1xAZyoJPYXAJWugS1uc/view"
 								href="https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -78,24 +75,19 @@ const AboutMe = () => {
 
 				<ul className="list-disc list-inside text-lg lg:text-xl my-8 space-y-4">
 					<li>
-						{/*I&apos;m a remote senior software engineer trusted by 30+ clients, ranging from startups to nonprofits to SaaS teams, to build clean, scalable web applications.*/}
 						I am a Software Engineer with a strong background in developing innovative web solutions.
 					</li>
 					<li>
-						{/*I specialize in delivering high-quality software solutions through async collaboration.*/}
 						I specialize in the MERN Stack, and I am passionate about creating clean, efficient code that drives exceptional user experiences.
 					</li>
 					<li>
-						{/*Although based in California, I often work remotely from Manila, Philippines, thriving in async, cross-timezone collaborations.*/}
 						My work is guided by a minimalist design philosophy that emphasizes clarity and functionality.
 					</li>
 					<li>
-						{/*No fluff, no micromanagement, no empty promises, just clear outcomes and reliable delivery.*/}
 						I enjoy collaborating on projects that push the boundaries of creativity and technology.
 					</li>
 				</ul>
 			</div>
-			{/*<Statistics />*/}
 			<Skills/>
 			<Tools/>
 		</div>
