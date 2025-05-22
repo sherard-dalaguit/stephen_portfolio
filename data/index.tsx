@@ -22,7 +22,7 @@ import {
   IconBrandNotion,
   IconBrandTailwind,
   IconBrandPrisma,
-  IconShieldLock
+  IconShieldLock, IconBrandOpenai
 } from "@tabler/icons-react";
 import React from "react";
 
@@ -38,6 +38,7 @@ export const skills = [
   { name: 'Auth.js', des: 'User Auth', icon: <IconShieldLock className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'AWS', des: 'Cloud Platform', icon: <IconBrandAws className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'OpenAI API', des: 'AI Integration', icon: <IconBrandOpenai className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
 
 export const tools = [
