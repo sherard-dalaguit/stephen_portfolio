@@ -151,20 +151,20 @@ export const timeline = [
     content: (
       <div>
         <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
-          RemoteRadar
+          Remote Radar
         </h1>
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
           Chief Technology Officer
         </h1>
         <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
-          <li>Developed and launched a full‑stack website for FitFlow using Next.js, TypeScript, and TailwindCSS,
-            enabling early user onboarding.
+          <li>Engineered and deployed a full-stack automated job platform using Next.js, TailwindCSS, and PostgreSQL,
+            continuously scraping over 300 new remote job postings per week from major remote job boards.
           </li>
-          <li>Implemented secure user authentication and subscription management in collaboration with the founder to
-            meet business requirements.
+          <li>Integrated GPT-4 API to automate resume optimization and personalized cover letter generation,
+            reducing application preparation time by approximately 70% per job
           </li>
-          <li>Designed a scalable MongoDB schema for efficient storage and retrieval of user goals and fitness data,
-            supporting rapid growth.
+          <li>Built a user-friendly dashboard allowing job filtering, bookmarking, and export functionalities,
+            resulting in streamlined workflow and a 2x increase in targeted job application volume within the first month.
           </li>
         </ul>
         <Image
@@ -200,24 +200,24 @@ export const timeline = [
     ),
   },
   {
-    title: "April 2025 – Dec 2025",
+    title: "April 2025 – Sept 2025",
     content: (
       <div>
         <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
           AI Aurelius
         </h1>
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
-          Full-Stack AI Software Engineer
+          Full-Stack Software Engineer
         </h1>
         <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
-          <li>Developed and launched a full‑stack website for FitFlow using Next.js, TypeScript, and TailwindCSS,
-            enabling early user onboarding.
+          <li>Engineered and launched a responsive, full-stack website using Next.js, TypeScript, and TailwindCSS for an early-stage SAAS business,
+            achieving 50+ early access signups within 2 weeks of launch.
           </li>
-          <li>Implemented secure user authentication and subscription management in collaboration with the founder to
-            meet business requirements.
+          <li>Developed user authentication and subscription-management features, reducing initial customer onboarding friction and
+            increasing returning user logins by approximately 25%.
           </li>
-          <li>Designed a scalable MongoDB schema for efficient storage and retrieval of user goals and fitness data,
-            supporting rapid growth.
+          <li>Architected a scalable backend infrastructure with MongoDB, optimizing database queries to
+            consistently achieve average response times of under 100ms during typical user activity.
           </li>
         </ul>
         <Image
