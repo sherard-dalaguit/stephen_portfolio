@@ -26,6 +26,7 @@ import {
 } from "@tabler/icons-react";
 import React from "react";
 import Image from "next/image";
+import CaseStudy from "@/components/CaseStudy";
 
 export const skills = [
   { name: 'TypeScript', des: 'JavaScript but better', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
