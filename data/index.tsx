@@ -25,6 +25,7 @@ import {
   IconShieldLock, IconBrandOpenai
 } from "@tabler/icons-react";
 import React from "react";
+import Image from "next/image";
 
 export const skills = [
   { name: 'TypeScript', des: 'JavaScript but better', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
@@ -140,5 +141,114 @@ export const projects = [
     iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
     githubLink: "https://github.com/sherard-dalaguit/Sleepify",
     deployedLink: "",
+  },
+];
+
+export const timeline = [
+  {
+    title: "Aug 2025 – Present",
+    content: (
+      <div>
+        <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
+          RemoteRadar
+        </h1>
+        <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
+          Chief Technology Officer
+        </h1>
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
+          <li>Developed and launched a full‑stack website for FitFlow using Next.js, TypeScript, and TailwindCSS,
+            enabling early user onboarding.
+          </li>
+          <li>Implemented secure user authentication and subscription management in collaboration with the founder to
+            meet business requirements.
+          </li>
+          <li>Designed a scalable MongoDB schema for efficient storage and retrieval of user goals and fitness data,
+            supporting rapid growth.
+          </li>
+        </ul>
+        <Image
+          src="/ICSearch.png"
+          alt="ICSearch"
+          width={500}
+          height={300}
+          className="rounded-lg mb-4"
+        />
+        <CaseStudy
+          steps={[
+            {
+              title: "Problem",
+              description: "Most students' problem...",
+              content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              img: "/TeamSync.png"
+            },
+            {
+              title: "Solution",
+              description: "How it was solved...",
+              content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. \n\nNeque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
+              img: "/TeamSync.png"
+            },
+            {
+              title: "Result",
+              description: "The outcome...",
+              content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. \n\nCorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. \n\nEt harum quidem rerum facilis est et expedita distinctio.",
+              img: "/TeamSync.png"
+            },
+          ]}
+        />
+      </div>
+    ),
+  },
+  {
+    title: "April 2025 – Dec 2025",
+    content: (
+      <div>
+        <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
+          AI Aurelius
+        </h1>
+        <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
+          Full-Stack AI Software Engineer
+        </h1>
+        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
+          <li>Developed and launched a full‑stack website for FitFlow using Next.js, TypeScript, and TailwindCSS,
+            enabling early user onboarding.
+          </li>
+          <li>Implemented secure user authentication and subscription management in collaboration with the founder to
+            meet business requirements.
+          </li>
+          <li>Designed a scalable MongoDB schema for efficient storage and retrieval of user goals and fitness data,
+            supporting rapid growth.
+          </li>
+        </ul>
+        <Image
+          src="/TeamSync.png"
+          alt="TeamSync"
+          width={500}
+          height={300}
+          className="rounded-lg mb-4"
+        />
+        <CaseStudy
+          steps={[
+            {
+              title: "Problem",
+              description: "Friend's SaaS Startup's problem...",
+              content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+              img: "/TeamSync.png"
+            },
+            {
+              title: "Solution",
+              description: "How it was solved...",
+              content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. \n\nNeque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
+              img: "/TeamSync.png"
+            },
+            {
+              title: "Result",
+              description: "The outcome...",
+              content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. \n\nCorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. \n\nEt harum quidem rerum facilis est et expedita distinctio.",
+              img: "/TeamSync.png"
+            },
+          ]}
+        />
+      </div>
+    ),
   },
 ];
