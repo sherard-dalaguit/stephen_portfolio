@@ -42,7 +42,7 @@ export const ProjectItems = ({
   };
 
   return (
-    <div className="relative mt-10 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5 px-8 py-8 lg:grid-cols-3 lg:gap-0 lg:py-12">
+    <div className="relative mt-10 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5 p-8 lg:grid-cols-3 lg:gap-0 lg:p-12">
       <div className={
 				clsx(
 					"hidden lg:block absolute aspect-square w-full max-w-xl rounded-full bg-[#C1C2D3]/30 blur-3xl filter",

@@ -176,7 +176,7 @@ export const projects = [
 
 export const timeline = [
   {
-    title: "Aug 2025 – Present",
+    title: "July 2025 – Present",
     content: (
       <div>
         <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
@@ -189,11 +189,14 @@ export const timeline = [
           <li>Engineered and deployed a full-stack automated job platform using Next.js, TailwindCSS, and PostgreSQL,
             continuously scraping over 300 new remote job postings per week from major remote job boards.
           </li>
-          <li>Integrated GPT-4 API to automate resume optimization and personalized cover letter generation,
-            reducing application preparation time by approximately 70% per job
+          <li>Integrated an email subscription service using Next.js API routes and SendGrid, delivering daily and
+            weekly curated remote job listings to 100+ subscribers, boosting platform engagement by 20%.
           </li>
-          <li>Built a user-friendly dashboard allowing job filtering, bookmarking, and export functionalities,
-            resulting in streamlined workflow and a 2x increase in targeted job application volume within the first month.
+          <li>Built a user-friendly dashboard allowing job filtering, bookmarking, and export functionalities, streamlining workflow and
+            driving a 2x increase in targeted job application volume within the first month.
+          </li>
+          <li>Attracted an initial user base of 150+ beta users within the first two weeks,
+            validating demand and incorporating feedback into iterative feature improvements.
           </li>
         </ul>
         <Image
@@ -229,7 +232,7 @@ export const timeline = [
     ),
   },
   {
-    title: "May 2025 – Sept 2025",
+    title: "May 2025 – Aug 2025",
     content: (
       <div>
         <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
@@ -239,14 +242,17 @@ export const timeline = [
           Front-End Software Engineer
         </h1>
         <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
-          <li>Engineered and launched a responsive, full-stack website using Next.js, TypeScript, and TailwindCSS for an early-stage SAAS business,
-            achieving 50+ early access signups within 2 weeks of launch.
+          <li>Engineered and launched a responsive B2B AI Agency landing page using Next.js, TypeScript, TailwindCSS, and Framer Motion,
+            decreasing initial rendering time to under 1 second.
           </li>
-          <li>Developed user authentication and subscription-management features, reducing initial customer onboarding friction and
-            increasing returning user logins by approximately 25%.
+          <li>Designed intuitive UI aligned with the agency’s branding, boosting initial test-session
+            user engagement metrics (session duration) by over 35%.
           </li>
-          <li>Architected a scalable backend infrastructure with MongoDB, optimizing database queries to
-            consistently achieve average response times of under 100ms during typical user activity.
+          <li>Enhanced the site’s visibility through SEO optimizations, achieving a 98/100 Lighthouse score
+            and increasing organic search impressions by 25% in initial indexing.
+          </li>
+          <li>Partnered directly with the founder through 5+ rounds of design iterations, refining layout and copy to align with business goals and
+            contributing to a 200% increase in user click-throughs to key CTA sections
           </li>
         </ul>
         <Image
