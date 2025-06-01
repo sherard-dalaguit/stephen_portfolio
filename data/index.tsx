@@ -88,9 +88,28 @@ export const navBarLinks = [
   {
     title: 'Resume',
     icon: <IconFileDescription className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+    // href: 'https://drive.google.com/file/d/1Gtb8nAcj5zEV3Thb6IZKVMDJ7ndvlSTT/view',
     href: 'https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view',
   }
 ]
+
+export const socialMedia = [
+    {
+        id: 1,
+        img: "/git.svg",
+        link: "https://github.com/sherard-dalaguit",
+    },
+    {
+        id: 2,
+        img: "/link.svg",
+        link: "https://www.linkedin.com/in/sherard-d/"
+    },
+    {
+        id: 3,
+        img: "/insta.svg",
+        link: "https://www.instagram.com/sherard_dalaguit/"
+    },
+];
 
 export const projects = [
   {
@@ -200,14 +219,14 @@ export const timeline = [
     ),
   },
   {
-    title: "April 2025 – Sept 2025",
+    title: "May 2025 – Sept 2025",
     content: (
       <div>
         <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
-          AI Aurelius
+          Clarius AI
         </h1>
         <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
-          Full-Stack Software Engineer
+          Front-End Software Engineer
         </h1>
         <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
           <li>Engineered and launched a responsive, full-stack website using Next.js, TypeScript, and TailwindCSS for an early-stage SAAS business,
