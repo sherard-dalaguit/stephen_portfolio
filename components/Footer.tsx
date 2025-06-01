@@ -6,7 +6,7 @@ import {socialMedia} from "@/data";
 
 const Footer = () => {
 	return (
-		<footer className="w-full py-20 px-20 relative" id="contact">
+		<footer className="w-full pt-20 pb-10 px-20 relative" id="contact">
 			<div className="h-48 mb-0 overflow-hidden">
 				<SpotlightReverse/>
 			</div>
@@ -33,7 +33,7 @@ const Footer = () => {
 				</a>
 			</div>
 
-			<div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+			<div className="flex mt-16 md:flex-row flex-col max-w-screen-xl mx-auto justify-between items-center">
 				<p className="md:text-base text-sm md:font-normal font-light">Copyright © 2025 Sherard</p>
 
 				<div className="flex items-center justify-center md:gap-3 gap-6 sm:mt-5 xs:mt-5">
