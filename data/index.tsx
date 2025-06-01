@@ -114,7 +114,7 @@ export const socialMedia = [
 export const projects = [
   {
     id: 1,
-    title: "SWEOverflow",
+    title: "DevExchange",
     subheader: "StackOverflow Clone App",
     des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
     img: "/DevExchange_3.png",
@@ -144,22 +144,22 @@ export const projects = [
   },
   {
     id: 4,
-    title: "ICSearch",
-    subheader: "Information Retrieval Search Engine",
-    des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
-    img: "/ICSearch.png",
-    iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
-    githubLink: "https://github.com/sherard-dalaguit/ICSearch",
-    deployedLink: "",
-  },
-  {
-    id: 5,
     title: "Sleepify",
     subheader: "Sleep-Tracker App",
     des: "A web application, build in Angular & Ionic, that helps people understand and visualize their sleep habits by tracking their sleep patterns and levels of tiredness each day.",
     img: "/Sleepify.png",
-    iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
+    iconLists: ["js.svg", "/angular_gradient.png", "/ionic.svg"],
     githubLink: "https://github.com/sherard-dalaguit/Sleepify",
+    deployedLink: "",
+  },
+  {
+    id: 5,
+    title: "ICSearch",
+    subheader: "Information Retrieval Search Engine",
+    des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
+    img: "/ICSearch.png",
+    iconLists: ["/python.svg"],
+    githubLink: "https://github.com/sherard-dalaguit/ICSearch",
     deployedLink: "",
   },
 ];

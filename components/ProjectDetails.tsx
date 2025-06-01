@@ -1,85 +1,112 @@
-import {CardBody, CardContainer, CardItem} from "@/components/ui/3d-card";
+'use client';
+
 import Image from "next/image";
-import Link from "next/link";
+import clsx from "clsx";
+import ProjectButton from "@/components/ui/ProjectButton";
+
+export const ProjectDetails = ({
+	children,
+}: {
+  children?: React.ReactNode;
+}) => {
+  return (
+		<div>{children}</div>
+	);
+};
 
 export const ProjectItems = ({
+	id,
 	title,
-	subheader,
-	des,
-	img,
-	iconLists,
-	githubLink,
-	deployedLink,
+  subheader,
+  des,
+  img,
+  iconLists,
+  githubLink,
+  deployedLink,
+  delayed,
 }: {
-	title: string;
-	subheader: string;
-	des: string;
-	img: string;
-	iconLists: string[];
-	githubLink: string;
-	deployedLink?: string;
+  id: number;
+  title: string;
+  subheader: string;
+  des: string;
+  img: string;
+  iconLists: string[];
+  githubLink: string;
+  deployedLink: string;
+  delayed?: string;
 }) => {
-	return (
-		<CardContainer className="inter-var">
-      <CardBody className="flex flex-col bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] rounded-xl p-6 border">
-        <div className="flex-1 flex flex-col">
-					<CardItem
-						translateZ="50"
-						className="text-xl md:text-2xl font-bold text-neutral-600 dark:text-white"
-					>
-						{title}
-					</CardItem>
+  const position = id % 2 === 0 ? "right" : "left";
 
-					<CardItem
-						as="p"
-						translateZ="60"
-						className="text-neutral-500 text-md md:text-lg max-w-sm mt-2 dark:text-neutral-300"
-					>
-						{subheader}
-					</CardItem>
-					<CardItem
-						as="p"
-						translateZ="60"
-						className="text-sm max-w-sm mt-2"
-					>
-						{des}
-					</CardItem>
+  const handleClick = (url: string) => {
+    window.open(url, "_blank");
+  };
+
+  return (
+    <div className="relative mt-10 grid items-center gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5 px-8 py-8 lg:grid-cols-3 lg:gap-0 lg:py-12">
+      <div className={
+				clsx(
+					"hidden lg:block absolute aspect-square w-full max-w-xl rounded-full bg-[#C1C2D3]/30 blur-3xl filter",
+					position === "right" ? "lg:right-0" : "lg:left-0"
+				)}
+			/>
+
+			<div>
+				<div className="flex space-x-2">
+					{iconLists && iconLists.map((icon, index) => (
+						<div key={index} className="w-fit rounded-2xl bg-black p-4 text-3xl">
+							<Image src={icon} alt={`icon-${index}`} width={24} height={24} />
+						</div>
+					))}
 				</div>
 
-				<CardItem translateZ="100" className="w-full mb-10">
-					<Image
-						src={img}
-						height="1000"
-						width="1000"
-						className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-						alt="thumbnail"
-					/>
-				</CardItem>
+				<h1 className="mt-6 text-4xl font-bold">{title}</h1>
+				<h2 className="mt-6 text-xl font-normal">{subheader}</h2>
+				<h3 className="prose prose-invert mt-4 max-w-xl">{des}</h3>
 
-				<div className="flex justify-between items-center mt-auto">
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={githubLink}
-            target="__blank"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            View Code
-          </CardItem>
-					{deployedLink && (
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href={deployedLink}
-            target="__blank"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            Live Site
-          </CardItem>
-					)}
-        </div>
+				{delayed ? (
+					<>
+						<p className="mt-4 text-red-500 font-semibold">
+							{`Note: This project is still in development. Expected completion: ${delayed}`}
+						</p>
+					</>
+				) : (
+					<div className="mt-8 flex flex-row space-x-10">
+						{deployedLink && (
+							<ProjectButton
+								title="Live Site"
+								otherClasses="h-12 w-40"
+								gradientClasses="h-16 w-46"
+								buttonClasses="h-12 w-40 text-lg"
+								handleClick={() => handleClick(deployedLink)}
+							/>
+						)}
+						<ProjectButton
+							title="View Code"
+							otherClasses="h-12 w-40"
+							gradientClasses="h-16 w-46"
+							buttonClasses="h-12 w-40 text-lg"
+							handleClick={() => handleClick(githubLink)}
+						/>
+					</div>
+				)}
+			</div>
 
-      </CardBody>
-    </CardContainer>
-	)
+			<Image
+				src={img}
+				alt="title"
+				loading="lazy"
+				placeholder="blur"
+				blurDataURL={img}
+				className={clsx(
+					"opacity-90 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl w-full h-auto",
+					position === "right"
+						? "lg:order-1 lg:translate-x-[15%]"
+						: "lg:-order-1 lg:translate-x-[-15%]"
+				)}
+				sizes="(max-width: 768px) 100vw, 50vw"
+				width={500}
+				height={300}
+			/>
+		</div>
+	);
 }
