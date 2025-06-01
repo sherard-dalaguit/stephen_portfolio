@@ -33,8 +33,7 @@ const Hero = () => {
 				<Spotlight/>
 			</div>
 
-			<div
-				className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
+			<div className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
 				<div className={cn(
 						"absolute inset-0 z-0",
 						"[background-size:100px_100px]",
