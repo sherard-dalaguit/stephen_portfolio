@@ -48,7 +48,7 @@ const Hero = () => {
 			<div className="h-[70vh] flex justify-center relative z-10">
 				<div className="max-w-lg md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center justify-center">
 					<TextGenerateEffect
-						className="font-bold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-9xl"
+						className="font-bold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
 						duration={1.6}
 						words="Sherard Dalaguit"
 					/>
