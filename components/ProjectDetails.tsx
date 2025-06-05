@@ -98,7 +98,7 @@ export const ProjectItems = ({
 				placeholder="blur"
 				blurDataURL={img}
 				className={clsx(
-					"opacity-90 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl w-full h-auto",
+					"opacity-90 z-10 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl w-full h-auto",
 					position === "right"
 						? "lg:order-1 lg:translate-x-[15%]"
 						: "lg:-order-1 lg:translate-x-[-15%]"
