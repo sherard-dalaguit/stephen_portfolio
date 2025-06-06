@@ -54,7 +54,15 @@ export const ProjectItems = ({
 				<div className="flex space-x-2">
 					{iconLists && iconLists.map((icon, index) => (
 						<div key={index} className="w-fit rounded-2xl bg-black p-4 text-3xl">
-							<Image src={icon} alt={`icon-${index}`} width={24} height={24} />
+							<Image
+								loading="lazy"
+								placeholder="blur"
+								blurDataURL={img}
+								src={icon}
+								alt={`icon-${index}`}
+								width={24}
+								height={24}
+							/>
 						</div>
 					))}
 				</div>
@@ -93,19 +101,19 @@ export const ProjectItems = ({
 
 			<Image
 				src={img}
-				alt="title"
-				loading="lazy"
+				alt={title}
 				placeholder="blur"
 				blurDataURL={img}
-				className={clsx(
-					"opacity-90 z-10 shadow-2xl lg:col-span-2 lg:pt-0 rounded-xl w-full h-auto",
-					position === "right"
-						? "lg:order-1 lg:translate-x-[15%]"
-						: "lg:-order-1 lg:translate-x-[-15%]"
-				)}
 				sizes="(max-width: 768px) 100vw, 50vw"
 				width={500}
 				height={300}
+				loading="lazy"
+				className={clsx(
+					'opacity-90 z-10 shadow-2xl lg:col-span-2 rounded-xl w-full h-auto',
+					position === 'right'
+						? 'lg:order-1 lg:translate-x-[15%]'
+						: 'lg:-order-1 lg:translate-x-[-15%]'
+				)}
 			/>
 		</div>
 	);

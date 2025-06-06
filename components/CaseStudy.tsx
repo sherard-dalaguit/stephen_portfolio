@@ -38,13 +38,11 @@ const CaseStudy = ({ btnName, steps }: CaseStudyProps) => {
 			}}
 		>
       <DialogTrigger asChild>
-				<div className="z-0">
-        	<MagicButton
-						title={btnName || "Case Study"}
-						icon={<IconBriefcase />}
-          	position="right"
-					/>
-				</div>
+				<MagicButton
+					title={btnName || "Case Study"}
+					icon={<IconBriefcase />}
+					position="right"
+				/>
       </DialogTrigger>
 
 			<DialogContent className="w-[90vw] h-[90vh] xl:w-[70vw] xl:h-[70vh] max-w-none max-h-none">
