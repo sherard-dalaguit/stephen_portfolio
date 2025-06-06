@@ -47,6 +47,7 @@ const AboutMe = () => {
 								href="https://www.linkedin.com/in/sherard-d"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="LinkedIn profile"
 							>
 								<IconBrandLinkedin className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
@@ -54,11 +55,13 @@ const AboutMe = () => {
 								href="https://www.github.com/sherard-dalaguit"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="GitHub profile"
 							>
 								<IconBrandGithub className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
 							<Link
 								href="mailto:sherarddalaguit.dev@gmail.com"
+								aria-label="Email me"
 							>
 								<IconMail className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
@@ -66,6 +69,7 @@ const AboutMe = () => {
 								href="https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view"
 								target="_blank"
 								rel="noopener noreferrer"
+								aria-label="Resume"
 							>
 								<IconFileDescription className="h-8 w-8 text-neutral-500 dark:text-neutral-300" />
 							</Link>
