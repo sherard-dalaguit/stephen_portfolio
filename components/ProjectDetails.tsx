@@ -56,7 +56,6 @@ export const ProjectItems = ({
 						<div key={index} className="w-fit rounded-2xl bg-black p-4 text-3xl">
 							<Image
 								loading="lazy"
-								placeholder="blur"
 								blurDataURL={img}
 								src={icon}
 								alt={`icon-${index}`}
