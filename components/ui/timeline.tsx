@@ -1,13 +1,12 @@
 "use client";
 import {
-  useMotionValueEvent,
   useScroll,
   useTransform,
   motion,
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import MagicButton from "@/components/ui/MagicButton";
-import {IconArrowBack, IconBriefcase, IconHome} from "@tabler/icons-react";
+import {IconBriefcase} from "@tabler/icons-react";
 import Link from "next/link";
 
 interface TimelineEntry {
@@ -45,7 +44,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
         <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
           My <span className="text-[#d1b3ff]">Experience</span>
         </h1>
-        <p className="mt-8 text-center text-lg lg:text-xl">
+        <p className="mt-8 text-center text-md sm:text-lg lg:text-xl">
           I&apos;ve been working as a Full-Stack Software Engineer for the past few years. <br />
           Here&apos;s a timeline of my journey so far.
         </p>
@@ -69,7 +68,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
               </div>
 
               <div className="relative pl-20 pr-4 md:pl-4 w-full">
-                <h1 className="md:hidden block text-2xl mb-4 text-left font-bold">
+                <h1 className="md:hidden block text-3xl mb-4 text-left font-bold">
                   {item.title}
                 </h1>
                 {item.content}{" "}

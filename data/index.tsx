@@ -13,13 +13,7 @@ import {
   IconMail,
   IconUser,
   IconBrandGit,
-  IconBrandSlack,
-  IconBrandFigma,
-  IconBrandTrello,
-  IconListCheck,
   IconBrandAws,
-  IconBrandGithubCopilot,
-  IconBrandNotion,
   IconBrandTailwind,
   IconBrandPrisma,
   IconShieldLock, IconBrandOpenai
@@ -27,6 +21,7 @@ import {
 import React from "react";
 import Image from "next/image";
 import CaseStudy from "@/components/CaseStudy";
+import Link from "next/link";
 
 export const skills = [
   { name: 'TypeScript', des: 'JavaScript but better', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
@@ -42,17 +37,6 @@ export const skills = [
   { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'OpenAI API', des: 'AI Integration', icon: <IconBrandOpenai className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
-
-export const tools = [
-  { name: 'Slack', des: 'Messaging Platform', icon: <IconBrandSlack className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Trello', des: 'Project Management', icon: <IconBrandTrello className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Jira', des: 'Issue Tracker', icon: <IconListCheck className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Notion', des: 'Note-taking App', icon: <IconBrandNotion className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'IntelliJ IDEA', des: 'Favorite IDE', icon: <IconCode className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'GitHub', des: 'Version Control', icon: <IconBrandGithub className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Copilot', des: 'AI Assistant', icon: <IconBrandGithubCopilot className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Figma', des: 'Design Tool', icon: <IconBrandFigma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-]
 
 export const navBarLinks = [
 	{
@@ -88,86 +72,67 @@ export const navBarLinks = [
   {
     title: 'Resume',
     icon: <IconFileDescription className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-    // href: 'https://drive.google.com/file/d/1Gtb8nAcj5zEV3Thb6IZKVMDJ7ndvlSTT/view',
+    // href: 'https://drive.google.com/file/d/1zlTZ-HZOx8RJT1mkQE3g2qmn7pPiZxlW/view',
     href: 'https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view',
   }
 ]
 
 export const socialMedia = [
-    {
-        id: 1,
-        img: "/git.svg",
-        link: "https://github.com/sherard-dalaguit",
-    },
-    {
-        id: 2,
-        img: "/link.svg",
-        link: "https://www.linkedin.com/in/sherard-d/"
-    },
-    {
-        id: 3,
-        img: "/insta.svg",
-        link: "https://www.instagram.com/sherard_dalaguit/"
-    },
+  {
+    id: 1,
+    img: "/git.svg",
+    link: "https://github.com/sherard-dalaguit",
+  },
+  {
+    id: 2,
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/sherard-d/"
+  },
+  {
+    id: 3,
+    img: "/insta.svg",
+    link: "https://www.instagram.com/sherard_dalaguit/"
+  },
 ];
 
 export const projects = [
   {
     id: 1,
-    title: "DevExchange",
-    subheader: "StackOverflow Clone App",
-    des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
-    img: "/DevExchange_3.png",
-    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/c.svg", "/mongodb.png"],
+    title: "Rizzlytics",
+    subheader: "AI Tinder Analyzer",
+    des: "An AI-powered Tinder analyzer built with React and Next.js that leverages the OpenAI API to give you actionable insights on your profile photos and message threads.",
+    img: "/in_progress.webp",
+    iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/convex.webp"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
-    deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/"
+    deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/",
+    delayed: "August 2025"
   },
   {
     id: 2,
-    title: "LumiNotes",
-    subheader: "Productivity & Note-Taking App",
-    des: "Modeled after Notion, LumiNotes offers customizable tools and integrations to help users organize tasks and capture notes seamlessly, streamlining their daily workflow.",
-    img: "/LumiNotes.png",
-    iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/convex.webp"],
-    githubLink: "https://github.com/sherard-dalaguit/LumiNotes",
-    deployedLink: "https://luminotes.vercel.app/"
+    title: "SWEOverflow",
+    subheader: "StackOverflow Clone App",
+    des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
+    img: "/DevExchange_3.webp",
+    iconLists: ["/next.svg", "/ts.svg", "/tail.svg", "/c.svg", "/mongodb.png"],
+    githubLink: "https://github.com/sherard-dalaguit/DevExchange",
+    deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/",
   },
   {
     id: 3,
-    title: "TeamSync",
-    subheader: "Real-Time Team Messaging Platform",
-    des: "Inspired by Slack, TeamSync facilitates seamless collaboration and communication among team members through instant messaging and integrated project management features.",
-    img: "/TeamSync.png",
-    iconLists: ["/re.svg", "/next.svg", "/ts.svg", "/convex.webp", "/shadcn.ico"],
-    githubLink: "https://github.com/sherard-dalaguit/TeamSync",
-    deployedLink: "https://team-sync-brown.vercel.app/",
-  },
-  {
-    id: 4,
     title: "KapeChat",
     subheader: "Tinder But For Job Seekers",
     des: "A web application that connects job seekers with potential employers through a swipe-based interface, allowing users to match and chat with companies that align with their career goals.",
-    img: "/KapeChat.png",
+    img: "/KapeChat.webp",
     iconLists: ["/re.svg", "/js.svg", "/tail.svg", "/firebase.svg"],
     githubLink: "https://github.com/Jollibuilders/FIP_Project",
     deployedLink: "",
   },
-  // {
-  //   id: 4,
-  //   title: "Sleepify",
-  //   subheader: "Sleep-Tracker App",
-  //   des: "A web application, build in Angular & Ionic, that helps people understand and visualize their sleep habits by tracking their sleep patterns and levels of tiredness each day.",
-  //   img: "/Sleepify.png",
-  //   iconLists: ["js.svg", "/angular_gradient.png", "/ionic.svg"],
-  //   githubLink: "https://github.com/sherard-dalaguit/Sleepify",
-  //   deployedLink: "",
-  // },
   {
-    id: 5,
+    id: 4,
     title: "ICSearch",
     subheader: "Information Retrieval Search Engine",
     des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
-    img: "/ICSearch.png",
+    img: "/ICSearch.webp",
     iconLists: ["/python.svg"],
     githubLink: "https://github.com/sherard-dalaguit/ICSearch",
     deployedLink: "",
@@ -176,32 +141,40 @@ export const projects = [
 
 export const timeline = [
   {
-    title: "July 2025 – Present",
+    title: "June 2025 – Present",
     content: (
       <div>
-        <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
-          Remote Radar
-        </h1>
-        <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
-          Chief Technology Officer
-        </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
+        <Link
+          href="https://www.remoteradar.io"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Remote Radar"
+          className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
+        >
+          <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+            Remote Radar
+          </h1>
+        </Link>
+        <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
+          Technical Founder
+        </h2>
+        <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>Engineered and deployed a full-stack automated job platform using Next.js, TailwindCSS, and PostgreSQL,
-            continuously scraping over 300 new remote job postings per week from major remote job boards.
+            continuously <span className="text-[#d1b3ff] font-bold">scraping over 300 new remote job postings</span> per week from major remote job boards.
           </li>
           <li>Integrated an email subscription service using Next.js API routes and SendGrid, delivering daily and
-            weekly curated remote job listings to 100+ subscribers, boosting platform engagement by 20%.
+            weekly curated <span className="text-[#d1b3ff] font-bold">remote job listings to 100+ subscribers, boosting platform engagement by 20%</span>.
           </li>
           <li>Built a user-friendly dashboard allowing job filtering, bookmarking, and export functionalities, streamlining workflow and
-            driving a 2x increase in targeted job application volume within the first month.
+            driving a <span className="text-[#d1b3ff] font-bold">2x increase in targeted job application volume</span> within the first month.
           </li>
-          <li>Attracted an initial user base of 150+ beta users within the first two weeks,
+          <li>Attracted an initial user base of <span className="text-[#d1b3ff] font-bold">150+ beta users within the first two weeks</span>,
             validating demand and incorporating feedback into iterative feature improvements.
           </li>
         </ul>
         <Image
-          src="/ICSearch.png"
-          alt="ICSearch"
+          src="/remote_radar.png"
+          alt="remote radar"
           width={500}
           height={300}
           className="rounded-lg mb-4"
@@ -210,21 +183,21 @@ export const timeline = [
           steps={[
             {
               title: "Problem",
-              description: "Most students' problem...",
+              description: "Most digital nomads' problem...",
               content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-              img: "/TeamSync.png"
+              img: "/remote_radar.png"
             },
             {
               title: "Solution",
               description: "How it was solved...",
               content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. \n\nNeque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
-              img: "/TeamSync.png"
+              img: "/remote_radar.png"
             },
             {
               title: "Result",
               description: "The outcome...",
               content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. \n\nCorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. \n\nEt harum quidem rerum facilis est et expedita distinctio.",
-              img: "/TeamSync.png"
+              img: "/remote_radar.png"
             },
           ]}
         />
@@ -232,31 +205,39 @@ export const timeline = [
     ),
   },
   {
-    title: "May 2025 – Aug 2025",
+    title: "April 2025 – Present",
     content: (
       <div>
-        <h1 className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl mb-6">
-          Clarius AI
-        </h1>
-        <h1 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl mb-6">
+        <Link
+          href="https://www.clariusai.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Remote Radar"
+          className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
+        >
+          <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+            Clarius AI
+          </h1>
+        </Link>
+        <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
           Front-End Software Engineer
-        </h1>
-        <ul className="list-disc list-inside text-lg lg:text-xl mb-8 space-y-4">
+        </h2>
+        <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>Engineered and launched a responsive B2B AI Agency landing page using Next.js, TypeScript, TailwindCSS, and Framer Motion,
-            decreasing initial rendering time to under 1 second.
+            <span className="text-[#d1b3ff] font-bold"> decreasing initial rendering time to under 1 second</span>.
           </li>
-          <li>Designed intuitive UI aligned with the agency’s branding, boosting initial test-session
-            user engagement metrics (session duration) by over 35%.
+          <li>Designed intuitive UI aligned with the agency’s branding, <span className="text-[#d1b3ff] font-bold">boosting initial test-session
+            user session duration by over 35%</span>.
           </li>
-          <li>Enhanced the site’s visibility through SEO optimizations, achieving a 98/100 Lighthouse score
-            and increasing organic search impressions by 25% in initial indexing.
+          <li>Enhanced the site’s visibility through SEO optimizations, <span className="text-[#d1b3ff] font-bold">achieving a 98/100 Lighthouse score </span>
+            and <span className="text-[#d1b3ff] font-bold">increasing organic search impressions by 25%</span> in initial indexing.
           </li>
-          <li>Partnered directly with the founder through 5+ rounds of design iterations, refining layout and copy to align with business goals and
-            contributing to a 200% increase in user click-throughs to key CTA sections
+          <li>Partnered directly with the founder through <span className="text-[#d1b3ff] font-bold">5+ rounds of design iterations</span>, refining layout and copy to align with business goals and
+            contributing to a <span className="text-[#d1b3ff] font-bold">200% increase in user click-throughs to key CTA sections</span>.
           </li>
         </ul>
         <Image
-          src="/TeamSync.png"
+          src="/DevExchange_3.webp"
           alt="TeamSync"
           width={500}
           height={300}
@@ -266,21 +247,21 @@ export const timeline = [
           steps={[
             {
               title: "Problem",
-              description: "Friend's SaaS Startup's problem...",
+              description: "Clarius AI's problem...",
               content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. \n\nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. \n\nDuis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. \n\nExcepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-              img: "/TeamSync.png"
+              img: "/DevExchange_3.webp"
             },
             {
               title: "Solution",
               description: "How it was solved...",
               content: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. \n\nNemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. \n\nNeque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur.",
-              img: "/TeamSync.png"
+              img: "/DevExchange_3.webp"
             },
             {
               title: "Result",
               description: "The outcome...",
               content: "At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque. \n\nCorrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. \n\nEt harum quidem rerum facilis est et expedita distinctio.",
-              img: "/TeamSync.png"
+              img: "/DevExchange_3.webp"
             },
           ]}
         />
