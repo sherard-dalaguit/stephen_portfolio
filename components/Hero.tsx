@@ -70,21 +70,21 @@ const Hero = () => {
 						</motion.div>
 					</div>
 
-					<div className="w-[40rem] h-40 mt-4 relative">
+					<div className="w-[30rem] sm:w-[40rem] h-40 mt-4 relative">
 						{/* Gradients */}
 						<motion.div
 							initial={{opacity: 0}}
 							animate={{opacity: 1}}
 							transition={{duration: 1}}
 						>
-							<div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm"/>
-							<div className="absolute inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4"/>
-							<div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm"/>
-							<div className="absolute inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4"/>
+							<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm"/>
+							<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4"/>
+							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm"/>
+							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4"/>
 						</motion.div>
 
 						<div
-							className="w-full h-full"
+							className="w-full h-full origin-top transform scale-65 sm:scale-80 lg:scale-100"
 							style={{
 								WebkitMaskImage: "radial-gradient(350px 200px at top, white 60%, transparent 80%)",
 								maskImage: "radial-gradient(350px 200px at top, white 60%, transparent 80%)",
