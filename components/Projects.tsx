@@ -13,7 +13,7 @@ const Projects = () => {
 				<br />
 				Here are some examples of my work so far.
 			</h1>
-			<section>
+			<section className="mx-auto w-full max-w-7xl px-2 sm:px-8 lg:px-10">
 				<ProjectDetails>
 					{projects.map(({id, title, subheader, des, img, iconLists, githubLink, deployedLink, delayed}) => (
 						<ProjectItems

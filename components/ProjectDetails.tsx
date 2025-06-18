@@ -77,7 +77,7 @@ export const ProjectItems = ({
 						</p>
 					</>
 				) : (
-					<div className="mt-8 flex flex-row space-x-10">
+					<div className="mt-8 flex flex-row justify-evenly sm:justify-start sm:space-x-10">
 						{deployedLink && (
 							<ProjectButton
 								title="Live Site"
@@ -103,9 +103,8 @@ export const ProjectItems = ({
 				alt={title}
 				placeholder="blur"
 				blurDataURL={img}
-				sizes="(max-width: 768px) 100vw, 50vw"
-				width={450}
-				height={300}
+				width={200}
+				height={100}
 				loading="lazy"
 				className={clsx(
 					'opacity-90 z-10 shadow-2xl lg:col-span-2 rounded-xl w-full h-auto',
