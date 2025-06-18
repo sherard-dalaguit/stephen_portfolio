@@ -103,8 +103,8 @@ export const ProjectItems = ({
 				alt={title}
 				placeholder="blur"
 				blurDataURL={img}
-				width={800}
-				height={600}
+				width={1920}
+				height={1080}
 				loading="lazy"
 				className={clsx(
 					'opacity-90 z-10 shadow-2xl lg:col-span-2 rounded-xl w-full h-auto',
