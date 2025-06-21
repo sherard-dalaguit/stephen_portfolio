@@ -89,7 +89,7 @@ const AboutMe = () => {
 					</li>
 					<li>
 						I&apos;m always pushing to create high-impact software and sharpen both my technical and personal edge.
-						Let's build something meaningful together!
+						Let&apos;s build something meaningful together!
 					</li>
 				</ul>
 			</div>
