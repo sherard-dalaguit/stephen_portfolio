@@ -3,12 +3,12 @@ import {skills} from "@/data";
 const Skills = () => {
   return (
     <section id="skills" className="max-w-screen-xl mx-auto py-16 xl:px-20">
-      <h1 className="text-center font-bold text-[32px] md:text-3xl lg:text-4xl mb-8">
+      <h1 className="text-center font-bold text-[36px] md:text-4xl lg:text-5xl mb-8">
         Current <span className="text-[#d1b3ff]">Technologies</span>
       </h1>
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
         {skills.map((skill, index) => (
-          <div key={index} className="break-inside-avoid flex flex-col sm:flex-row items-center p-2 w-full md:h-18 rounded-xl border-zinc-700 bg-[linear-gradient(180deg,#27272a,#18181b)]">
+          <div key={index} className="break-inside-avoid flex flex-col sm:flex-row items-center p-2 w-full md:h-18 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5">
             <span className="mx-4">{skill.icon}</span>
             <div className="flex flex-col">
               <h1 className="text-md sm:text-lg">{skill.name}</h1>

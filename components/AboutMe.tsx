@@ -6,19 +6,19 @@ import React from "react";
 
 const AboutMe = () => {
 	return (
-		<div id="about" className="mx-auto w-full pt-20 sm:pb-40 px-8 md:px-20">
-			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
+		<div id="about" className="mx-auto w-full pt-20 sm:pb-40 px-8 md:px-20 ">
+			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl mb-12">
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
-			<div className="grid grid-cols-1 lg:grid-cols-2 items-start gap-y-8 lg:gap-x-6 mx-auto max-w-[80vw] xl:max-w-[67vw] sm:mt-4">
-				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4">
+			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5">
+				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4 ">
 					<div className="w-[200px] h-[200px] flex-shrink-0 relative mb-6">
 						<Image
 							src="/sherard.jpg"
 							alt="selfie"
 							width={200}
 							height={200}
-							className="object-cover rounded-full border-2 border-[#d1b3ff] shadow-lg mt-8 mr-4"
+							className="object-cover rounded-full border-2 border-[#d1b3ff] shadow-lg md:mt-8 mr-4"
 						/>
 					</div>
 
@@ -69,7 +69,6 @@ const AboutMe = () => {
 							</Link>
 							<Link
 								href="https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view"
-								// href="https://drive.google.com/file/d/1zlTZ-HZOx8RJT1mkQE3g2qmn7pPiZxlW/view"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Resume"
@@ -80,18 +79,17 @@ const AboutMe = () => {
 					</div>
 				</div>
 
-				<ul className="list-disc list-inside text-md md:text-lg lg:text-xl md:my-8 space-y-4 hidden sm:block">
+				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 space-y-4 hidden sm:block">
 					<li>
-						I am a Software Engineer with a strong background in developing innovative web solutions.
+						I&apos;m a Computer Science and Software Engineering student at UC Irvine, passionate about building fast, responsive, and beautiful web applications.
+						I specialize in modern full-stack development using Next.js, TailwindCSS, TypeScript, and Node.js--focusing on clean UI, intuitive UX, and real-world performance.
 					</li>
 					<li>
-						I specialize in the MERN Stack, and I am passionate about creating clean, efficient code that drives exceptional user experiences.
+						Outside of coding, I&apos;m big on my own personal development--balancing the grind with daily gym sessions, consistent reading, tennis training, and getting in touch with my Filipino heritage (i&apos;m whitewashed lol).
 					</li>
 					<li>
-						My work is guided by a minimalist design philosophy that emphasizes clarity and functionality.
-					</li>
-					<li>
-						I enjoy collaborating on projects that push the boundaries of creativity and technology.
+						I&apos;m always pushing to create high-impact software and sharpen both my technical and personal edge.
+						Let's build something meaningful together!
 					</li>
 				</ul>
 			</div>
