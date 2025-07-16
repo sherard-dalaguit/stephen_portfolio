@@ -12,6 +12,7 @@ import MagicButton from "@/components/ui/MagicButton";
 import {IconBriefcase} from "@tabler/icons-react";
 import {useState} from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Step {
   title: string;
@@ -22,10 +23,12 @@ interface Step {
 
 interface CaseStudyProps {
 	btnName?: string;
+	link: string;
+	name: string;
   steps: Step[];
 }
 
-const CaseStudy = ({ btnName, steps }: CaseStudyProps) => {
+const CaseStudy = ({ btnName, link, name, steps }: CaseStudyProps) => {
 	const [step, setStep] = useState(0);
 	const [open, setOpen] = useState(false);
 
@@ -57,11 +60,23 @@ const CaseStudy = ({ btnName, steps }: CaseStudyProps) => {
           <DialogDescription className="text-zinc-400 text-md md:text-lg lg:text-xl">
 						{steps[step].description}
 					</DialogDescription>
+
+					<DialogDescription className="text-[#d1b3ff] hover:text-[#a17eff] text-md md:text-lg lg:text-xl mt-2">
+						<Link
+							href={`/experience/${link}`}
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label={`Read ${name}'s full case study`}
+							className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
+						>
+							{name}&apos;s Full Case Study
+						</Link>
+					</DialogDescription>
         </DialogHeader>
 
 				<div className="flex flex-col xl:flex-row items-center justify-between w-full h-full px-[2vw]">
 					<div className="w-full xl:w-1/2 xl:pr-8">
-						<div className="max-h-[30vh] overflow-y-auto lg:max-h-none lg:overflow-visible">
+						<div className="max-h-[30vh] overflow-y-auto lg:max-h-[40vh]">
 							<h1 className="text-md md:text-lg lg:text-xl xl:mr-14">
 								{steps[step].content.split('\n').map((line, i) => (
 									<span key={i} className="block">

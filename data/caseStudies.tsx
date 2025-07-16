@@ -6,13 +6,29 @@ export const caseStudyContent = {
     image: '/projects/AurumisAI.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'Framer Motion', 'Vercel', 'Lighthouse'],
 
-    overview: `Aurumis AI is a boutique B2B agency that needed a sleek, modern website to showcase its AI solutions to enterprise clients. The founder approached me to rebuild their marketing presence from scratch with a focus on visual polish, performance, and search engine visibility. As the sole developer, I handled everything from architecture to deployment within a 6-week sprint.`,
+    overview: 'Aurumis AI is a boutique B2B agency offering AI consulting and services to enterprise clients. Their team approached me to build a custom portfolio website that would reflect their expertise, build trust with clients, and boost their online discoverability. They previously relied on a generic no-code site, which lacked polish, loaded slowly, and had near-zero SEO value. I was hired to design and develop a fast, responsive, SEO-optimized platform that would elevate the brand and convert leads.\n' +
+      '\n' +
+      'As the sole developer, I led the architecture, design implementation, frontend development, animation layer, and deployment. I worked closely with the founder through three iterative rounds of design and layout feedback. The final product scored 98 on Lighthouse, saw a 25% increase in organic impressions, and a 2x increase in CTA clicks within the first month of launch.',
 
-    problem: `The client's original no-code solution was bloated, slow, and not SEO-friendly. Page load times exceeded 3 seconds, and Lighthouse scores were consistently poor. Worse, the site didn't feel premium — which was critical, since their target clients were enterprise decision-makers. They needed a professional, performant site to gain trust and drive conversions.`,
+    problem: 'The original Aurumis AI website had been built with a drag-and-drop builder, resulting in excessive DOM nesting, poor mobile performance, and a bloated bundle size. Page speed was slow (~3.2s LCP), and the branding was inconsistent across devices. Worse, the website lacked proper HTML semantics and meta tags, preventing Google from indexing any content effectively.\n' +
+      '\n' +
+      'From a user experience perspective, the layout was visually bland, the calls-to-action were buried beneath unnecessary sections, and there was no animation or interactivity to reflect the modernity of an AI-focused brand.\n' +
+      '\n' +
+      'The founder was aware the site didn’t make a strong first impression and wanted a solution that not only performed better technically but also "looked like something built by a Silicon Valley startup."',
 
-    solution: `I chose to rebuild the site using Next.js for its performance and SSR benefits, paired with TailwindCSS for scalable styling and Framer Motion for subtle animations. I restructured the layout to prioritize CTAs, integrated semantic HTML for SEO, and leveraged Vercel’s edge deployment for fast global delivery. I also worked closely with the founder through 3+ feedback loops to align the design with the brand’s identity and tone.`,
+    solution: 'To build a site that met performance and design goals without sacrificing developer speed, I chose Next.js (App Router) for its SSR capabilities, routing system, and integration with Vercel. Styling was done using TailwindCSS, allowing for rapid prototyping and pixel-level control. I layered in Framer Motion for page transitions and subtle microinteractions that added life without hurting performance.\n' +
+      '\n' +
+      'I rebuilt the IA (information architecture) from scratch: reorganizing the content hierarchy to ensure the homepage clearly communicated (1) what Aurumis does, (2) why it matters, and (3) how to get in touch. I reduced the original page from ~10 sections to 5 focused ones — each optimized to drive a specific user action.\n' +
+      '\n' +
+      'Accessibility and SEO were baked in from the start. I used semantic HTML5 elements (<section>, <article>, <main>, etc.), included meta tags for all pages, generated Open Graph preview images for better link previews, and implemented proper heading structures for screen readers.\n' +
+      '\n' +
+      'Each component was developed responsively from the ground up, using Tailwind’s mobile-first breakpoints. I paid close attention to spacing and font scaling to ensure the site felt polished across all device widths.',
 
-    result: `The final product scored a 98/100 on Lighthouse, with the largest contentful paint under 1 second. Organic impressions increased by 25% in the first 30 days after Google reindexed the site. Most importantly, the founder reported a 2x increase in clicks to contact and CTA sections — directly tied to layout changes and page speed improvements.`,
+    result: 'After launch, Lighthouse performance scores immediately jumped to 98–100 across all metrics, including LCP, FCP, and TTI. The new layout cut LCP from 3.2s to 0.9s, largely thanks to server-side rendering, image optimization, and layout streamlining.\n' +
+      '\n' +
+      'Within the first 30 days, Google Search Console showed a 25% increase in organic impressions and a 15% boost in click-through rate compared to the old site — this was attributed to proper indexing, better meta descriptions, and fast load times.\n' +
+      '\n' +
+      'From a business perspective, the redesigned site drove a 200% increase in user clicks to contact forms and CTA buttons. The founder also reported that several clients specifically complimented the site\'s modern, high-trust look.',
 
     development: [
       {
@@ -29,9 +45,13 @@ export const caseStudyContent = {
       }
     ],
 
-    challenges: `One unexpected issue was ensuring scroll-based animations remained performant on low-end mobile devices. Framer Motion animations needed to be tuned to avoid jank, especially on image-heavy sections. I resolved this by using intersection observers and simplifying transitions on mobile breakpoints.`,
+    challenges: 'One technical challenge was managing animations across different breakpoints. On mobile, Framer Motion’s default transitions caused minor lag during scroll, particularly with larger hero sections. To fix this, I used the useInView() hook to defer animation triggers until elements were in view, and I replaced keyframe-based transitions with GPU-accelerated transforms like translateY().\n' +
+      '\n' +
+      'I also had to resolve an issue where font scaling appeared inconsistent across different browsers. The solution involved normalizing the base font size and implementing Tailwind\'s clamp() function for responsive typography that worked across both Chrome and Safari.',
 
-    lessons: `This project reinforced the value of tight feedback loops with stakeholders. The founder’s involvement during wireframing helped us avoid costly layout revisions later. I also gained a deeper understanding of performance tuning for production deployments.`,
+    lessons: 'Working directly with a founder emphasized the importance of fast iteration cycles and getting early feedback. Rather than spend days polishing visuals, I shipped wireframes early, collected notes, and adjusted based on real feedback. This saved hours of rework and gave the founder more ownership in the design process.\n' +
+      '\n' +
+      'From a technical standpoint, this project deepened my understanding of fine-grained performance tuning, accessibility best practices, and animation optimization.',
 
     links: {
       live: 'https://www.aurumisai.com',
@@ -45,13 +65,35 @@ export const caseStudyContent = {
     image: '/projects/remote_radar.png',
     techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'PostgreSQL', 'SendGrid', 'Vercel', 'CronJobs'],
 
-    overview: `Remote Radar is a full-stack job aggregation platform that scrapes and curates remote software engineering jobs from multiple job boards. As a digital nomad myself, I wanted to solve the pain of manually checking platforms daily and instead offer a streamlined dashboard for browsing, saving, and applying to jobs — all in one place.`,
+    overview: 'Remote Radar is a personal full-stack project I built to solve a real pain I experienced while job hunting as a digital nomad: manually checking dozens of remote job boards every day. The project aggregates job listings, allows filtering/bookmarking, and sends personalized email digests to subscribers.\n' +
+      '\n' +
+      'This is not just a demo app — it\'s a functioning platform used by over 200+ active subscribers, pulling in 300+ new jobs per week via automated scrapers. The project helped me solidify skills in full-stack architecture, scraping strategies, email workflows, and building user-centric UIs with real engagement metrics.',
 
-    problem: `Remote job seekers often waste hours jumping between job boards, dealing with spammy listings, expired posts, and non-technical filters. Most aggregators either miss jobs or don't allow useful features like bookmarking or filtering by tech stack. I wanted to build a reliable source of remote jobs with actual productivity tools built in.`,
+    problem: 'Finding high-quality remote jobs is tedious. Most job boards don’t filter for your exact tech stack, and many job aggregators scrape expired or irrelevant listings. There’s no way to bookmark jobs, track which ones you\'ve applied to, or receive tailored updates.\n' +
+      '\n' +
+      'As a job seeker, I found myself opening 6+ tabs daily and manually scanning them — which felt like a part-time job. I wanted a platform that did the heavy lifting for me.',
 
-    solution: `I architected the platform using Next.js for both frontend and backend logic (API routes), integrated PostgreSQL for persistent job/user data, and built a scraping system that aggregates 300+ fresh listings every week. I added features like “mark as applied,” job saving, and filtered search. For user engagement, I built an email digest system with SendGrid to deliver personalized job updates daily and weekly.`,
+    solution: 'I built Remote Radar from scratch using Next.js (frontend + backend) and PostgreSQL to power a full-stack remote job board with bookmarking, tracking, and subscription features.\n' +
+      '\n' +
+      'Custom web scrapers run on a cron job schedule to pull job listings from sources like WeWorkRemotely, RemoteOK, and RemoteTechJobs.\n' +
+      '\n' +
+      'All data is stored in a normalized PostgreSQL schema and deduplicated using hash-based IDs.\n' +
+      '\n' +
+      'Users can filter jobs by role, tech stack, or keyword, and mark jobs as "applied" to track their progress.\n' +
+      '\n' +
+      'A daily and weekly email digest system delivers curated jobs to subscribers using SendGrid, dynamically based on their saved preferences.\n' +
+      '\n' +
+      'The UI is fully responsive, dark-mode friendly, and built using TailwindCSS. I also added a landing page, about section, and subtle animations to polish the product for potential public release.',
 
-    result: `The platform quickly grew to 200+ email subscribers in its first month. Lighthouse scores remained in the 95–100 range, and engagement improved by 20% after introducing bookmark/export tools. Job seekers reported saving hours per week, and the CTR for job links doubled after optimizing the dashboard UI.`,
+    result: '200+ active email subscribers in the first 4 weeks\n' +
+      '\n' +
+      '20% boost in engagement after adding bookmark & export features\n' +
+      '\n' +
+      '95+ Lighthouse scores across all pages\n' +
+      '\n' +
+      'Several job seekers reported saving 5+ hours/week and increased their interview rates\n' +
+      '\n' +
+      'Remote Radar evolved from a personal solution into a lightweight SaaS prototype. It laid the foundation for future monetization via gated features (e.g., auto-apply, premium filters, resume templates).',
 
     development: [
       {
@@ -72,9 +114,13 @@ export const caseStudyContent = {
       }
     ],
 
-    challenges: `Building a scraper that handled inconsistent HTML from multiple boards was a key challenge. I built abstracted parser functions for common layouts and fallback strategies when sites updated their DOM structure unexpectedly. I also had to sanitize and truncate long post bodies to fit the dashboard UI.`,
+    challenges: 'The biggest challenge was scraper reliability. Many boards used inconsistent HTML structures or changed DOM patterns frequently. I had to build fallback selectors, add schema validation, and implement alerts for failed scrapes. Another challenge was preventing job duplicates — solved via hashing logic.\n' +
+      '\n' +
+      'Handling SendGrid rate limits and email design across clients (Gmail, Outlook, Apple Mail) also required testing across environments and simplifying markup.',
 
-    lessons: `This project taught me how to design for scale early. I structured the job schema to support future expansion (e.g., job tags, salary ranges, location filters), and abstracted scraper logic to support adding new sources in <1 hour. I also gained experience integrating email automation in a production-grade app.`,
+    lessons: 'I learned the importance of designing for scale from the beginning — including how to structure databases, normalize content, and build scraper architecture that’s modular and extendable. I also gained hands-on experience in building engagement-driven features, such as reminders, saved filters, and performance-tracked CTAs.\n' +
+      '\n' +
+      'More than anything, I experienced what it feels like to build a full-stack product with real users and measurable impact — far beyond the scope of a student portfolio project.',
 
     links: {
       live: 'https://www.remoteradar.io',
