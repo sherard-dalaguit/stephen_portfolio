@@ -41,7 +41,7 @@ const AboutMe = () => {
 						</div>
 
 						<p className="text-sm lg:text-md text-zinc-400 mt-2">
-							Computer Science & Software Engineering<br /> at the University of California, Irvine
+							Software Engineering at the<br />University of California, Irvine
 						</p>
 
 						<div className="flex flex-row items-center space-x-2 mt-4">
@@ -68,7 +68,7 @@ const AboutMe = () => {
 								<IconMail className="h-9 w-9 text-neutral-500 dark:text-neutral-300" />
 							</Link>
 							<Link
-								href="https://drive.google.com/file/d/1JGZ10xseERVZ6v3PkFqpF4MdQ90NN2Dr/view"
+								href="https://drive.google.com/file/d/1huYFlkzMxKq45cqxBwQtL-5u_WI_CFVT/view"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="Resume"
@@ -79,9 +79,10 @@ const AboutMe = () => {
 					</div>
 				</div>
 
+				{/*<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-4 hidden sm:block">*/}
 				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 space-y-4 hidden sm:block">
 					<li>
-						I&apos;m a Computer Science and Software Engineering student at UC Irvine, passionate about building fast, responsive, and beautiful web applications.
+						I&apos;m a Software Engineering student at UC Irvine, passionate about building fast, responsive, and beautiful web applications.
 						I specialize in modern full-stack development using Next.js, TailwindCSS, TypeScript, and Node.js--focusing on clean UI, intuitive UX, and real-world performance.
 					</li>
 					<li>
@@ -91,6 +92,13 @@ const AboutMe = () => {
 						I&apos;m always pushing to create high-impact software and sharpen both my technical and personal edge.
 						Let&apos;s build something meaningful together!
 					</li>
+					{/*<li>*/}
+					{/*	I&apos;m a <span className="text-[#d1b3ff] font-bold">Mid-Level Software Engineer</span> with <span className="text-[#d1b3ff] font-bold">3 years of experience</span>,*/}
+					{/*	specializing in modern full-stack development using TypeScript, React, Next.js, Node.js, and TailwindCSS.*/}
+					{/*</li>*/}
+					{/*<li>*/}
+					{/*	I&apos;ve worked with <span className="text-[#d1b3ff] font-bold">20+ clients</span> across startups, nonprofits, and SaaS platforms, delivering high-quality software solutions that meet real-world needs.*/}
+					{/*</li>*/}
 				</ul>
 			</div>
 			<Skills/>

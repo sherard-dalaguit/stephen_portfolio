@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import {FlipWords} from "@/components/ui/flip-words";
 
 const Hero = () => {
-	const words = ["Full-Stack Developer", "Remote Software Engineer"];
+	const words = ["Full-Stack Developer", "Remote Software Engineer", "Founder of Nomadlyst"];
 
 	const renderButton = () => {
 		return (
@@ -20,7 +20,7 @@ const Hero = () => {
 				animate={{opacity: 1}}
 				transition={{duration: 2}}
 			>
-				<Link href="/#projects">
+				<Link href="/#experience">
 					<MagicButton title="Show my work" icon={<IconAward/>} position="right"/>
 				</Link>
 			</motion.div>
@@ -53,6 +53,13 @@ const Hero = () => {
 						words="Sherard Dalaguit"
 					/>
 
+					{/*<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-mmd md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">*/}
+					{/*	<TextGenerateEffect*/}
+					{/*		className="text-center ml-2.5 md:tracking-wider mb-4"*/}
+					{/*		words="Remote Mid-Level Software Engineer | Trusted By 20+ Clients Across Startups, Nonprofits, & SaaS Platforms"*/}
+					{/*	/>*/}
+					{/*</div>*/}
+
 					<div className="flex flex-row gap-2 text-lg md:text-xl lg:text-2xl xl:text-3xl">
 						<div className="hidden sm:block">
 							<FlipWords words={words}/>
@@ -65,7 +72,7 @@ const Hero = () => {
 						>
 							<p className="hidden sm:block mb-4">| </p>
 							<p className="text-center ml-2.5 md:tracking-wider mb-4">
-								SWE & CS @ UC Irvine
+								SWE @ UC Irvine
 							</p>
 						</motion.div>
 					</div>
