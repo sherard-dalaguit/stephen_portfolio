@@ -6,7 +6,7 @@ import {
 } from "motion/react";
 import React, { useEffect, useRef, useState } from "react";
 import MagicButton from "@/components/ui/MagicButton";
-import {IconBriefcase} from "@tabler/icons-react";
+import {IconBriefcase, IconHome} from "@tabler/icons-react";
 import Link from "next/link";
 
 interface TimelineEntry {
@@ -50,6 +50,16 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
         </p>
       </div>
 
+      {/*{limit == null && (*/}
+      {/*  <Link href="/#experience" className="mt-8">*/}
+      {/*    <MagicButton*/}
+      {/*      title="Return Home"*/}
+      {/*      icon={<IconHome />}*/}
+      {/*      position="right"*/}
+      {/*    />*/}
+      {/*  </Link>*/}
+      {/*)}*/}
+
       <div ref={ref} className="relative max-w-7xl mx-auto">
         {dataToShow.map((item, index) => {
           const isLast = index === dataToShow.length - 1;
@@ -62,7 +72,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
                 <div className="h-10 absolute left-3 md:left-3 w-10 rounded-full bg-white dark:bg-black flex items-center justify-center">
                   <div className="h-4 w-4 rounded-full bg-neutral-200 dark:bg-neutral-800 border border-neutral-300 dark:border-neutral-700 p-2" />
                 </div>
-                <h1 className="hidden md:block text-xl md:pl-20 md:text-5xl font-bold">
+                <h1 className="hidden md:block text-xl md:pl-20 mr-[-10] md:text-5xl font-bold">
                   {item.title}
                 </h1>
               </div>

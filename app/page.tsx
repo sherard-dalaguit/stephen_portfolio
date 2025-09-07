@@ -3,6 +3,8 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/AboutMe";
+import Experience from "@/components/Experience";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
@@ -13,6 +15,10 @@ export default function Home() {
         </div>
         <Hero />
         <AboutMe />
+        {/*<Experience limit={4} />*/}
+        <Experience />
+        {/*<Testimonials limit={12} />*/}
+        {/*<Projects limit={4} />*/}
         <Projects />
         <Footer />
       </div>
