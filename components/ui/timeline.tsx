@@ -45,7 +45,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
           My <span className="text-[#d1b3ff]">Experience</span>
         </h1>
         <p className="mt-8 text-center text-md sm:text-lg lg:text-xl">
-          I&apos;ve been working as a Full-Stack Software Engineer for the past few years. <br />
+          I&apos;ve been working as a Full-Stack Software Engineer for the past few months. <br />
           Here&apos;s a timeline of my journey so far.
         </p>
       </div>

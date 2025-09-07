@@ -214,17 +214,17 @@ export const timeline = [
     title: "May 2025 - June 2025",
     content: (
       <div>
-        <Link
-          href="https://www.aurumisai.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Remote Radar"
-          className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
-        >
+        {/*<Link*/}
+        {/*  href="https://www.aurumisai.com"*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*  aria-label="Remote Radar"*/}
+        {/*  className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"*/}
+        {/*>*/}
           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
             Aurumis AI
           </h1>
-        </Link>
+        {/*</Link>*/}
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
           Software Engineer <span className="text-[#d1b3ff] font-bold">(Freelance)</span>
         </h2>
@@ -239,13 +239,13 @@ export const timeline = [
             contributing to a <span className="text-[#d1b3ff] font-bold">20% increase in user click-throughs to key CTA sections</span>.
           </li>
         </ul>
-        <Image
-          src="/projects/AurumisAI.png"
-          alt="Aurumis AI"
-          width={800}
-          height={500}
-          className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
-        />
+        {/*<Image*/}
+        {/*  src="/projects/AurumisAI.png"*/}
+        {/*  alt="Aurumis AI"*/}
+        {/*  width={800}*/}
+        {/*  height={500}*/}
+        {/*  className="rounded-lg mb-4 border-2 border-[#d1b3ff]"*/}
+        {/*/>*/}
         {/*<CaseStudy*/}
         {/*  link="/aurumis-ai"*/}
         {/*  name="Aurumis AI"*/}
