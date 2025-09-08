@@ -170,7 +170,7 @@ export const timeline = [
             continuously <span className="text-[#d1b3ff] font-bold">scraping over 2000 new remote job postings</span> per week from major remote job boards.
           </li>
           <li>Integrated an email subscription service using Next.js API routes and SendGrid, delivering daily and
-            weekly curated <span className="text-[#d1b3ff] font-bold">remote job listings to 750+ subscribers, boosting platform engagement by 60%</span>.
+            weekly curated <span className="text-[#d1b3ff] font-bold">remote job listings to 100+ subscribers, boosting platform engagement by 30%</span>.
           </li>
           <li>Optimized scraping and database indexing logic to handle 2000+ weekly postings with minimal duplication, ensuring platform reliability
 						and <span className="text-[#d1b3ff] font-bold">increasing query speed by 40%</span>.
