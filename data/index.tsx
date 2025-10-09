@@ -170,7 +170,7 @@ export const timeline = [
             continuously <span className="text-[#d1b3ff] font-bold">scraping over 2000 new remote job postings</span> per week from major remote job boards.
           </li>
           <li>Integrated an email subscription service using Next.js API routes and SendGrid, delivering daily and
-            weekly curated <span className="text-[#d1b3ff] font-bold">remote job listings to 100+ subscribers, boosting platform engagement by 30%</span>.
+            weekly curated <span className="text-[#d1b3ff] font-bold">remote job listings to 250+ subscribers</span>.
           </li>
           <li>Optimized scraping and database indexing logic to handle 2000+ weekly postings with minimal duplication, ensuring platform reliability
 						and <span className="text-[#d1b3ff] font-bold">increasing query speed by 40%</span>.
@@ -210,68 +210,68 @@ export const timeline = [
       </div>
     ),
   },
-  {
-    title: "May 2025 - June 2025",
-    content: (
-      <div>
-        {/*<Link*/}
-        {/*  href="https://www.aurumisai.com"*/}
-        {/*  target="_blank"*/}
-        {/*  rel="noopener noreferrer"*/}
-        {/*  aria-label="Remote Radar"*/}
-        {/*  className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"*/}
-        {/*>*/}
-          <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
-            Aurumis AI
-          </h1>
-        {/*</Link>*/}
-        <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-          Software Engineer <span className="text-[#d1b3ff] font-bold">(Freelance)</span>
-        </h2>
-        <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-          <li>Engineered and launched a responsive B2B AI Agency site using Next.js, TypeScript, TailwindCSS, and Framer Motion,
-            <span className="text-[#d1b3ff] font-bold"> decreasing initial rendering time to under 1 second</span>.
-          </li>
-          <li>Enhanced the site’s visibility through SEO optimizations, <span className="text-[#d1b3ff] font-bold">achieving a 98/100 Lighthouse score </span>
-            and <span className="text-[#d1b3ff] font-bold">increasing organic search impressions by 25%</span> in initial indexing.
-          </li>
-          <li>Partnered directly with the founder through <span className="text-[#d1b3ff] font-bold">3+ rounds of design iterations</span>, refining layout and copy to align with business goals and
-            contributing to a <span className="text-[#d1b3ff] font-bold">20% increase in user click-throughs to key CTA sections</span>.
-          </li>
-        </ul>
-        {/*<Image*/}
-        {/*  src="/projects/AurumisAI.png"*/}
-        {/*  alt="Aurumis AI"*/}
-        {/*  width={800}*/}
-        {/*  height={500}*/}
-        {/*  className="rounded-lg mb-4 border-2 border-[#d1b3ff]"*/}
-        {/*/>*/}
-        {/*<CaseStudy*/}
-        {/*  link="/aurumis-ai"*/}
-        {/*  name="Aurumis AI"*/}
-        {/*  steps={[*/}
-        {/*    {*/}
-        {/*      title: "Problem",*/}
-        {/*      description: "Aurumis AI's problem...",*/}
-        {/*      content: caseStudyContent['aurumis-ai'].problem,*/}
-        {/*      img: "/projects/AurumisAI.png"*/}
-        {/*    },*/}
-        {/*    {*/}
-        {/*      title: "Solution",*/}
-        {/*      description: "How it was solved...",*/}
-        {/*      content: caseStudyContent['aurumis-ai'].solution,*/}
-        {/*      img: "/projects/AurumisAI.png"*/}
-        {/*    },*/}
-        {/*    {*/}
-        {/*      title: "Result",*/}
-        {/*      description: "The outcome...",*/}
-        {/*      content: caseStudyContent['aurumis-ai'].result,*/}
-        {/*      img: "/projects/AurumisAI.png"*/}
-        {/*    },*/}
-        {/*  ]}*/}
-        {/*/>*/}
-      </div>
-    ),
-  },
+  // {
+  //   title: "May 2025 - June 2025",
+  //   content: (
+  //     <div>
+  //       <Link
+  //         href="https://www.aurumisai.com"
+  //         target="_blank"
+  //         rel="noopener noreferrer"
+  //         aria-label="Remote Radar"
+  //         className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
+  //       >
+  //         <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+  //           Aurumis AI
+  //         </h1>
+  //       </Link>
+  //       <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
+  //         Software Engineer <span className="text-[#d1b3ff] font-bold">(Freelance)</span>
+  //       </h2>
+  //       <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+  //         <li>Engineered and launched a responsive B2B AI Agency site using Next.js, TypeScript, TailwindCSS, and Framer Motion,
+  //           <span className="text-[#d1b3ff] font-bold"> decreasing initial rendering time to under 1 second</span>.
+  //         </li>
+  //         <li>Enhanced the site’s visibility through SEO optimizations, <span className="text-[#d1b3ff] font-bold">achieving a 98/100 Lighthouse score </span>
+  //           and <span className="text-[#d1b3ff] font-bold">increasing organic search impressions by 25%</span> in initial indexing.
+  //         </li>
+  //         <li>Partnered directly with the founder through <span className="text-[#d1b3ff] font-bold">3+ rounds of design iterations</span>, refining layout and copy to align with business goals and
+  //           contributing to a <span className="text-[#d1b3ff] font-bold">20% increase in user click-throughs to key CTA sections</span>.
+  //         </li>
+  //       </ul>
+  //       <Image
+  //         src="/projects/AurumisAI.png"
+  //         alt="Aurumis AI"
+  //         width={800}
+  //         height={500}
+  //         className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
+  //       />
+  //       {/*<CaseStudy*/}
+  //       {/*  link="/aurumis-ai"*/}
+  //       {/*  name="Aurumis AI"*/}
+  //       {/*  steps={[*/}
+  //       {/*    {*/}
+  //       {/*      title: "Problem",*/}
+  //       {/*      description: "Aurumis AI's problem...",*/}
+  //       {/*      content: caseStudyContent['aurumis-ai'].problem,*/}
+  //       {/*      img: "/projects/AurumisAI.png"*/}
+  //       {/*    },*/}
+  //       {/*    {*/}
+  //       {/*      title: "Solution",*/}
+  //       {/*      description: "How it was solved...",*/}
+  //       {/*      content: caseStudyContent['aurumis-ai'].solution,*/}
+  //       {/*      img: "/projects/AurumisAI.png"*/}
+  //       {/*    },*/}
+  //       {/*    {*/}
+  //       {/*      title: "Result",*/}
+  //       {/*      description: "The outcome...",*/}
+  //       {/*      content: caseStudyContent['aurumis-ai'].result,*/}
+  //       {/*      img: "/projects/AurumisAI.png"*/}
+  //       {/*    },*/}
+  //       {/*  ]}*/}
+  //       {/*/>*/}
+  //     </div>
+  //   ),
+  // },
 
 ];

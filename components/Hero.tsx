@@ -11,7 +11,7 @@ import { motion } from "framer-motion";
 import {FlipWords} from "@/components/ui/flip-words";
 
 const Hero = () => {
-	const words = ["Full-Stack Developer", "Remote Software Engineer", "Founder of Nomadlyst"];
+	const words = ["Full-Stack Developer", "Remote Software Engineer"];
 
 	const renderButton = () => {
 		return (
