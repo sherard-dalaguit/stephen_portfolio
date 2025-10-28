@@ -163,17 +163,20 @@ export const timeline = [
           </h1>
         </Link>
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-          Technical Founder
+          Founding Software Engineer
         </h2>
         <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-          <li>Engineered and deployed a full-stack automated job platform using Next.js, TailwindCSS, and MongoDB,
-            continuously <span className="text-[#d1b3ff] font-bold">scraping over 2000 new remote job postings</span> per week from major remote job boards.
+          <li>Launched and scaled a full-stack remote job aggregation platform that automates scraping 2,000+ new listings weekly across
+            major remote-work sites, driving rapid early traction and product-market validation.
           </li>
-          <li>Integrated an email subscription service using Next.js API routes and SendGrid, delivering daily and
-            weekly curated <span className="text-[#d1b3ff] font-bold">remote job listings to 250+ subscribers</span>.
+          <li>Architected end-to-end systems for scraping, data cleaning, and storage in MongoDB, enabling near real-time updates and a
+            seamless discovery experience for users.
           </li>
-          <li>Optimized scraping and database indexing logic to handle 2000+ weekly postings with minimal duplication, ensuring platform reliability
-						and <span className="text-[#d1b3ff] font-bold">increasing query speed by 40%</span>.
+          <li>Built automated email digests with SendGrid and serverless Next.js API routes, delivering personalized daily and
+            weekly job recommendations to 300+ early subscribers with {">"}98% delivery success.
+          </li>
+          <li>Led growth-driven iteration cycles, refining data pipelines and UX based on user engagement analytics
+            to improve job relevance and retention.
           </li>
         </ul>
         <Image
