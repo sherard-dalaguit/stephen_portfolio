@@ -105,6 +105,17 @@ export const socialMedia = [
 export const projects = [
   {
     id: 1,
+    title: "TagalogAI",
+    subheader: "AI Tagalog Coach",
+    des: "An AI-powered Tagalog learning coach that lets users hold real-time voice conversations with a natural-sounding AI tutor and receive instant, personalized feedback on their grammar, vocabulary, and fluency.",
+    img: "/projects/TagalogAI.webp",
+    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
+    githubLink: "https://github.com/sherard-dalaguit/DevExchange",
+    deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/",
+    delayed: "February 2026"
+  },
+  {
+    id: 2,
     title: "Rizzlytics",
     subheader: "AI Tinder Analyzer",
     des: "An AI-powered Tinder analyzer built with React and Next.js that leverages the OpenAI API to give you actionable insights on your profile photos and message threads.",
@@ -112,10 +123,10 @@ export const projects = [
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
     deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/",
-    delayed: "November 2025"
+    delayed: "December 2025"
   },
   {
-    id: 2,
+    id: 3,
     title: "SWEOverflow",
     subheader: "StackOverflow Clone App",
     des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
@@ -125,7 +136,7 @@ export const projects = [
     deployedLink: "https://swe-overflow.vercel.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "KapeChat",
     subheader: "Tinder But For Job Seekers",
     des: "A web application that connects job seekers with potential employers through a swipe-based interface, allowing users to match and chat with companies that align with their career goals.",
@@ -135,7 +146,7 @@ export const projects = [
     deployedLink: "",
   },
   {
-    id: 4,
+    id: 5,
     title: "ICSearch",
     subheader: "Information Retrieval Search Engine",
     des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
@@ -229,17 +240,14 @@ export const timeline = [
   //         </h1>
   //       </Link>
   //       <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-  //         Software Engineer <span className="text-[#d1b3ff] font-bold">(Freelance)</span>
+  //         Freelance Software Engineer
   //       </h2>
   //       <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-  //         <li>Engineered and launched a responsive B2B AI Agency site using Next.js, TypeScript, TailwindCSS, and Framer Motion,
-  //           <span className="text-[#d1b3ff] font-bold"> decreasing initial rendering time to under 1 second</span>.
+  //         <li>Developed a responsive portfolio site for a B2B AI Agency using Next.js, TypeScript, TailwindCSS, and Framer Motion,
+  //           ensuring fast load times and polished UI animations.
   //         </li>
   //         <li>Enhanced the site’s visibility through SEO optimizations, <span className="text-[#d1b3ff] font-bold">achieving a 98/100 Lighthouse score </span>
   //           and <span className="text-[#d1b3ff] font-bold">increasing organic search impressions by 25%</span> in initial indexing.
-  //         </li>
-  //         <li>Partnered directly with the founder through <span className="text-[#d1b3ff] font-bold">3+ rounds of design iterations</span>, refining layout and copy to align with business goals and
-  //           contributing to a <span className="text-[#d1b3ff] font-bold">20% increase in user click-throughs to key CTA sections</span>.
   //         </li>
   //       </ul>
   //       <Image
