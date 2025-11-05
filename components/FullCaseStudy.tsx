@@ -1,3 +1,9 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import MagicButton from "@/components/ui/MagicButton";
+import {IconHome} from "@tabler/icons-react";
+
 type CaseStudyProps = {
   title: string;
   role: string;
@@ -36,59 +42,75 @@ export default function FullCaseStudy({
   links
 }: CaseStudyProps) {
   return (
-    <div className="p-8 max-w-7xl mx-auto">
-      <h1 className="text-4xl font-bold">{title}</h1>
-      <p className="text-zinc-400 mb-4">{role} · {timeline}</p>
+    <div className="flex flex-col mt-16 p-8 z-30 max-w-7xl mx-auto">
+      <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl text-[#d1b3ff]">
+        {title}
+      </h1>
+      <p className="mt-4 text-center text-lg sm:text-xl lg:text-2xl text-zinc-400">{role} · {timeline}</p>
 
-      <img src={image} className="rounded-lg border my-4" alt={title} />
+      <Link href="/#projects" className="my-8 sm:mt-0 mx-auto">
+        <MagicButton
+          title="Return Home"
+          icon={<IconHome/>}
+          position="right"
+        />
+      </Link>
 
-      <section>
-        <h2 className="text-2xl font-semibold mb-2">Overview</h2>
-        <p>{overview}</p>
+      <Image
+        src={image}
+        className="rounded-lg border-2 border-[#d1b3ff] my-4 mx-auto z-100"
+        alt={title}
+        width={1000}
+        height={500}
+      />
+
+      <section className="mt-12 mb-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Overview</h2>
+        <p className="md:text-xl whitespace-pre-line">{overview}</p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mt-6 mb-2">Problem</h2>
-        <p>{problem}</p>
+      <section className="my-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Problem</h2>
+        <p className="md:text-xl whitespace-pre-line">{problem}</p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mt-6 mb-2">Solution</h2>
-        <p>{solution}</p>
+      <section className="my-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Solution</h2>
+        <p className="md:text-xl whitespace-pre-line">{solution}</p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mt-6 mb-2">Result</h2>
-        <p>{result}</p>
+      <section className="my-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Result</h2>
+        <p className="md:text-xl whitespace-pre-line">{result}</p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mt-6 mb-2">Development</h2>
+      <section className="my-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Development</h2>
         {development.map((section) => {
           return (
             <div key={section.title} className="mb-6">
-              <h3 className="text-xl font-semibold">{section.title}</h3>
-              <p>{section.content}</p>
+              <h3 className="text-2xl font-semibold text-zinc-400 mb-1">{section.title}</h3>
+              <p className="md:text-xl">{section.content}</p>
             </div>
           )
         })}
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mt-6 mb-2">Challenges</h2>
-        <p>{challenges}</p>
+      <section className="my-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Challenges</h2>
+        <p className="md:text-xl whitespace-pre-line">{challenges}</p>
       </section>
 
-      <section>
-        <h2 className="text-2xl font-semibold mt-6 mb-2">Lessons</h2>
-        <p>{lessons}</p>
+      <section className="my-6">
+        <h2 className="text-3xl md:text-5xl font-bold mb-2 text-[#d1b3ff]">Lessons</h2>
+        <p className="md:text-xl whitespace-pre-line">{lessons}</p>
       </section>
 
-      <section className="mt-6">
-        <h3 className="font-bold">Technologies Used</h3>
+      <section className="my-6">
+        <h3 className="text-3xl md:text-5xl font-bold mb-4 text-[#d1b3ff]">Technologies Used</h3>
         <ul className="flex flex-wrap gap-2 mt-2">
           {techStack.map((tech) => (
-            <li key={tech} className="bg-zinc-800 px-2 py-1 rounded text-sm">{tech}</li>
+            <li key={tech} className="bg-zinc-800 px-2 py-1 rounded text-lg">{tech}</li>
           ))}
         </ul>
       </section>

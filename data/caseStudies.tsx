@@ -58,28 +58,28 @@ export const caseStudyContent = {
       github: null // optional
     }
   },
-	'remote-radar': {
-    title: 'Remote Radar',
-    role: 'Technical Founder',
-    timeline: 'May 2025 – Present',
+	'nomadlyst': {
+    title: 'Nomadlyst',
+    role: 'Founding Software Engineer',
+    timeline: 'July 2025 – Present',
     image: '/projects/remote_radar.png',
-    techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'PostgreSQL', 'SendGrid', 'Vercel', 'CronJobs'],
+    techStack: ['Next.js', 'TypeScript', 'TailwindCSS', 'MongoDB', 'SendGrid', 'Vercel', 'CronJobs'],
 
     overview: 'Remote Radar is a personal full-stack project I built to solve a real pain I experienced while job hunting as a digital nomad: manually checking dozens of remote job boards every day. The project aggregates job listings, allows filtering/bookmarking, and sends personalized email digests to subscribers.\n' +
       '\n' +
-      'This is not just a demo app — it\'s a functioning platform used by over 200+ active subscribers, pulling in 300+ new jobs per week via automated scrapers. The project helped me solidify skills in full-stack architecture, scraping strategies, email workflows, and building user-centric UIs with real engagement metrics.',
+      'This is not just a demo app — it\'s a functioning platform used by over 200+ active subscribers, pulling in 1500+ new jobs per week via automated scrapers. The project helped me solidify skills in full-stack architecture, scraping strategies, email workflows, and building user-centric UIs with real engagement metrics.',
 
     problem: 'Finding high-quality remote jobs is tedious. Most job boards don’t filter for your exact tech stack, and many job aggregators scrape expired or irrelevant listings. There’s no way to bookmark jobs, track which ones you\'ve applied to, or receive tailored updates.\n' +
       '\n' +
       'As a job seeker, I found myself opening 6+ tabs daily and manually scanning them — which felt like a part-time job. I wanted a platform that did the heavy lifting for me.',
 
-    solution: 'I built Remote Radar from scratch using Next.js (frontend + backend) and PostgreSQL to power a full-stack remote job board with bookmarking, tracking, and subscription features.\n' +
+    solution: 'I built Remote Radar from scratch using Next.js (frontend + backend) and MongoDB to power a full-stack remote job board with bookmarking, tracking, and subscription features.\n' +
       '\n' +
       'Custom web scrapers run on a cron job schedule to pull job listings from sources like WeWorkRemotely, RemoteOK, and RemoteTechJobs.\n' +
       '\n' +
-      'All data is stored in a normalized PostgreSQL schema and deduplicated using hash-based IDs.\n' +
+      'All data is stored in a normalized MongoDB schema and deduplicated using hash-based IDs.\n' +
       '\n' +
-      'Users can filter jobs by role, tech stack, or keyword, and mark jobs as "applied" to track their progress.\n' +
+      'Users can filter jobs by role, salary, or keyword, and mark jobs as "applied" to track their progress.\n' +
       '\n' +
       'A daily and weekly email digest system delivers curated jobs to subscribers using SendGrid, dynamically based on their saved preferences.\n' +
       '\n' +
