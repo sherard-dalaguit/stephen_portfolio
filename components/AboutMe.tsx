@@ -10,7 +10,7 @@ const AboutMe = () => {
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl mb-12">
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
-			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 gap-8 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5">
+			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 gap-8 container">
 				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4 ">
 					<div className="w-[200px] h-[200px] flex-shrink-0 relative mb-6">
 						<Image

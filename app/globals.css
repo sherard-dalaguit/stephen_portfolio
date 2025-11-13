@@ -130,6 +130,21 @@ html {
   }
 }
 
+@layer components {
+  .container {
+    @apply rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/15 to-slate-500/5;
+  }
+  .dark-container {
+    @apply rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/10 to-slate-500/5;
+  }
+}
+
+@layer utilities {
+  .text-purple {
+    @apply text-[#d1b3ff];
+  }
+}
+
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s) var(--animation-direction, forwards) linear infinite;
 

@@ -1,6 +1,6 @@
 "use client";
 
-import {testimonials} from "@/data";
+import {testimonials} from "@/data/testimonials";
 import React from "react";
 import MagicButton from "@/components/ui/MagicButton";
 import {IconHome, IconMessages, IconStar, IconStarFilled, IconStarHalfFilled} from "@tabler/icons-react";
@@ -19,7 +19,7 @@ const TestimonialItems = ({
 }) => {
 	const hasHalfStar = stars % 1 !== 0;
 	return (
-		<div className="relative justify-between shrink-0 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] px-8 py-6 rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/20 to-slate-50/5">
+		<div className="relative justify-between shrink-0 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)] px-8 py-6 container">
 			<div className="flex flex-row">
 				{Array.from({length: stars}).map((_, index) => (
 					<IconStarFilled
