@@ -15,7 +15,7 @@ const Projects = ({ limit } : { limit?: number }) => {
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
 				My <span className="text-[#d1b3ff]">Projects</span>
 			</h1>
-			<h1 className="mx-auto mt-8 text-center text-md sm:text-lg lg:text-xl">
+			<h1 className="mx-auto my-8 text-center text-md sm:text-lg lg:text-xl">
 				I&apos;ve built a variety of innovative projects that showcase my technical expertise and creative design.
 				<br />
 				Here are some examples of my work so far.
@@ -29,7 +29,7 @@ const Projects = ({ limit } : { limit?: number }) => {
 			{/*		/>*/}
 			{/*	</Link>*/}
 			{/*)}*/}
-			<section className="relative overflow-visible [clip-path:inset(-9999px_-9999px_0_-9999px)] mx-auto mt-8 sm:mt-20 w-full px-2 sm:px-8 lg:px-10">
+			<section className="relative overflow-visible [clip-path:inset(-9999px_-9999px_0_-9999px)] mx-auto w-full px-2 sm:px-8 lg:px-10">
 				<ProjectDetails>
 					{projectsToShow.map(({id, title, subheader, des, img, iconLists, githubLink, deployedLink, delayed}) => {
 						const isLast = id === projectsToShow[projectsToShow.length - 1].id;
