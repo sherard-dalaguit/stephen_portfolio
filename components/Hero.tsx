@@ -8,10 +8,8 @@ import MagicButton from "@/components/ui/MagicButton";
 import Link from "next/link";
 import {cn} from "@/lib/utils";
 import { motion } from "framer-motion";
-import {FlipWords} from "@/components/ui/flip-words";
 
 const Hero = () => {
-	const words = ["Full-Stack Developer", "Remote Software Engineer"];
 
 	const renderButton = () => {
 		return (
@@ -53,28 +51,12 @@ const Hero = () => {
 						words="Sherard Dalaguit"
 					/>
 
-					{/*<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-mmd md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">*/}
-					{/*	<TextGenerateEffect*/}
-					{/*		className="text-center ml-2.5 md:tracking-wider mb-4"*/}
-					{/*		words="Remote Mid-Level Software Engineer | Trusted By 20+ Clients Across Startups, Nonprofits, & SaaS Platforms"*/}
-					{/*	/>*/}
-					{/*</div>*/}
-
-					<div className="flex flex-row gap-2 text-lg md:text-xl lg:text-2xl xl:text-3xl">
-						<div className="hidden sm:block">
-							<FlipWords words={words}/>
-						</div>
-						<motion.div
-							initial={{opacity: 0}}
-							animate={{opacity: 1}}
-							transition={{duration: 1.6}}
-							className="flex flex-row items-center"
-						>
-							<p className="hidden sm:block mb-4">| </p>
-							<p className="text-center ml-2.5 md:tracking-wider mb-4">
-								SWE @ UC Irvine
-							</p>
-						</motion.div>
+					<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-mmd md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">
+						<TextGenerateEffect
+							className="text-center ml-2.5 md:tracking-wider mb-4"
+							// words="Remote Mid-Level Software Engineer | Trusted By 20+ Clients Across Startups, Nonprofits, & SaaS Platforms"
+							words="Remote Full-Stack Software Engineer | Building Production-Ready SaaS Platforms & AI-Driven Applications"
+						/>
 					</div>
 
 					<div className="w-[30rem] sm:w-[40rem] h-40 mt-4 relative">
