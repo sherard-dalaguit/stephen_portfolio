@@ -140,7 +140,7 @@ html {
 }
 
 @layer utilities {
-  .text-purple {
+  .lavender-text {
     @apply text-[#d1b3ff];
   }
 }
