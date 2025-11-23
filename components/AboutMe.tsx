@@ -89,11 +89,11 @@ const AboutMe = () => {
 
 				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-6 hidden sm:block">
 					<li>
-						I’m a <span className="text-[#d1b3ff] font-bold">full-stack software engineer</span> with <span className="text-[#d1b3ff] font-bold">1 year of experience</span>,
+						I&apos;m a <span className="text-[#d1b3ff] font-bold">full-stack software engineer</span> with <span className="text-[#d1b3ff] font-bold">1 year of experience</span>,
 						specializing in scalable, production-ready applications with TypeScript, Next.js, Node.js, and MongoDB.
 					</li>
 					<li>
-						I'm currently building <span className="text-[#d1b3ff] font-bold">full-stack and AI-powered products</span>
+						I&apos;m currently building <span className="text-[#d1b3ff] font-bold">full-stack and AI-powered products</span>
 						{" "}across dating, language learning, and productivity—designed for real use, not just portfolio demos.
 					</li>
 
