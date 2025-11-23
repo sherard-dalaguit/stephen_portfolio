@@ -23,8 +23,6 @@ import {
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import CaseStudy from "@/components/CaseStudy";
-import { caseStudyContent } from "./caseStudies";
 
 export const skills = [
   { name: 'TypeScript', des: 'JavaScript but better', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
@@ -40,6 +38,8 @@ export const skills = [
   { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'OpenAI API', des: 'AI Integration', icon: <IconBrandOpenai className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
+
+export const minimalNavBarLinks = []
 
 export const navBarLinks = [
 	{
@@ -111,7 +111,7 @@ export const projects = [
     img: "/projects/TagalogAI.webp",
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
-    deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/",
+    deployedLink: "https://www.tagalogai.com",
     delayed: "February 2026"
   },
   {
@@ -122,7 +122,7 @@ export const projects = [
     img: "/projects/in_progress.webp",
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
-    deployedLink: "https://dev-exchange-sherard-dalaguits-projects.vercel.app/",
+    deployedLink: "https://www.rizzlytics.com",
     delayed: "December 2025"
   },
   {
@@ -137,6 +137,16 @@ export const projects = [
   },
   {
     id: 4,
+    title: "TeamSync",
+    subheader: "Real-Time Team Messaging Platform",
+    des: "Inspired by Slack, TeamSync facilitates seamless collaboration and communication among team members through instant messaging and integrated project management features.",
+    img: "/TeamSync.png",
+    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/convex.webp", "/shadcn.ico"],
+    githubLink: "https://github.com/sherard-dalaguit/TeamSync",
+    deployedLink: "https://team-sync-brown.vercel.app/",
+  },
+  {
+    id: 5,
     title: "KapeChat",
     subheader: "Tinder But For Job Seekers",
     des: "A web application that connects job seekers with potential employers through a swipe-based interface, allowing users to match and chat with companies that align with their career goals.",
@@ -146,7 +156,7 @@ export const projects = [
     deployedLink: "",
   },
   {
-    id: 5,
+    id: 6,
     title: "ICSearch",
     subheader: "Information Retrieval Search Engine",
     des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
@@ -177,14 +187,14 @@ export const timeline = [
           Founding Software Engineer
         </h2>
         <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-          <li>Launched and scaled a full-stack remote job aggregation platform that automates scraping 2,000+ new listings weekly across
+          <li>Launched a full-stack remote job aggregation platform that scrapes 2,000+ new listings weekly across
             major remote-work sites, driving rapid early traction and product-market validation.
           </li>
           <li>Architected end-to-end systems for scraping, data cleaning, and storage in MongoDB, enabling near real-time updates and a
             seamless discovery experience for users.
           </li>
-          <li>Built automated email digests with SendGrid and serverless Next.js API routes, delivering personalized daily and
-            weekly job recommendations to 300+ early subscribers with {">"}98% delivery success.
+          <li>Designed email delivery pipelines using SendGrid and serverless Next.js API routes, sending personalized daily and
+            weekly job digests to 300+ early subscribers with {">"}98% delivery success.
           </li>
           <li>Led growth-driven iteration cycles, refining data pipelines and UX based on user engagement analytics
             to improve job relevance and retention.
@@ -193,34 +203,10 @@ export const timeline = [
         <Image
           src="/projects/nomadlyst.webp"
           alt="remote radar"
-          width={800}
+          width={700}
           height={500}
           className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
         />
-        {/*<CaseStudy*/}
-        {/*  link="/remote-radar"*/}
-        {/*  name="Remote Radar"*/}
-        {/*  steps={[*/}
-        {/*    {*/}
-        {/*      title: "Problem",*/}
-        {/*      description: "Most digital nomads' problem...",*/}
-        {/*      content: caseStudyContent['remote-radar'].problem,*/}
-        {/*      img: "/projects/remote_radar.png"*/}
-        {/*    },*/}
-        {/*    {*/}
-        {/*      title: "Solution",*/}
-        {/*      description: "How it was solved...",*/}
-        {/*      content: caseStudyContent['remote-radar'].solution,*/}
-        {/*      img: "/projects/remote_radar.png"*/}
-        {/*    },*/}
-        {/*    {*/}
-        {/*      title: "Result",*/}
-        {/*      description: "The outcome...",*/}
-        {/*      content: caseStudyContent['remote-radar'].result,*/}
-        {/*      img: "/projects/remote_radar.png"*/}
-        {/*    },*/}
-        {/*  ]}*/}
-        {/*/>*/}
       </div>
     ),
   },
@@ -235,7 +221,7 @@ export const timeline = [
   //         aria-label="Remote Radar"
   //         className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
   //       >
-  //         <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+  //         <h1 className="font-bold lavender-text hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
   //           Aurumis AI
   //         </h1>
   //       </Link>
@@ -246,41 +232,17 @@ export const timeline = [
   //         <li>Developed a responsive portfolio site for a B2B AI Agency using Next.js, TypeScript, TailwindCSS, and Framer Motion,
   //           ensuring fast load times and polished UI animations.
   //         </li>
-  //         <li>Enhanced the site’s visibility through SEO optimizations, <span className="text-[#d1b3ff] font-bold">achieving a 98/100 Lighthouse score </span>
-  //           and <span className="text-[#d1b3ff] font-bold">increasing organic search impressions by 25%</span> in initial indexing.
+  //         <li>Enhanced the site’s visibility through SEO optimizations, achieving a 98/100 Lighthouse score
+  //           and increasing organic search impressions by 25% in initial indexing.
   //         </li>
   //       </ul>
   //       <Image
   //         src="/projects/AurumisAI.png"
   //         alt="Aurumis AI"
-  //         width={800}
+  //         width={700}
   //         height={500}
   //         className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
   //       />
-  //       {/*<CaseStudy*/}
-  //       {/*  link="/aurumis-ai"*/}
-  //       {/*  name="Aurumis AI"*/}
-  //       {/*  steps={[*/}
-  //       {/*    {*/}
-  //       {/*      title: "Problem",*/}
-  //       {/*      description: "Aurumis AI's problem...",*/}
-  //       {/*      content: caseStudyContent['aurumis-ai'].problem,*/}
-  //       {/*      img: "/projects/AurumisAI.png"*/}
-  //       {/*    },*/}
-  //       {/*    {*/}
-  //       {/*      title: "Solution",*/}
-  //       {/*      description: "How it was solved...",*/}
-  //       {/*      content: caseStudyContent['aurumis-ai'].solution,*/}
-  //       {/*      img: "/projects/AurumisAI.png"*/}
-  //       {/*    },*/}
-  //       {/*    {*/}
-  //       {/*      title: "Result",*/}
-  //       {/*      description: "The outcome...",*/}
-  //       {/*      content: caseStudyContent['aurumis-ai'].result,*/}
-  //       {/*      img: "/projects/AurumisAI.png"*/}
-  //       {/*    },*/}
-  //       {/*  ]}*/}
-  //       {/*/>*/}
   //     </div>
   //   ),
   // },
