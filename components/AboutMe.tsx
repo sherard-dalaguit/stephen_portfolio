@@ -1,8 +1,9 @@
 import Skills from "@/components/Skills";
 import Image from "next/image";
 import Link from "next/link";
-import {IconBrandGithub, IconBrandLinkedin, IconFileDescription, IconMail, IconMapPinFilled} from "@tabler/icons-react";
+import {IconBrandGithub, IconBrandLinkedin, IconFileDescription, IconMail} from "@tabler/icons-react";
 import React from "react";
+import {Tooltip} from "@/components/ui/tooltip-card";
 
 const AboutMe = () => {
 	return (
@@ -10,7 +11,7 @@ const AboutMe = () => {
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl mb-12">
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
-			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 gap-8 container">
+			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 container">
 				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4 ">
 					<div className="w-[200px] h-[200px] flex-shrink-0 relative mb-6">
 						<Image
@@ -30,19 +31,26 @@ const AboutMe = () => {
 							Full-Stack Software Engineer
 						</h2>
 
-						<div className="flex flex-row items-center mt-2">
-							<IconMapPinFilled className="text-[#d1b3ff]" />
-							<p className="text-md lg:text-lg ml-2">
+						<div className="flex flex-wrap justify-center sm:justify-start mt-2 gap-2">
+							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#d1b3ff]/20 text-sm lg:text-md">
 								Los Angeles, California
-								<br className="block sm:hidden" />
-								<span className="hidden sm:inline"> &bull; </span>
+							</span>
+
+							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#d1b3ff]/20 text-sm lg:text-md">
 								Manila, Philippines
-							</p>
+							</span>
 						</div>
 
-						<p className="text-sm lg:text-md text-zinc-400 mt-2">
-							Software Engineering at the<br />University of California, Irvine
-						</p>
+						<div className="max-sm:text-center text-sm lg:text-[1rem] mt-2">
+							B.S. Software Engineering & B.S. Computer Science
+							<br />at the{" "}
+							<Tooltip
+								containerClassName="text-zinc-100"
+								content="University of California, Irvine is nationally ranked #8 in Software Engineering and #25 in Computer Science by U.S. News & World Report."
+							>
+								<span className="font-bold lavender-text hover:text-[#a17eff] underline underline-offset-4 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">University of California, Irvine</span>
+							</Tooltip>
+						</div>
 
 						<div className="flex flex-row items-center space-x-2 mt-4">
 							<Link
@@ -79,22 +87,19 @@ const AboutMe = () => {
 					</div>
 				</div>
 
-				{/*<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-4 hidden sm:block">*/}
-				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 space-y-4 hidden sm:block">
+				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-6 hidden sm:block">
 					<li>
-						I&apos;m a Software Engineering student at UC Irvine, passionate about building fast, responsive, and beautiful web applications.
-						I specialize in modern full-stack development using Next.js, TailwindCSS, TypeScript, and Node.js--focusing on clean UI, intuitive UX, and real-world performance.
+						I’m a <span className="text-[#d1b3ff] font-bold">full-stack software engineer</span> with <span className="text-[#d1b3ff] font-bold">1 year of experience</span>,
+						specializing in scalable, production-ready applications with TypeScript, Next.js, Node.js, and MongoDB.
 					</li>
 					<li>
-						Outside of coding, I&apos;m big on my own personal development--balancing the grind with daily gym sessions, consistent reading, tennis training, and getting in touch with my Filipino heritage (i&apos;m whitewashed lol).
+						I'm currently building <span className="text-[#d1b3ff] font-bold">full-stack and AI-powered products</span>
+						{" "}across dating, language learning, and productivity—designed for real use, not just portfolio demos.
 					</li>
-					<li>
-						I&apos;m always pushing to create high-impact software and sharpen both my technical and personal edge.
-						Let&apos;s build something meaningful together!
-					</li>
+
 					{/*<li>*/}
 					{/*	I&apos;m a <span className="text-[#d1b3ff] font-bold">Mid-Level Software Engineer</span> with <span className="text-[#d1b3ff] font-bold">3 years of experience</span>,*/}
-					{/*	specializing in modern full-stack development using TypeScript, React, Next.js, Node.js, and TailwindCSS.*/}
+					{/*	specializing in modern full-stack development with TypeScript, React, Next.js, Node.js, and MongoDB.*/}
 					{/*</li>*/}
 					{/*<li>*/}
 					{/*	I&apos;ve worked with <span className="text-[#d1b3ff] font-bold">20+ clients</span> across startups, nonprofits, and SaaS platforms, delivering high-quality software solutions that meet real-world needs.*/}
