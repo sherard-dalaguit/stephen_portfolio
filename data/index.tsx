@@ -138,7 +138,7 @@ export const projects = [
   {
     id: 4,
     title: "TeamSync",
-    subheader: "Real-Time Team Messaging Platform",
+    subheader: "Team Messaging Platform",
     des: "Inspired by Slack, TeamSync facilitates seamless collaboration and communication among team members through instant messaging and integrated project management features.",
     img: "/projects/TeamSync.webp",
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/convex.webp"],
@@ -148,8 +148,8 @@ export const projects = [
   {
     id: 5,
     title: "KapeChat",
-    subheader: "Tinder But For Job Seekers",
-    des: "A web application that connects job seekers with potential employers through a swipe-based interface, allowing users to match and chat with companies that align with their career goals.",
+    subheader: "Coffee-Chat Networking Platform",
+    des: "A warm, student-focused platform where users can explore mentor profiles, mutually connect, chat, and schedule coffee-chat meetups—all in one place. Designed for accessibility, community, and personal growth.",
     img: "/projects/KapeChat.webp",
     iconLists: ["/tech/js.svg", "/tech/re.svg", "/tech/tail.svg", "/tech/firebase.svg"],
     githubLink: "https://github.com/Jollibuilders/FIP_Project",
@@ -158,7 +158,7 @@ export const projects = [
   {
     id: 6,
     title: "ICSearch",
-    subheader: "Information Retrieval Search Engine",
+    subheader: "Mini Search Engine",
     des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
     img: "/projects/ICSearch.webp",
     iconLists: ["/tech/python.svg"],
