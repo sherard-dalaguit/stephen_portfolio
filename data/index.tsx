@@ -112,7 +112,7 @@ export const projects = [
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
     deployedLink: "https://www.tagalogai.com",
-    // delayed: "April 2026"
+    delayed: "April 2026"
   },
   {
     id: 2,
@@ -123,7 +123,7 @@ export const projects = [
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
     deployedLink: "https://www.rizzlytics.com",
-    // delayed: "January 2026"
+    delayed: "February 2026"
   },
   {
     id: 3,
