@@ -112,7 +112,7 @@ export const projects = [
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
     deployedLink: "https://www.tagalogai.com",
-    delayed: "April 2026"
+    // delayed: "April 2026"
   },
   {
     id: 2,
@@ -123,7 +123,7 @@ export const projects = [
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/DevExchange",
     deployedLink: "https://www.rizzlytics.com",
-    delayed: "January 2026"
+    // delayed: "January 2026"
   },
   {
     id: 3,
@@ -169,7 +169,43 @@ export const projects = [
 
 export const timeline = [
   {
-    title: "July 2025 – Present",
+    title: "Jan 2026 – Present",
+    content: (
+      <div>
+        <Link
+          href="https://www.panasonic.aero"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Nomadlyst"
+          className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
+        >
+          <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+            Panasonic Avionics Corporation
+          </h1>
+        </Link>
+        <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
+          Software Engineer
+        </h2>
+        <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+          <li>Software engineering work completed through a University of California, Irvine industry-sponsored capstone partnership</li>
+          {/*<li>Designed and implemented a deterministic onboard ad-selection engine evaluating priority, pacing, frequency,*/}
+          {/*  and targeting rules per flight, achieving 100% guaranteed campaign fulfillment in simulated flight scenarios.*/}
+          {/*</li>*/}
+          {/*<li>Architected a flight-scoped decision pipeline separating ground-side campaign resolution from air-side execution,*/}
+          {/*  reducing onboard state by {">"}80% and enabling fully offline operation during flight.*/}
+          {/*</li>*/}
+          {/*<li>Built and validated explainable decision logic capable of replaying and auditing 100% of ad-selection outcomes,*/}
+          {/*  ensuring correctness and contract compliance across thousands of simulated delivery events per flight.*/}
+          {/*</li>*/}
+          {/*<li>Implemented fallback and inventory-safety mechanisms that maintained {"<"}10ms decision latency per ad*/}
+          {/*  opportunity while ensuring zero empty inventory states under constrained onboard resources.*/}
+          {/*</li>*/}
+        </ul>
+      </div>
+    ),
+  },
+  {
+    title: "May 2025 – Aug 2025",
     content: (
       <div>
         <Link
@@ -210,41 +246,4 @@ export const timeline = [
       </div>
     ),
   },
-  // {
-  //   title: "May 2025 - June 2025",
-  //   content: (
-  //     <div>
-  //       <Link
-  //         href="https://www.aurumisai.com"
-  //         target="_blank"
-  //         rel="noopener noreferrer"
-  //         aria-label="Remote Radar"
-  //         className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
-  //       >
-  //         <h1 className="font-bold lavender-text hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
-  //           Aurumis AI
-  //         </h1>
-  //       </Link>
-  //       <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-  //         Freelance Software Engineer
-  //       </h2>
-  //       <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-  //         <li>Developed a responsive portfolio site for a B2B AI Agency using Next.js, TypeScript, TailwindCSS, and Framer Motion,
-  //           ensuring fast load times and polished UI animations.
-  //         </li>
-  //         <li>Enhanced the site’s visibility through SEO optimizations, achieving a 98/100 Lighthouse score
-  //           and increasing organic search impressions by 25% in initial indexing.
-  //         </li>
-  //       </ul>
-  //       <Image
-  //         src="/projects/AurumisAI.png"
-  //         alt="Aurumis AI"
-  //         width={700}
-  //         height={500}
-  //         className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
-  //       />
-  //     </div>
-  //   ),
-  // },
-
 ];
