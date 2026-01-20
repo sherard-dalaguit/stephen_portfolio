@@ -23,7 +23,7 @@ const AboutMe = () => {
 						/>
 					</div>
 
-					<div className="flex flex-col items-center sm:items-start md:pl-8 mt-2">
+					<div className="flex flex-col items-center sm:items-start md:pl-8 mt-2 gap-1">
 						<h1 className="text-2xl lg:text-3xl font-bold mt-4">
 							Sherard Dalaguit
 						</h1>
@@ -31,7 +31,7 @@ const AboutMe = () => {
 							Full-Stack Software Engineer
 						</h2>
 
-						<div className="flex flex-wrap justify-center sm:justify-start mt-2 gap-2">
+						<div className="flex flex-wrap justify-center sm:justify-start my-2 gap-2">
 							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#d1b3ff]/20 text-sm lg:text-md">
 								Los Angeles, California
 							</span>
@@ -42,11 +42,11 @@ const AboutMe = () => {
 						</div>
 
 						<div className="max-sm:text-center text-sm lg:text-[1rem] mt-2">
-							B.S. Software Engineering & B.S. Computer Science
+							Bachelor of Science in Software Engineering
 							<br />at the{" "}
 							<Tooltip
 								containerClassName="text-zinc-100"
-								content="University of California, Irvine is nationally ranked #8 in Software Engineering and #25 in Computer Science by U.S. News & World Report."
+								content="University of California, Irvine is nationally ranked #8 in Software Engineering by U.S. News & World Report."
 							>
 								<span className="font-bold lavender-text hover:text-[#a17eff] underline underline-offset-4 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">University of California, Irvine</span>
 							</Tooltip>
