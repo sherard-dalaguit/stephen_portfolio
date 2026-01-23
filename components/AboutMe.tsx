@@ -42,11 +42,11 @@ const AboutMe = () => {
 						</div>
 
 						<div className="max-sm:text-center text-sm lg:text-[1rem] mt-2">
-							Bachelor of Science in Software Engineering
+							B.S. Software Engineering & B.S. Computer Science
 							<br />at the{" "}
 							<Tooltip
 								containerClassName="text-zinc-100"
-								content="University of California, Irvine is nationally ranked #8 in Software Engineering by U.S. News & World Report."
+								content="University of California, Irvine is nationally ranked #8 in Software Engineering and #25 in Computer Science by U.S. News & World Report."
 							>
 								<span className="font-bold lavender-text hover:text-[#a17eff] underline underline-offset-4 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">University of California, Irvine</span>
 							</Tooltip>
