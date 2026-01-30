@@ -39,7 +39,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
     : data;
 
   return (
-    <div ref={containerRef} className="flex flex-col items-center w-full font-sans md:px-10">
+    <div ref={containerRef} className="flex flex-col items-center w-full md:px-10">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
           My <span className="text-[#d1b3ff]">Experience</span>
