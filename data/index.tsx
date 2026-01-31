@@ -117,13 +117,12 @@ export const projects = [
   {
     id: 2,
     title: "Rizzlytics",
-    subheader: "AI Tinder Analyzer",
-    des: "An AI-powered Tinder analyzer built with React and Next.js that leverages the OpenAI API to give you actionable insights on your profile photos and message threads.",
-    img: "/projects/in_progress.webp",
+    subheader: "AI Dating App Profile Analyzer",
+    des: "An AI-powered dating profile analysis system that evaluates photos and message threads using vision-based feedback pipelines and structured AI outputs.",
+    img: "/projects/Rizzlytics.webp",
     iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
-    githubLink: "https://github.com/sherard-dalaguit/DevExchange",
+    githubLink: "https://github.com/sherard-dalaguit/rizzlytics",
     deployedLink: "https://www.rizzlytics.com",
-    delayed: "February 2026"
   },
   {
     id: 3,
@@ -145,26 +144,6 @@ export const projects = [
     githubLink: "https://github.com/sherard-dalaguit/TeamSync",
     deployedLink: "https://team-sync-brown.vercel.app/",
   },
-  {
-    id: 5,
-    title: "KapeChat",
-    subheader: "Coffee-Chat Networking Platform",
-    des: "A warm, student-focused platform where users can explore mentor profiles, mutually connect, chat, and schedule coffee-chat meetups—all in one place. Designed for accessibility, community, and personal growth.",
-    img: "/projects/KapeChat.webp",
-    iconLists: ["/tech/js.svg", "/tech/re.svg", "/tech/tail.svg", "/tech/firebase.svg"],
-    githubLink: "https://github.com/Jollibuilders/FIP_Project",
-    deployedLink: "",
-  },
-  {
-    id: 6,
-    title: "ICSearch",
-    subheader: "Mini Search Engine",
-    des: "Python Search Engine that efficiently organizes and retrieves over 55,000 documents while presenting clear, ranked results through an intuitive graphical interface.",
-    img: "/projects/ICSearch.webp",
-    iconLists: ["/tech/python.svg"],
-    githubLink: "https://github.com/sherard-dalaguit/ICSearch",
-    deployedLink: "",
-  },
 ];
 
 export const timeline = [
@@ -180,32 +159,26 @@ export const timeline = [
           className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
         >
           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
-            Panasonic Avionics Corporation
+            Panasonic Avionics
           </h1>
         </Link>
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
           Software Engineer
         </h2>
         <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-          <li>Software engineering work completed through a University of California, Irvine industry-sponsored capstone partnership</li>
-          {/*<li>Designed and implemented a deterministic onboard ad-selection engine evaluating priority, pacing, frequency,*/}
-          {/*  and targeting rules per flight, achieving 100% guaranteed campaign fulfillment in simulated flight scenarios.*/}
-          {/*</li>*/}
-          {/*<li>Architected a flight-scoped decision pipeline separating ground-side campaign resolution from air-side execution,*/}
-          {/*  reducing onboard state by {">"}80% and enabling fully offline operation during flight.*/}
-          {/*</li>*/}
-          {/*<li>Built and validated explainable decision logic capable of replaying and auditing 100% of ad-selection outcomes,*/}
-          {/*  ensuring correctness and contract compliance across thousands of simulated delivery events per flight.*/}
-          {/*</li>*/}
-          {/*<li>Implemented fallback and inventory-safety mechanisms that maintained {"<"}10ms decision latency per ad*/}
-          {/*  opportunity while ensuring zero empty inventory states under constrained onboard resources.*/}
-          {/*</li>*/}
+          <li>
+            Software engineering work completed through a University of California, Irvine industry-sponsored capstone partnership.
+          </li>
+          <li>
+            Designing a dependency-aware backend service that validates aircraft software deployments across hardware variants,
+            applications, configurations, and product features before fleet-wide rollout.
+          </li>
         </ul>
       </div>
     ),
   },
   {
-    title: "May 2025 – Aug 2025",
+    title: "May 2025 – Sep 2025",
     content: (
       <div>
         <Link
@@ -232,13 +205,10 @@ export const timeline = [
           <li>Designed email delivery pipelines using SendGrid and serverless Next.js API routes, sending personalized daily and
             weekly job digests to 300+ early subscribers with {">"}98% delivery success.
           </li>
-          <li>Led growth-driven iteration cycles, refining data pipelines and UX based on user engagement analytics
-            to improve job relevance and retention.
-          </li>
         </ul>
         <Image
           src="/projects/nomadlyst.webp"
-          alt="remote radar"
+          alt="nomadlyst"
           width={700}
           height={500}
           className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
