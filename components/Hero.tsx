@@ -46,12 +46,12 @@ const Hero = () => {
 			<div className="h-[70vh] flex justify-center relative z-10">
 				<div className="max-w-lg md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center justify-center">
 					<TextGenerateEffect
-						className="font-bold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
+						className="font-semibold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
 						duration={1.6}
 						words="Sherard Dalaguit"
 					/>
 
-					<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-mmd md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">
+					<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-md md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">
 						<TextGenerateEffect
 							className="text-center ml-2.5 md:tracking-wider mb-4"
 							// words="Remote Mid-Level Software Engineer | Trusted By 20+ Clients Across Startups, Nonprofits, & SaaS Platforms"
