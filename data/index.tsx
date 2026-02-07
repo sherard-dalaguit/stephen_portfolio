@@ -169,10 +169,22 @@ export const timeline = [
           <li>
             Software engineering work completed through a University of California, Irvine industry-sponsored capstone partnership.
           </li>
-          <li>
-            Designing a dependency-aware backend service that validates aircraft software deployments across hardware variants,
-            applications, configurations, and product features before fleet-wide rollout.
-          </li>
+          {/*<li>*/}
+          {/*  Designed a dependency-aware backend service that validates aircraft software deployments across hardware*/}
+          {/*  variants, applications, configurations, and product features before fleet-wide rollout.*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  Architected an extensible dependency schema supporting semantic version ranges, hard vs. soft requirements,*/}
+          {/*  and explicit incompatibilities across 250,000+ modeled deployable artifacts.*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  Implemented a deterministic dependency resolution engine capable of evaluating proposed deployments in {"<"}1s,*/}
+          {/*  returning human-readable, actionable incompatibility explanations across 1,500+ aircraft targets.*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  Prevented incompatible releases by shifting validation to pre-deployment, eliminating 90%+ of modeled*/}
+          {/*  post-deploy failure scenarios in fleet-scale simulations.*/}
+          {/*</li>*/}
         </ul>
       </div>
     ),
@@ -182,33 +194,36 @@ export const timeline = [
     content: (
       <div>
         <Link
-          href="https://www.nomadlyst.com"
+          href="https://www.openlyst.io"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Nomadlyst"
+          aria-label="OpenLyst"
           className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
         >
           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
-            Nomadlyst
+            OpenLyst
           </h1>
         </Link>
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-          Founding Software Engineer
+          Founding Engineer
         </h2>
         <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
-          <li>Launched a full-stack remote job aggregation platform that scrapes 2,000+ new listings weekly across
-            major remote-work sites, driving rapid early traction and product-market validation.
+          <li>
+            Built and launched a production job aggregation platform by ingesting and normalizing data from
+            multiple remote job sources, processing 2,000+ new listings weekly.
           </li>
-          <li>Architected end-to-end systems for scraping, data cleaning, and storage in MongoDB, enabling near real-time updates and a
-            seamless discovery experience for users.
+          <li>
+            Designed end-to-end ingestion pipelines using custom scrapers and MongoDB persistence, reducing data
+            duplication and enabling consistent, near real-time updates.
           </li>
-          <li>Designed email delivery pipelines using SendGrid and serverless Next.js API routes, sending personalized daily and
-            weekly job digests to 300+ early subscribers with {">"}98% delivery success.
+          <li>
+            Implemented serverless email delivery workflows with Next.js API routes and SendGrid, delivering
+            personalized job digests to 300+ subscribers with {">"}98% delivery success.
           </li>
         </ul>
         <Image
-          src="/projects/nomadlyst.webp"
-          alt="nomadlyst"
+          src="/projects/openlyst.webp"
+          alt="OpenLyst Home Page"
           width={700}
           height={500}
           className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
