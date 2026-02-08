@@ -169,10 +169,10 @@ export const timeline = [
           <li>
             Software engineering work completed through a University of California, Irvine industry-sponsored capstone partnership.
           </li>
-          {/*<li>*/}
-          {/*  Designed a dependency-aware backend service that validates aircraft software deployments across hardware*/}
-          {/*  variants, applications, configurations, and product features before fleet-wide rollout.*/}
-          {/*</li>*/}
+          <li>
+            Designing a dependency-aware backend service that validates aircraft software deployments across hardware
+            variants, applications, configurations, and product features before fleet-wide rollout.
+          </li>
           {/*<li>*/}
           {/*  Architected an extensible dependency schema supporting semantic version ranges, hard vs. soft requirements,*/}
           {/*  and explicit incompatibilities across 250,000+ modeled deployable artifacts.*/}
