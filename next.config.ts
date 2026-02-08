@@ -4,6 +4,11 @@ const nextConfig: NextConfig = {
 	output: 'export',
 	typescript: {
 		ignoreBuildErrors: true,
+	},
+	images: {
+		domains: [
+			"api.microlink.io"
+		]
 	}
 };
 
