@@ -21,8 +21,7 @@ import {
   IconBriefcase,
 } from "@tabler/icons-react";
 import React from "react";
-import Image from "next/image";
-import Link from "next/link";
+import {LinkPreview} from "@/components/ui/link-preview";
 
 export const skills = [
   { name: 'TypeScript', des: 'JavaScript but better', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
@@ -151,17 +150,11 @@ export const timeline = [
     title: "Jan 2026 – Present",
     content: (
       <div>
-        <Link
-          href="https://www.panasonic.aero"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Nomadlyst"
-          className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
-        >
+        <LinkPreview url="https://www.panasonic.aero" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
             Panasonic Avionics
           </h1>
-        </Link>
+        </LinkPreview>
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
           Software Engineer
         </h2>
@@ -193,17 +186,11 @@ export const timeline = [
     title: "May 2025 – Sep 2025",
     content: (
       <div>
-        <Link
-          href="https://www.openlyst.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="OpenLyst"
-          className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
-        >
+        <LinkPreview url="https://www.openlyst.io" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
             OpenLyst
           </h1>
-        </Link>
+        </LinkPreview>
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
           Founding Engineer
         </h2>
@@ -221,13 +208,6 @@ export const timeline = [
             personalized job digests to 300+ subscribers with {">"}98% delivery success.
           </li>
         </ul>
-        <Image
-          src="/projects/openlyst.webp"
-          alt="OpenLyst Home Page"
-          width={700}
-          height={500}
-          className="rounded-lg mb-4 border-2 border-[#d1b3ff]"
-        />
       </div>
     ),
   },
