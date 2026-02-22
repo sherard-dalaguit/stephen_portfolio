@@ -105,13 +105,12 @@ export const projects = [
   {
     id: 1,
     title: "TagalogAI",
-    subheader: "AI Tagalog Coach",
+    subheader: "AI Tagalog Conversation Coach",
     des: "An AI-powered Tagalog learning coach that lets users hold real-time voice conversations with a natural-sounding AI tutor and receive instant, personalized feedback on their grammar, vocabulary, and fluency.",
-    img: "/projects/TagalogAI.webp",
-    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
-    githubLink: "https://github.com/sherard-dalaguit/DevExchange",
+    img: "/projects/TagalogAI2.webp",
+    iconLists: ["/tech/re.svg", "/tech/next.svg", "/tech/openai.svg", "/tech/vapi.svg", "/tech/mongodb.png"],
+    githubLink: "https://github.com/sherard-dalaguit/tagalogai",
     deployedLink: "https://www.tagalogai.com",
-    delayed: "April 2026"
   },
   {
     id: 2,
@@ -119,7 +118,7 @@ export const projects = [
     subheader: "AI Dating App Profile Analyzer",
     des: "An AI-powered dating profile analysis system that evaluates photos and message threads using vision-based feedback pipelines and structured AI outputs.",
     img: "/projects/Rizzlytics.webp",
-    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/mongodb.png"],
+    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/openai.svg", "/tech/mongodb.png"],
     githubLink: "https://github.com/sherard-dalaguit/rizzlytics",
     deployedLink: "https://www.rizzlytics.com",
   },
