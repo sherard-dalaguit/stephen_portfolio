@@ -6,7 +6,7 @@ import {Analytics} from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: "Sherard's Portfolio",
-  description: "Modern Portfolio",
+  description: "Portfolio of Sherard Dalaguit, a software engineer building full-stack and AI-powered products using TypeScript, React, Next.js, Node.js, and Python. Showcasing projects, systems design, and production-ready applications.",
   icons: {
     icon: "/selfie.jpg",
   }
