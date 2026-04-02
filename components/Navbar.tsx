@@ -1,10 +1,14 @@
 import {FloatingDock} from "@/components/ui/floating-dock";
-import {navBarLinks} from "@/data";
+import {minimalNavBarLinks, navBarLinks} from "@/data";
 
-const Navbar = () => {
+const Navbar = ({ minimal }: { minimal?: boolean }) => {
 	return (
     <div className="flex items-center justify-center h-[35rem] w-full">
-      <FloatingDock items={navBarLinks}/>
+      {minimal ? (
+        <FloatingDock items={minimalNavBarLinks} />
+      ) : (
+        <FloatingDock items={navBarLinks} />
+      )}
     </div>
   )
 }

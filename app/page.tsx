@@ -3,6 +3,7 @@ import Navbar from "@/components/Navbar";
 import Projects from "@/components/Projects";
 import Footer from "@/components/Footer";
 import AboutMe from "@/components/AboutMe";
+import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Testimonials from "@/components/Testimonials";
 
@@ -15,6 +16,7 @@ export default function Home() {
         </div>
         <Hero />
         <AboutMe />
+        <Skills />
         {/*<Experience limit={4} />*/}
         <Experience />
         {/*<Testimonials limit={12} />*/}

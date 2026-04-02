@@ -2,9 +2,9 @@ import {skills} from "@/data";
 
 const Skills = () => {
   return (
-    <section id="skills" className="max-w-screen-xl mx-auto py-16 xl:px-20">
-      <h1 className="text-center font-bold text-[36px] md:text-4xl lg:text-5xl mb-8">
-        Current <span className="text-[#d1b3ff]">Technologies</span>
+    <section id="skills" className="max-w-screen-xl mx-auto py-24 xl:px-20">
+      <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl mb-8">
+        My <span className="text-[#d1b3ff]">Skills</span>
       </h1>
       <div className="grid grid-cols-3 lg:grid-cols-4 gap-4 justify-center">
         {skills.map((skill, index) => (

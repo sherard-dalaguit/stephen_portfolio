@@ -1,4 +1,3 @@
-import Skills from "@/components/Skills";
 import Image from "next/image";
 import Link from "next/link";
 import {IconBrandGithub, IconBrandLinkedin, IconFileDescription, IconMail} from "@tabler/icons-react";
@@ -7,7 +6,7 @@ import {Tooltip} from "@/components/ui/tooltip-card";
 
 const AboutMe = () => {
 	return (
-		<div id="about" className="mx-auto w-full pt-20 sm:pb-40 px-8 md:px-20 ">
+		<div id="about" className="mx-auto w-full py-24 px-8 md:px-20 ">
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl mb-12">
 				About <span className="text-[#d1b3ff]">Me</span>
 			</h1>
@@ -19,7 +18,7 @@ const AboutMe = () => {
 							alt="selfie"
 							width={200}
 							height={200}
-							className="object-cover rounded-full border-2 border-[#d1b3ff] shadow-lg md:mt-8 mr-4"
+							className="rounded-4xl border-2 border-[#d1b3ff] shadow-lg md:mt-8 mr-4"
 						/>
 					</div>
 
@@ -54,7 +53,7 @@ const AboutMe = () => {
 
 						<div className="flex flex-row items-center space-x-2 mt-4">
 							<Link
-								href="https://www.linkedin.com/in/sherard-d"
+								href="https://www.linkedin.com/in/sherard-dalaguit"
 								target="_blank"
 								rel="noopener noreferrer"
 								aria-label="LinkedIn profile"
@@ -108,7 +107,6 @@ const AboutMe = () => {
 					{/*</li>*/}
 				</ul>
 			</div>
-			<Skills/>
 		</div>
 	)
 }

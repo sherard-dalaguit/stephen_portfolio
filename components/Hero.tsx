@@ -26,7 +26,7 @@ const Hero = () => {
 	}
 
 	return (
-		<div className="w-screen min-h-screen pt-36 dark:bg-black">
+		<div className="w-screen min-h-screen pb-24 pt-36 dark:bg-black">
 			<div className="relative z-10" style={{transform: "translateY(-120px)"}}>
 				<Spotlight/>
 			</div>
@@ -56,6 +56,7 @@ const Hero = () => {
 							className="text-center ml-2.5 md:tracking-wider mb-4"
 							// words="Remote Mid-Level Software Engineer | Trusted By 20+ Clients Across Startups, Nonprofits, & SaaS Platforms"
 							words="Remote Full-Stack Software Engineer | Building Production-Ready SaaS Platforms & AI-Driven Applications"
+							// words="Remote Software Engineer | Ex-Panasonic Avionics | Building Scalable SaaS Platforms & AI-Driven Applications"
 						/>
 					</div>
 

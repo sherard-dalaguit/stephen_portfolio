@@ -1,5 +1,4 @@
 import {
-  IconBrandFirebase,
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandMongodb,
@@ -13,29 +12,38 @@ import {
   IconMail,
   IconUser,
   IconBrandGit,
-  IconBrandAws,
   IconBrandTailwind,
-  IconBrandPrisma,
-  IconShieldLock,
   IconBrandOpenai,
   IconBriefcase,
+  IconBrandPython,
+  IconCoffee,
+  IconBrandCpp,
+  IconBrandJavascript,
+  IconSql,
+  IconHierarchy,
+  IconSchema,
+  IconTerminal2,
 } from "@tabler/icons-react";
 import React from "react";
 import {LinkPreview} from "@/components/ui/link-preview";
 
 export const skills = [
+  { name: 'Python', des: 'General Purpose', icon: <IconBrandPython className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Java', des: 'Enterprise Software', icon: <IconCoffee className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'C++', des: 'System Programming', icon: <IconBrandCpp className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'JavaScript', des: 'Web Scripting', icon: <IconBrandJavascript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'TypeScript', des: 'JavaScript but better', icon: <IconBrandTypescript className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'React', des: 'JavaScript Library', icon: <IconBrandReact className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Node.js', des: 'Runtime Environment', icon: <IconBrandNodejs className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'React', des: 'Frontend Library', icon: <IconBrandReact className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'Next.js', des: 'React Framework', icon: <IconBrandNextjs className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Tailwind', des: 'CSS Framework', icon: <IconBrandTailwind className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Node.js', des: 'Backend', icon: <IconBrandNodejs className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'SQL', des: 'Database Management', icon: <IconSql className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Neo4j', des: 'Graph Database', icon: <IconHierarchy className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'MongoDB', des: 'NoSQL Database', icon: <IconBrandMongodb className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Prisma', des: 'ORM Tool', icon: <IconBrandPrisma className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Firebase', des: 'BaaS Platform', icon: <IconBrandFirebase className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Auth.js', des: 'User Auth', icon: <IconShieldLock className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'AWS', des: 'Cloud Platform', icon: <IconBrandAws className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
-  { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Mongoose', des: 'ODM for MongoDB', icon: <IconSchema className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Tailwind', des: 'CSS Framework', icon: <IconBrandTailwind className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
   { name: 'OpenAI API', des: 'AI Integration', icon: <IconBrandOpenai className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Claude Code', des: 'CLI-based AI Agent', icon: <IconTerminal2 className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
+  { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
 
 export const minimalNavBarLinks = []
@@ -69,7 +77,7 @@ export const navBarLinks = [
   {
     title: 'LinkedIn',
     icon: <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
-    href: 'https://www.linkedin.com/in/sherard-d/',
+    href: 'https://www.linkedin.com/in/sherard-dalaguit/',
   },
   {
     title: 'GitHub',
@@ -159,24 +167,21 @@ export const timeline = [
         </h2>
         <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>
-            Software engineering work completed through a University of California, Irvine industry-sponsored capstone partnership.
+            Designed a Python backend validation service preventing incompatible aircraft software deployments by
+            modeling hardware, software, and configuration constraints prior to fleet rollout.
           </li>
           <li>
-            Designing a dependency-aware backend service that validates aircraft software deployments across hardware
-            variants, applications, configurations, and product features before fleet-wide rollout.
+            Architected a Neo4j dependency graph schema supporting semantic version ranges, hard vs. soft requirements,
+            and incompatibilities across 250,000+ deployable artifacts.
           </li>
-          {/*<li>*/}
-          {/*  Architected an extensible dependency schema supporting semantic version ranges, hard vs. soft requirements,*/}
-          {/*  and explicit incompatibilities across 250,000+ modeled deployable artifacts.*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  Implemented a deterministic dependency resolution engine capable of evaluating proposed deployments in {"<"}1s,*/}
-          {/*  returning human-readable, actionable incompatibility explanations across 1,500+ aircraft targets.*/}
-          {/*</li>*/}
-          {/*<li>*/}
-          {/*  Prevented incompatible releases by shifting validation to pre-deployment, eliminating 90%+ of modeled*/}
-          {/*  post-deploy failure scenarios in fleet-scale simulations.*/}
-          {/*</li>*/}
+          <li>
+            Implemented a deterministic resolution engine that evaluates proposed deployments in {"<"}1s by traversing
+            dependency graphs across 1,500+ aircraft targets.
+          </li>
+          <li>
+            Shifted release validation to pre-deployment constraint evaluation, generating actionable incompatibility
+            explanations and eliminating 90%+ of modeled fleet-scale failure scenarios.
+          </li>
         </ul>
       </div>
     ),
