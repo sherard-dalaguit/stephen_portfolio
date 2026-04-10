@@ -163,7 +163,7 @@ export const timeline = [
           </h1>
         </LinkPreview>
         <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-          Software Engineer
+          Software Engineering Consultant
         </h2>
         <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>
