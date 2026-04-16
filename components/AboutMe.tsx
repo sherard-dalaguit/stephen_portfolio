@@ -18,7 +18,7 @@ const AboutMe = () => {
 							alt="selfie"
 							width={200}
 							height={200}
-							className="rounded-4xl border-2 border-[#d1b3ff] shadow-lg md:mt-8 mr-4"
+							className="rounded-[60px] border-2 border-[#d1b3ff] shadow-lg md:mt-8 mr-4"
 						/>
 					</div>
 
@@ -51,36 +51,38 @@ const AboutMe = () => {
 							</Tooltip>
 						</div>
 
-						<div className="flex flex-row items-center space-x-2 mt-4">
+						<div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-4">
 							<Link
 								href="https://www.linkedin.com/in/sherard-dalaguit"
 								target="_blank"
 								rel="noopener noreferrer"
-								aria-label="LinkedIn profile"
+								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
 							>
-								<IconBrandLinkedin className="h-9 w-9 text-neutral-500 dark:text-neutral-300" />
+								<IconBrandLinkedin className="h-5 w-5" />
+								LinkedIn
 							</Link>
 							<Link
 								href="https://www.github.com/sherard-dalaguit"
 								target="_blank"
 								rel="noopener noreferrer"
-								aria-label="GitHub profile"
+								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
 							>
-								<IconBrandGithub className="h-9 w-9 text-neutral-500 dark:text-neutral-300" />
+								<IconBrandGithub className="h-5 w-5" />
+								GitHub
 							</Link>
 							<Link
-								href="mailto:sherarddalaguit.dev@gmail.com"
-								aria-label="Email me"
+								href="mailto:me@sherarddalaguit.com"
+								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
 							>
-								<IconMail className="h-9 w-9 text-neutral-500 dark:text-neutral-300" />
+								<IconMail className="h-5 w-5" />
+								Email
 							</Link>
 							<Link
-								href="https://drive.google.com/file/d/1huYFlkzMxKq45cqxBwQtL-5u_WI_CFVT/view"
-								target="_blank"
-								rel="noopener noreferrer"
-								aria-label="Resume"
+								href="/resume"
+								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
 							>
-								<IconFileDescription className="h-9 w-9 text-neutral-500 dark:text-neutral-300" />
+								<IconFileDescription className="h-5 w-5" />
+								Resume
 							</Link>
 						</div>
 					</div>
