@@ -46,7 +46,28 @@ export const skills = [
   { name: 'Git', des: 'Version Control', icon: <IconBrandGit className="h-12 w-12 text-neutral-500 dark:text-neutral-300" /> },
 ];
 
-export const minimalNavBarLinks = []
+export const minimalNavBarLinks = [
+  {
+    title: 'Home',
+    icon: <IconHome className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+    href: '/',
+  },
+  {
+    title: 'LinkedIn',
+    icon: <IconBrandLinkedin className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+    href: 'https://www.linkedin.com/in/sherard-dalaguit/',
+  },
+  {
+    title: 'GitHub',
+    icon: <IconBrandGithub className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+    href: 'https://github.com/sherard-dalaguit',
+  },
+  {
+    title: 'Resume',
+    icon: <IconFileDescription className="h-full w-full text-neutral-500 dark:text-neutral-300" />,
+    href: 'https://drive.google.com/file/d/16HlYgqi1iCdye8q8YDiiwuStUHhBtj89/view'
+  }
+]
 
 export const navBarLinks = [
 	{
@@ -212,6 +233,18 @@ export const timeline = [
             personalized job digests to 300+ subscribers with {">"}98% delivery success.
           </li>
         </ul>
+        {/*<Link*/}
+        {/*  href={`/experience/nomadlyst`}*/}
+        {/*  target="_blank"*/}
+        {/*  rel="noopener noreferrer"*/}
+        {/*  className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"*/}
+        {/*>*/}
+        {/*  <MagicButton*/}
+        {/*    title="Case Study"*/}
+        {/*    icon={<IconBriefcase />}*/}
+        {/*    position="right"*/}
+        {/*  />*/}
+        {/*</Link>*/}
       </div>
     ),
   },
