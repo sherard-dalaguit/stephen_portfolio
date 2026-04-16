@@ -27,7 +27,7 @@ const ResumePage = () => {
         </p>
       </div>
 
-      <Link href="/#about">
+      <Link href="/">
         <MagicButton
           title="Return Home"
           icon={<IconHome />}
