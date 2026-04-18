@@ -17,7 +17,7 @@ const ResumePage = () => {
         <p className="mt-6 text-center text-md sm:text-lg lg:text-xl">
           Here&apos;s a full look at my background, skills, and experience.{" "}
           <a
-            href="/Sherard_Dalaguit_Resume_2026.pdf"
+            href="/Sherard_Dalaguit_Resume.pdf"
             download
             className="text-[#d1b3ff] underline underline-offset-4 hover:opacity-80 transition-opacity"
           >
@@ -38,7 +38,7 @@ const ResumePage = () => {
       <div className="flex justify-center mt-20 px-4 z-10">
         <div style={{ width: "min(720px, 85vw)", aspectRatio: "8.5 / 11.5" }}>
           <iframe
-            src="/Sherard_Dalaguit_Resume_2026.pdf"
+            src="/Sherard_Dalaguit_Resume.pdf"
             className="w-full h-full rounded-xl border border-neutral-700 shadow-xl"
             title="Sherard Dalaguit Resume"
           />
