@@ -25,6 +25,7 @@ import {
   IconTerminal2,
 } from "@tabler/icons-react";
 import React from "react";
+import Image from "next/image";
 import {LinkPreview} from "@/components/ui/link-preview";
 
 export const skills = [
@@ -178,30 +179,50 @@ export const timeline = [
     title: "Jan 2026 – Present",
     content: (
       <div>
-        <LinkPreview url="https://www.panasonic.aero" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
-          <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
-            Panasonic Avionics
-          </h1>
-        </LinkPreview>
-        <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-          Software Engineering Consultant
+        <div className="flex items-center gap-4 mb-2">
+          <Image
+            src="/logo/panasonic_avionics_corporation.jpg"
+            alt="Panasonic Avionics logo"
+            width={64}
+            height={64}
+            className="rounded-xl object-cover shrink-0"
+          />
+          <LinkPreview url="https://www.panasonic.aero" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
+            <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+              Panasonic Avionics
+            </h1>
+          </LinkPreview>
+        </div>
+        <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
+          Software Engineer Consultant
         </h2>
-        <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+        <div className="flex flex-wrap gap-2 mb-6">
+          {["Python", "Go", "OpenAPI", "Neo4j", "YAML"].map((tag) => (
+            <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>
-            Designed a Python backend validation service preventing incompatible aircraft software deployments by
-            modeling hardware, software, and configuration constraints prior to fleet rollout.
+            Built a Python backend validation service to prevent incompatible aircraft software deployments by enforcing
+            hardware, software, and configuration constraints prior to fleet rollout.
+          </li>
+          <li>
+            Engineered a deterministic resolution system for large-scale, distributed deployment validation, via
+            dependency graph traversal across 1,500+ aircraft to deliver low-latency ({"<"}5s) constraint evaluation.
+          </li>
+          <li>
+            Designed OpenAPI integration contracts and Go-based validation tooling for YAML dependency manifests,
+            enabling pipeline-level verification before Neo4j ingestion.
           </li>
           <li>
             Architected a Neo4j dependency graph schema supporting semantic version ranges, hard vs. soft requirements,
-            and incompatibilities across 250,000+ deployable artifacts.
+            and incompatibilities across 50,000+ deployable artifacts.
           </li>
           <li>
-            Implemented a deterministic resolution engine that evaluates proposed deployments in {"<"}1s by traversing
-            dependency graphs across 1,500+ aircraft targets.
-          </li>
-          <li>
-            Shifted release validation to pre-deployment constraint evaluation, generating actionable incompatibility
-            explanations and eliminating 90%+ of modeled fleet-scale failure scenarios.
+            Reduced simulated fleet-scale deployment failures by 90%+ by partnering with a Principal Architect to shift
+            validation to pre-deployment constraint evaluation with actionable incompatibility explanations.
           </li>
         </ul>
       </div>
@@ -211,26 +232,46 @@ export const timeline = [
     title: "May 2025 – Sep 2025",
     content: (
       <div>
-        <LinkPreview url="https://www.openlyst.io" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
-          <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
-            OpenLyst
-          </h1>
-        </LinkPreview>
-        <h2 className="text-zinc-400 text-[20px] md:text-xl lg:text-2xl my-2 sm:my-6">
-          Founding Engineer
+        <div className="flex items-center gap-4 mb-2">
+          <Image
+            src="/logo/openlyst.jpg"
+            alt="OpenLyst logo"
+            width={64}
+            height={64}
+            className="rounded-xl object-cover shrink-0"
+          />
+          <LinkPreview url="https://www.openlyst.io" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
+            <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+              OpenLyst
+            </h1>
+          </LinkPreview>
+        </div>
+        <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
+          Founder & Engineer
         </h2>
-        <ul className="list-disc list-inside text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+        <div className="flex flex-wrap gap-2 mb-6">
+          {["TypeScript", "Next.js", "MongoDB", "GitHub Actions", "SendGrid"].map((tag) => (
+            <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">
+              {tag}
+            </span>
+          ))}
+        </div>
+        <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>
-            Built and launched a production job aggregation platform by ingesting and normalizing data from
-            multiple remote job sources, processing 2,000+ new listings weekly.
+            Launched and deployed a production remote job aggregation platform processing 2,000+ new listings weekly
+            via automated GitHub Actions pipelines that scrape, normalize, and remove stale data across multiple sources.
           </li>
           <li>
-            Designed end-to-end ingestion pipelines using custom scrapers and MongoDB persistence, reducing data
-            duplication and enabling consistent, near real-time updates.
+            Engineered resilient ingestion pipelines with deduplication and failure handling, reducing duplicate listings
+            by ~40% and ensuring consistent data quality.
           </li>
           <li>
-            Implemented serverless email delivery workflows with Next.js API routes and SendGrid, delivering
-            personalized job digests to 300+ subscribers with {">"}98% delivery success.
+            Designed a MongoDB-backed data model optimized for high-frequency writes and fast querying, enabling near
+            real-time job updates and personalized delivery.
+          </li>
+          <li>
+            Automated serverless email delivery workflows with Next.js API routes and Twilio SendGrid, distributing
+            personalized job digests to 100+ early users with {">"}98% delivery success.
           </li>
         </ul>
         {/*<Link*/}
