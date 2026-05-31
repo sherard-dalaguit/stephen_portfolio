@@ -6,8 +6,8 @@ import { IconAward } from "@tabler/icons-react";
 import {SparklesCore} from "@/components/ui/sparkles";
 import MagicButton from "@/components/ui/MagicButton";
 import Link from "next/link";
-import {cn} from "@/lib/utils";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const Hero = () => {
 
@@ -31,16 +31,14 @@ const Hero = () => {
 				<Spotlight/>
 			</div>
 
-			<div className="h-screen w-full dark:bg-black bg-white dark:bg-grid-white/[0.075] bg-grid-black/[0.2] flex items-center justify-center absolute top-0 left-0">
-				<div className={cn(
-						"absolute inset-0 z-0",
-						"[background-size:100px_100px]",
-						"[background-image:linear-gradient(to_right,#e4e4e7_1px,transparent_1px),linear-gradient(to_bottom,#e4e4e7_1px,transparent_1px)]",
-						"dark:[background-image:linear-gradient(to_right,#262626_1px,transparent_1px),linear-gradient(to_bottom,#262626_1px,transparent_1px)]",
-					)}
+			<div className="w-full absolute left-0 top-0 min-h-96 pointer-events-none">
+				<Image
+					src="/footer-grid.svg"
+					alt="grid"
+					width={1000}
+					height={1000}
+					className="w-full h-full rotate-180"
 				/>
-				{/* Radial gradient for the container to give a faded look */}
-				<div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)] dark:bg-black"></div>
 			</div>
 
 			<div className="h-[70vh] flex justify-center relative z-10">

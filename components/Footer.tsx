@@ -6,8 +6,8 @@ import {socialMedia} from "@/data";
 
 const Footer = () => {
 	return (
-		<footer className="w-full pt-20 pb-10 px-4 sm:px-20 relative" id="contact">
-			<div className="h-48 mb-0 overflow-hidden">
+		<footer className="w-full h-[80vh] px-4 sm:px-20 relative flex flex-col" id="contact">
+			<div className="h-48 overflow-hidden">
 				<SpotlightReverse/>
 			</div>
 
@@ -17,26 +17,26 @@ const Footer = () => {
 					alt="grid"
 					width={1000}
 					height={1000}
-					className="w-full h-full opacity-70"
+					className="w-full h-full"
 				/>
 			</div>
 
-			<div className="flex flex-col items-center max-w-screen-xl mx-auto w-full md:px-4">
-				<h1 className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+			<div className="flex-1 flex flex-col items-center justify-center max-w-screen-2xl mx-auto w-full md:px-4 space-y-8">
+				<h1 className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
 					Interested in <span className="text-[#d1b3ff]">networking</span> or <span
 					className="text-[#d1b3ff]">collaborating</span> on tech projects?
 				</h1>
-				<p className="text-white-200 md:mt-10 my-5 text-md lg:text-lg text-center">Feel free to reach out! I&apos;m eager to network and
+				<p className="text-white-200 text-md lg:text-lg xl:text-2xl text-center">Feel free to reach out! I&apos;m eager to network and
 					explore opportunities to grow together.</p>
 				<a href="mailto:sherarddalaguit.dev@gmail.com">
 					<MagicButton title="Let's get in touch" icon={<IconLocationFilled width={15}/>} position="right"/>
 				</a>
 			</div>
 
-			<div className="flex mt-16 md:flex-row flex-col max-w-screen-xl mx-auto justify-between items-center">
+			<div className="py-10 flex md:flex-row flex-col max-w-screen-xl mx-auto justify-between items-center w-full">
 				<p className="md:text-base text-sm md:font-normal font-light">Copyright © 2026 Sherard</p>
 
-				<div className="flex items-center justify-center md:gap-3 gap-6 mt-5">
+				<div className="flex items-center justify-center md:gap-3 gap-6 mt-5 md:mt-0">
 					{socialMedia.map((profile) => (
 						<a key={profile.id} href={profile.link} target="_blank" rel="noopener noreferrer">
 							<div className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300">
