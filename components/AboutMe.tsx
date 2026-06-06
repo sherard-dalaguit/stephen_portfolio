@@ -90,12 +90,12 @@ const AboutMe = () => {
 
 				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-6 hidden sm:block">
 					<li>
-						I&apos;m a <span className="primary-text-gradient font-bold">software engineer</span> who designs and ships
-						<span className="primary-text-gradient font-bold"> production-grade full-stack systems</span>,
+						I&apos;m a <span className="text-[#d1b3ff] font-bold">software engineer</span> who designs and ships
+						<span className="text-[#d1b3ff] font-bold"> production-grade full-stack systems</span>,
 						with a strong focus on architecture, data modeling, and reliability using TypeScript, Next.js, Node.js, and MongoDB.
 					</li>
 					<li>
-						I build <span className="primary-text-gradient font-bold">AI-powered and full-stack products</span> across
+						I build <span className="text-[#d1b3ff] font-bold">AI-powered and full-stack products</span> across
 						language learning, dating, and backend-heavy platforms—designed around real-world constraints like latency,
 						correctness, and failure handling.
 					</li>
