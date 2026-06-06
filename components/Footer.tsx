@@ -23,8 +23,8 @@ const Footer = () => {
 
 			<div className="flex-1 flex flex-col items-center justify-center max-w-screen-2xl mx-auto w-full md:px-4 space-y-8">
 				<h1 className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
-					Interested in <span className="text-[#d1b3ff]">networking</span> or <span
-					className="text-[#d1b3ff]">collaborating</span> on tech projects?
+					Interested in <span className="primary-text-gradient">networking</span> or <span
+					className="primary-text-gradient">collaborating</span> on tech projects?
 				</h1>
 				<p className="text-white-200 text-md lg:text-lg xl:text-2xl text-center">Feel free to reach out! I&apos;m eager to network and
 					explore opportunities to grow together.</p>

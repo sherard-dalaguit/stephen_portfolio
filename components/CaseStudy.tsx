@@ -53,7 +53,7 @@ const CaseStudy = ({ btnName, link, name, steps }: CaseStudyProps) => {
 			<DialogContent className="w-[90vw] h-[90vh] xl:w-[70vw] xl:h-[70vh] max-w-none max-h-none">
 
 				<DialogHeader>
-          <DialogTitle className="font-bold text-[#d1b3ff] text-[32px] md:text-4xl lg:text-5xl">
+          <DialogTitle className="font-bold primary-text-gradient text-[32px] md:text-4xl lg:text-5xl">
 						{steps[step].title}
 					</DialogTitle>
 
@@ -61,7 +61,7 @@ const CaseStudy = ({ btnName, link, name, steps }: CaseStudyProps) => {
 						{steps[step].description}
 					</DialogDescription>
 
-					<DialogDescription className="text-[#d1b3ff] hover:text-[#a17eff] text-md md:text-lg lg:text-xl mt-2">
+					<DialogDescription className="primary-text-gradient hover:opacity-80 text-md md:text-lg lg:text-xl mt-2">
 						<Link
 							href={`/experience/${link}`}
 							target="_blank"

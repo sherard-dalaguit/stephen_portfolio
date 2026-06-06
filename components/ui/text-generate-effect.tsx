@@ -5,11 +5,13 @@ import { motion, stagger, useAnimate } from "motion/react";
 export const TextGenerateEffect = ({
   words,
   className,
+  wordClassName,
   filter = true,
   duration = 1,
 }: {
   words: string;
   className?: string;
+  wordClassName?: string;
   filter?: boolean;
   duration?: number;
 }) => {
@@ -36,7 +38,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className="dark:text-white text-black opacity-0"
+              className={wordClassName ?? "dark:text-white text-black opacity-0"}
               style={{
                 filter: filter ? "blur(10px)" : "none",
               }}

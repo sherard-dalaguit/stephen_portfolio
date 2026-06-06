@@ -17,7 +17,7 @@ const Layout = ({
 				<div className="relative z-50" style={{transform: "translateY(-120px)"}}>
 					<Spotlight/>
 				</div>
-				<div className="w-full absolute left-0 top-0 min-h-96 pointer-events-none rotate-180">
+				<div className="w-full absolute left-0 top-0 z-20 min-h-96 pointer-events-none rotate-180">
 					<Image
 						src="/footer-grid.svg"
 						alt="grid"

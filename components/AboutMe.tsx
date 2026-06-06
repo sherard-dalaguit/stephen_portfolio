@@ -8,7 +8,7 @@ const AboutMe = () => {
 	return (
 		<div id="about" className="mx-auto w-full py-24 px-8 md:px-20 ">
 			<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl mb-12">
-				About <span className="text-[#d1b3ff]">Me</span>
+				About <span className="primary-text-gradient">Me</span>
 			</h1>
 			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 container">
 				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4 ">
@@ -90,22 +90,22 @@ const AboutMe = () => {
 
 				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-6 hidden sm:block">
 					<li>
-						I&apos;m a <span className="text-[#d1b3ff] font-bold">software engineer</span> who designs and ships
-						<span className="text-[#d1b3ff] font-bold"> production-grade full-stack systems</span>,
+						I&apos;m a <span className="primary-text-gradient font-bold">software engineer</span> who designs and ships
+						<span className="primary-text-gradient font-bold"> production-grade full-stack systems</span>,
 						with a strong focus on architecture, data modeling, and reliability using TypeScript, Next.js, Node.js, and MongoDB.
 					</li>
 					<li>
-						I build <span className="text-[#d1b3ff] font-bold">AI-powered and full-stack products</span> across
+						I build <span className="primary-text-gradient font-bold">AI-powered and full-stack products</span> across
 						language learning, dating, and backend-heavy platforms—designed around real-world constraints like latency,
 						correctness, and failure handling.
 					</li>
 
 					{/*<li>*/}
-					{/*	I&apos;m a <span className="text-[#d1b3ff] font-bold">Mid-Level Software Engineer</span> with <span className="text-[#d1b3ff] font-bold">3 years of experience</span>,*/}
+					{/*	I&apos;m a <span className="primary-text-gradient font-bold">Mid-Level Software Engineer</span> with <span className="primary-text-gradient font-bold">3 years of experience</span>,*/}
 					{/*	specializing in modern full-stack development with TypeScript, React, Next.js, Node.js, and MongoDB.*/}
 					{/*</li>*/}
 					{/*<li>*/}
-					{/*	I&apos;ve worked with <span className="text-[#d1b3ff] font-bold">20+ clients</span> across startups, nonprofits, and SaaS platforms, delivering high-quality software solutions that meet real-world needs.*/}
+					{/*	I&apos;ve worked with <span className="primary-text-gradient font-bold">20+ clients</span> across startups, nonprofits, and SaaS platforms, delivering high-quality software solutions that meet real-world needs.*/}
 					{/*</li>*/}
 				</ul>
 			</div>

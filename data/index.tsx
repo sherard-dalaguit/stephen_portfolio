@@ -162,21 +162,216 @@ export const projects = [
     githubLink: "https://github.com/sherard-dalaguit/SWEOverflow",
     deployedLink: "https://swe-overflow.vercel.app/",
   },
-  {
-    id: 4,
-    title: "TeamSync",
-    subheader: "Team Messaging Platform",
-    des: "Inspired by Slack, TeamSync facilitates seamless collaboration and communication among team members through instant messaging and integrated project management features.",
-    img: "/projects/TeamSync.webp",
-    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/tail.svg", "/tech/convex.webp"],
-    githubLink: "https://github.com/sherard-dalaguit/TeamSync",
-    deployedLink: "https://team-sync-brown.vercel.app/",
-  },
 ];
 
 export const timeline = [
+  // {
+  //   title: "Apr 2030 – Present",
+  //   content: (
+  //     <div>
+  //       <div className="flex items-center gap-4 mb-2">
+  //         <Image
+  //           src="/logo/twilio.jpg"
+  //           alt="Twilio logo"
+  //           width={64}
+  //           height={64}
+  //           className="rounded-xl object-cover shrink-0"
+  //         />
+  //         <LinkPreview url="https://www.twilio.com" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
+  //           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+  //             Twilio
+  //           </h1>
+  //         </LinkPreview>
+  //       </div>
+  //       <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
+  //         Software Engineer III
+  //       </h2>
+  //       <div className="flex flex-wrap gap-2 mb-6">
+  //         {["Java", "TypeScript", "PostgreSQL", "Distributed Systems", "Event-Driven"].map((tag) => (
+  //           <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">
+  //             {tag}
+  //           </span>
+  //         ))}
+  //       </div>
+  //       <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+  //         <li>
+  //           Led technical direction for core customer-facing communication systems supporting 10M+ monthly workflows,
+  //           reducing cross-service integration issues by 30% through clearer API contracts and ownership boundaries.
+  //         </li>
+  //         <li>
+  //           Modernized legacy backend services across multiple quarters, saving 400+ engineering hours annually by
+  //           reducing manual release coordination, improving observability, and simplifying service ownership.
+  //         </li>
+  //         <li>
+  //           Drove delivery across concurrent roadmap initiatives involving distributed APIs and event-driven workflows,
+  //           increasing on-time milestone completion from 70% to 90%+ across 3 product teams.
+  //         </li>
+  //         <li>
+  //           Designed reliability improvements for high-throughput messaging workflows, reducing recurring incident
+  //           patterns by 35% and saving 120+ on-call hours annually through better alerting and failure isolation.
+  //         </li>
+  //         <li>
+  //           Mentored 2–4 engineers through design reviews, PR feedback, and onboarding support, cutting ramp-up time
+  //           by 25% and improving code quality across backend service areas.
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   title: "Sep 2028 – Mar 2030",
+  //   content: (
+  //     <div>
+  //       <div className="flex items-center gap-4 mb-2">
+  //         <Image
+  //           src="/logo/twilio.jpg"
+  //           alt="Twilio logo"
+  //           width={64}
+  //           height={64}
+  //           className="rounded-xl object-cover shrink-0"
+  //         />
+  //         <LinkPreview url="https://www.twilio.com" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
+  //           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+  //             Twilio
+  //           </h1>
+  //         </LinkPreview>
+  //       </div>
+  //       <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
+  //         Software Engineer II
+  //       </h2>
+  //       <div className="flex flex-wrap gap-2 mb-6">
+  //         {["Java", "TypeScript", "PostgreSQL", "Async Processing", "Monitoring"].map((tag) => (
+  //           <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">
+  //             {tag}
+  //           </span>
+  //         ))}
+  //       </div>
+  //       <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+  //         <li>
+  //           Scaled distributed backend services supporting millions of daily communication events, reducing request
+  //           latency by 35% through asynchronous processing, caching, and database optimization.
+  //         </li>
+  //         <li>
+  //           Built fault-tolerant event processing pipelines handling 50M+ daily events, improving reliability to
+  //           99.9%+ and reducing customer-impacting processing failures by 40%.
+  //         </li>
+  //         <li>
+  //           Developed monitoring and debugging tools used by 80+ engineers, reducing incident investigation time by
+  //           40% through centralized traces, job status visibility, and service-level error reporting.
+  //         </li>
+  //         <li>
+  //           Improved service scalability during traffic spikes, cutting peak-hour queue backlog by 45% through
+  //           optimized database access patterns, background job execution, and queue processing.
+  //         </li>
+  //         <li>
+  //           Partnered with product, design, and senior engineers to deliver platform improvements that reduced support
+  //           escalations by 20% while balancing customer impact, reliability, and technical debt.
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
+  // {
+  //   title: "Jan 2027 – Aug 2028",
+  //   content: (
+  //     <div>
+  //       <div className="flex items-center gap-4 mb-2">
+  //         <Image
+  //           src="/logo/twilio.jpg"
+  //           alt="Twilio logo"
+  //           width={64}
+  //           height={64}
+  //           className="rounded-xl object-cover shrink-0"
+  //         />
+  //         <LinkPreview url="https://www.twilio.com" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
+  //           <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+  //             Twilio
+  //           </h1>
+  //         </LinkPreview>
+  //       </div>
+  //       <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
+  //         Software Engineer
+  //       </h2>
+  //       <div className="flex flex-wrap gap-2 mb-6">
+  //         {["Java", "TypeScript", "PostgreSQL", "REST APIs", "Agile"].map((tag) => (
+  //           <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">
+  //             {tag}
+  //           </span>
+  //         ))}
+  //       </div>
+  //       <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+  //         <li>
+  //           Developed backend APIs and internal platform features using Java, TypeScript, and PostgreSQL, reducing
+  //           request processing time by 25% across workflows used by 30+ internal teams.
+  //         </li>
+  //         <li>
+  //           Improved reliability for asynchronous workflows, decreasing failed job executions by 30% and saving 10+
+  //           engineering hours weekly through retry logic, validation, and failure recovery.
+  //         </li>
+  //         <li>
+  //           Built service health and debugging tooling for event-driven systems, helping engineers identify production
+  //           issues faster and reducing manual incident investigation by 6+ hours per week.
+  //         </li>
+  //         <li>
+  //           Collaborated with 5+ engineers in a remote agile team to ship production features across multiple releases,
+  //           contributing to API design, code reviews, sprint planning, and launch support.
+  //         </li>
+  //       </ul>
+  //     </div>
+  //   ),
+  // },
   {
-    title: "Jan 2026 – Present",
+    title: "Jun 2026 – Present",
+    content: (
+      <div>
+        <div className="flex items-center gap-4 mb-2">
+          <Image
+            src="/logo/twilio.jpg"
+            alt="Twilio logo"
+            width={64}
+            height={64}
+            className="rounded-xl object-cover shrink-0"
+          />
+          <LinkPreview url="https://www.twilio.com" className="font-bold underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">
+            <h1 className="font-bold text-[#d1b3ff] hover:text-[#a17eff] text-[32px] md:text-4xl lg:text-5xl">
+              Twilio
+            </h1>
+          </LinkPreview>
+        </div>
+        <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
+          Software Engineer Intern
+        </h2>
+        {/*<div className="flex flex-wrap gap-2 mb-6">*/}
+        {/*  {["Python", "REST APIs", "Async", "Distributed Systems", "Monitoring"].map((tag) => (*/}
+        {/*    <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">*/}
+        {/*      {tag}*/}
+        {/*    </span>*/}
+        {/*  ))}*/}
+        {/*</div>*/}
+        <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
+          <li>
+            Incoming Summer 2026
+          {/*  Developed backend services and internal APIs supporting high-volume communication workflows, improving*/}
+          {/*  request processing latency by 25% through asynchronous task optimization and query restructuring.*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  Built monitoring and debugging tooling for distributed event pipelines handling 1M+ daily events,*/}
+          {/*  reducing incident investigation time by 40% for engineering teams.*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  Implemented fault-tolerant retry and validation mechanisms across asynchronous services, decreasing*/}
+          {/*  failed job executions by 35% under high-throughput workloads.*/}
+          {/*</li>*/}
+          {/*<li>*/}
+          {/*  Collaborated with 5+ engineers in an agile remote environment to ship production-ready features,*/}
+          {/*  participating in code reviews, sprint planning, and system design discussions.*/}
+          </li>
+        </ul>
+      </div>
+    ),
+  },
+  {
+    title: "Jan 2026 – Jun 2026",
     content: (
       <div>
         <div className="flex items-center gap-4 mb-2">

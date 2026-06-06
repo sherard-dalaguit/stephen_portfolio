@@ -42,7 +42,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
     <div ref={containerRef} className="flex flex-col items-center w-full md:px-10">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
-          My <span className="text-[#d1b3ff]">Experience</span>
+          My <span className="primary-text-gradient">Experience</span>
         </h1>
         <p className="my-8 text-center text-md sm:text-lg lg:text-xl">
           I&apos;ve been working as a Full-Stack Software Engineer for the past few months. <br />
@@ -106,7 +106,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-purple-500 via-blue-500 to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-[#ff46c5] via-[#d1b3ff] to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

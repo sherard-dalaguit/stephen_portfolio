@@ -63,10 +63,10 @@ const Testimonials = ({ limit } : { limit?: number }) => {
 		<div id="testimonials" className="max-w-[80vw] 2xl:max-w-[70vw] flex flex-col rounded-md antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center mx-auto pt-20 pb-40">
 			<div className="mb-20 mx-auto flex flex-col items-center justify-center">
 				<h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
-					Client <span className="text-[#d1b3ff]">Testimonials</span>
+					Client <span className="primary-text-gradient">Testimonials</span>
 				</h1>
 				<h1 className="mx-auto mt-8 text-center text-lg lg:text-xl">
-					I&apos;ve worked with dozens of <span className="text-[#d1b3ff]">founders</span> and <span className="text-[#d1b3ff]">companies</span> over the past few years. <br />
+					I&apos;ve worked with dozens of <span className="primary-text-gradient">founders</span> and <span className="primary-text-gradient">companies</span> over the past few years. <br />
 					Here&apos;s what they have to say about me.
 				</h1>
 				{limit == null && (

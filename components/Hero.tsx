@@ -43,6 +43,14 @@ const Hero = () => {
 
 			<div className="h-[70vh] flex justify-center relative z-10">
 				<div className="max-w-lg md:max-w-3xl lg:max-w-[70vw] flex flex-col items-center justify-center">
+					{/*<motion.h1*/}
+					{/*	className="font-semibold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl primary-text-gradient"*/}
+					{/*	initial={{ opacity: 0, filter: "blur(10px)" }}*/}
+					{/*	animate={{ opacity: 1, filter: "blur(0px)" }}*/}
+					{/*	transition={{ duration: 1.6 }}*/}
+					{/*>*/}
+					{/*	Sherard Dalaguit*/}
+					{/*</motion.h1>*/}
 					<TextGenerateEffect
 						className="font-semibold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
 						duration={1.6}
@@ -65,10 +73,10 @@ const Hero = () => {
 							animate={{opacity: 1}}
 							transition={{duration: 1}}
 						>
-							<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-[2px] w-3/4 blur-sm"/>
-							<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-indigo-500 to-transparent h-px w-3/4"/>
-							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-[5px] w-1/4 blur-sm"/>
-							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-sky-500 to-transparent h-px w-1/4"/>
+							<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-[2px] w-3/4 blur-sm"/>
+							<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-px w-3/4"/>
+							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-[5px] w-1/4 blur-sm"/>
+							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-px w-1/4"/>
 						</motion.div>
 
 						<div

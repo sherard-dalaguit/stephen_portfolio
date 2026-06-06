@@ -4,6 +4,7 @@ import { motion } from "motion/react";
 
 type SpotlightProps = {
   gradientFirst?: string;
+  gradientFirstRight?: string;
   gradientSecond?: string;
   gradientThird?: string;
   translateY?: number;
@@ -15,9 +16,10 @@ type SpotlightProps = {
 };
 
 export const SpotlightReverse = ({
-  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, rgba(122,73,209,0.15) 0%, rgba(122,73,209,0.065) 50%, transparent 80%)",
-  gradientSecond = "radial-gradient(50% 50% at 50% 50%, rgba(255,255,255,0.08) 0%, rgba(255,255,255,0.025) 80%, transparent 100%)",
-  gradientThird = "radial-gradient(50% 50% at 50% 50%, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.025) 80%, transparent 100%)",
+  gradientFirst = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, rgba(255,100,210,0.20) 0%, rgba(255,100,210,0.05) 60%, transparent 100%)",
+  gradientFirstRight = "radial-gradient(68.54% 68.72% at 55.02% 31.46%, rgba(255,100,210,0.20) 0%, rgba(255,100,210,0.05) 60%, transparent 100%)",
+  gradientSecond = "radial-gradient(50% 50% at 50% 50%, rgba(120,50,220,0.18) 0%, rgba(120,50,220,0.05) 80%, transparent 100%)",
+  gradientThird = "radial-gradient(50% 50% at 50% 50%, rgba(120,50,220,0.22) 0%, rgba(120,50,220,0.06) 90%, transparent 100%)",
   translateY = 350,  // now positive for upward direction
   width = 560,
   height = 1380,
@@ -71,7 +73,7 @@ export const SpotlightReverse = ({
         <div
           style={{
             transform: `translateY(${translateY}px) rotate(-135deg)`,
-            background: gradientFirst,
+            background: gradientFirstRight,
             width: `${width}px`,
             height: `${height}px`,
           }}
