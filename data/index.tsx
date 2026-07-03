@@ -341,30 +341,26 @@ export const timeline = [
         <h2 className="text-[18px] md:text-lg lg:text-xl my-4 pl-3 border-l-2 border-[#d1b3ff] text-zinc-300">
           Software Engineer Intern
         </h2>
-        {/*<div className="flex flex-wrap gap-2 mb-6">*/}
-        {/*  {["Python", "REST APIs", "Async", "Distributed Systems", "Monitoring"].map((tag) => (*/}
-        {/*    <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">*/}
-        {/*      {tag}*/}
-        {/*    </span>*/}
-        {/*  ))}*/}
-        {/*</div>*/}
+        <div className="flex flex-wrap gap-2 mb-6">
+          {["TypeScript", "DynamoDB", "LLMs", "AWS"].map((tag) => (
+            <span key={tag} className="px-3 py-1 text-sm rounded-full bg-[#d1b3ff]/10 text-[#d1b3ff] border border-[#d1b3ff]/30">
+              {tag}
+            </span>
+          ))}
+        </div>
         <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>
-            Incoming Summer 2026
-          {/*  Developed backend services and internal APIs supporting high-volume communication workflows, improving*/}
-          {/*  request processing latency by 25% through asynchronous task optimization and query restructuring.*/}
+            Working on AI-powered infrastructure within Twilio's internal marketing platform, developing LLM-powered content generation workflows with TypeScript and DynamoDB for campaigns reaching <span className="font-bold lavender-text">millions of users</span>.
+          {/*  Engineered an LLM-powered content generation engine enabling marketers to produce AI-generated marketing assets for products used by <span className="font-bold lavender-text">300M+ global users</span>, cutting campaign creation from hours to minutes.*/}
           {/*</li>*/}
           {/*<li>*/}
-          {/*  Built monitoring and debugging tooling for distributed event pipelines handling 1M+ daily events,*/}
-          {/*  reducing incident investigation time by 40% for engineering teams.*/}
+          {/*  Architected a persistent state management layer using TypeScript and DynamoDB, supporting <span className="font-bold lavender-text">50K+ AI-generated marketing assets</span> through secure session persistence and resumable editing workflows.*/}
           {/*</li>*/}
           {/*<li>*/}
-          {/*  Implemented fault-tolerant retry and validation mechanisms across asynchronous services, decreasing*/}
-          {/*  failed job executions by 35% under high-throughput workloads.*/}
+          {/*  Developed reusable orchestration libraries and typed service contracts powering LLM workflows across <span className="font-bold lavender-text">3+ internal applications</span>, reducing duplicated engineering effort by <span className="font-bold lavender-text">60%</span> and accelerating feature delivery.*/}
           {/*</li>*/}
           {/*<li>*/}
-          {/*  Collaborated with 5+ engineers in an agile remote environment to ship production-ready features,*/}
-          {/*  participating in code reviews, sprint planning, and system design discussions.*/}
+          {/*  Built production deployment infrastructure with feature flags, automated testing, and enterprise authentication across <span className="font-bold lavender-text">15+ production components</span>, enabling zero-downtime incremental feature rollouts.*/}
           </li>
         </ul>
       </div>
@@ -405,7 +401,7 @@ export const timeline = [
           </li>
           <li>
             Engineered a deterministic resolution system for large-scale, distributed deployment validation, via
-            dependency graph traversal across 1,500+ aircraft to deliver low-latency ({"<"}5s) constraint evaluation.
+            dependency graph traversal across <span className="font-bold lavender-text">1,500+ aircraft</span> to deliver low-latency (<span className="font-bold lavender-text">{"<"}5s</span>) constraint evaluation.
           </li>
           <li>
             Designed OpenAPI integration contracts and Go-based validation tooling for YAML dependency manifests,
@@ -413,10 +409,10 @@ export const timeline = [
           </li>
           <li>
             Architected a Neo4j dependency graph schema supporting semantic version ranges, hard vs. soft requirements,
-            and incompatibilities across 50,000+ deployable artifacts.
+            and incompatibilities across <span className="font-bold lavender-text">50,000+ deployable artifacts</span>.
           </li>
           <li>
-            Reduced simulated fleet-scale deployment failures by 90%+ by partnering with a Principal Architect to shift
+            Reduced simulated fleet-scale deployment failures by <span className="font-bold lavender-text">90%+</span> by partnering with a Principal Architect to shift
             validation to pre-deployment constraint evaluation with actionable incompatibility explanations.
           </li>
         </ul>
@@ -453,12 +449,12 @@ export const timeline = [
         </div>
         <ul className="list-disc list-outside ml-5 text-md sm:text-lg lg:text-xl mb-8 space-y-4">
           <li>
-            Launched and deployed a production remote job aggregation platform processing 2,000+ new listings weekly
-            via automated GitHub Actions pipelines that scrape, normalize, and remove stale data across multiple sources.
+            Launched and deployed a production remote job aggregation platform processing <span className="font-bold lavender-text">2,000+ new listings weekly</span>
+            {" "}via automated GitHub Actions pipelines that scrape, normalize, and remove stale data across multiple sources.
           </li>
           <li>
             Engineered resilient ingestion pipelines with deduplication and failure handling, reducing duplicate listings
-            by ~40% and ensuring consistent data quality.
+            by <span className="font-bold lavender-text">~40%</span> and ensuring consistent data quality.
           </li>
           <li>
             Designed a MongoDB-backed data model optimized for high-frequency writes and fast querying, enabling near
@@ -466,7 +462,7 @@ export const timeline = [
           </li>
           <li>
             Automated serverless email delivery workflows with Next.js API routes and Twilio SendGrid, distributing
-            personalized job digests to 100+ early users with {">"}98% delivery success.
+            personalized job digests to <span className="font-bold lavender-text">100+ early users</span> with <span className="font-bold lavender-text">{">"}98% delivery success</span>.
           </li>
         </ul>
         {/*<Link*/}
