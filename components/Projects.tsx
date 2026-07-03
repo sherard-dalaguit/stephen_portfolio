@@ -31,23 +31,9 @@ const Projects = ({ limit } : { limit?: number }) => {
 			{/*)}*/}
 			<section className="relative overflow-visible [clip-path:inset(-9999px_-9999px_0_-9999px)] mx-auto w-full px-2 sm:px-8 lg:px-10">
 				<ProjectDetails>
-					{projectsToShow.map(({id, title, subheader, des, img, iconLists, githubLink, deployedLink, delayed}) => {
-						const isLast = id === projectsToShow[projectsToShow.length - 1].id;
-						return (
-							<ProjectItems
-								id={id}
-								key={id}
-								title={title}
-								subheader={subheader}
-								des={des}
-								img={img}
-								iconLists={iconLists}
-								githubLink={githubLink}
-								deployedLink={deployedLink}
-								delayed={delayed}
-							/>
-						)
-					})}
+					{projectsToShow.map((project) => (
+						<ProjectItems key={project.id} {...project} />
+					))}
 				</ProjectDetails>
 
 				{limit != null && (

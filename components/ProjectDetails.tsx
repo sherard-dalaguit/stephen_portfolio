@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import clsx from "clsx";
-import ProjectButton from "@/components/ui/ProjectButton";
 
 export const ProjectDetails = ({
 	children,
@@ -21,8 +20,6 @@ export const ProjectItems = ({
   des,
   img,
   iconLists,
-  githubLink,
-  deployedLink,
   delayed,
 }: {
   id: number;
@@ -37,10 +34,6 @@ export const ProjectItems = ({
 }) => {
   const position = id % 2 === 0 ? "right" : "left";
 
-  const handleClick = (url: string) => {
-    window.open(url, "_blank");
-  };
-
   return (
     <div className="relative mt-10 px-4 sm:px-6 lg:px-12 py-8 grid items-center gap-8 container lg:grid-cols-3 lg:gap-0">
       <div className={
@@ -50,7 +43,7 @@ export const ProjectItems = ({
 				)}
 			/>
 
-			<div>
+			<div className="flex h-full flex-col justify-center self-stretch">
 				<div className="flex space-x-2">
 					{iconLists && iconLists.map((icon, index) => (
 						<div key={index} className="w-fit rounded-2xl bg-black p-4 text-3xl">
@@ -70,31 +63,10 @@ export const ProjectItems = ({
 				<h2 className="mt-6 text-xl font-normal">{subheader}</h2>
 				<h3 className="prose prose-invert mt-4 max-w-xl">{des}</h3>
 
-				{delayed ? (
-					<>
-						<p className="mt-4 text-red-500 font-semibold">
-							{`Note: This project is still in development. Expected completion: ${delayed}`}
-						</p>
-					</>
-				) : (
-					<div className="mt-8 flex flex-row justify-evenly sm:justify-start sm:space-x-10">
-						{deployedLink && (
-							<ProjectButton
-								title="Live Site"
-								otherClasses="h-12 w-40"
-								gradientClasses="h-16 w-46"
-								buttonClasses="h-12 w-40 text-lg"
-								handleClick={() => handleClick(deployedLink)}
-							/>
-						)}
-						<ProjectButton
-							title="View Code"
-							otherClasses="h-12 w-40"
-							gradientClasses="h-16 w-46"
-							buttonClasses="h-12 w-40 text-lg"
-							handleClick={() => handleClick(githubLink)}
-						/>
-					</div>
+				{delayed && (
+					<p className="mt-4 text-red-500 font-semibold">
+						{`Note: This project is still in development. Expected completion: ${delayed}`}
+					</p>
 				)}
 			</div>
 
