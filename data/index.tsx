@@ -144,6 +144,16 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Runway",
+    subheader: "Cash Flow Projection Engine",
+    des: "A financial planning platform that syncs transactions and balances across multiple banks through Plaid, then runs a deterministic projection engine over recurring income, expenses, and savings goals to forecast daily balances and real-time spendable cash.",
+    img: "/projects/Runway.webp",
+    iconLists: ["/tech/ts.svg", "/tech/re.svg", "/tech/next.svg", "/tech/postgres.svg", "/tech/plaid.svg"],
+    githubLink: "",
+    deployedLink: "",
+  },
+  {
+    id: 3,
     title: "Rizzlytics",
     subheader: "AI Dating App Profile Analyzer",
     des: "An AI-powered dating profile analysis system that evaluates photos and message threads using vision-based feedback pipelines and structured AI outputs.",
@@ -153,7 +163,7 @@ export const projects = [
     deployedLink: "https://www.rizzlytics.com",
   },
   {
-    id: 3,
+    id: 4,
     title: "SWEOverflow",
     subheader: "StackOverflow Clone App",
     des: "A platform where developers can share insights, collaborate on projects, and engage in peer-to-peer learning to enhance their skills and foster innovation.",
