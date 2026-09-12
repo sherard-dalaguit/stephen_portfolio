@@ -24,7 +24,7 @@ const AboutMe = () => {
 
 					<div className="flex flex-col items-center sm:items-start md:pl-8 mt-2 gap-1">
 						<h1 className="text-2xl lg:text-3xl font-bold mt-4">
-							Sherard Dalaguit
+							Stephen Dalaguit
 						</h1>
 						<h2 className="text-md lg:text-lg text-zinc-400">
 							Full-Stack Software Engineer
@@ -40,20 +40,14 @@ const AboutMe = () => {
 							</span>
 						</div>
 
-						<div className="max-sm:text-center text-sm lg:text-[1rem] mt-2">
-							B.S. Software Engineering & B.S. Computer Science
-							<br />at the{" "}
-							<Tooltip
-								containerClassName="text-zinc-100"
-								content="University of California, Irvine is nationally ranked #8 in Software Engineering and #25 in Computer Science by U.S. News & World Report."
-							>
-								<span className="font-bold lavender-text hover:text-[#a17eff] underline underline-offset-4 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer">University of California, Irvine</span>
-							</Tooltip>
+						<div className="max-sm:text-center text-md lg:text-[1rem] mt-2">
+							B.A. Business Administration, Marketing
+							<br />{" "}at <span className="lavender-text font-semibold">California State University, Fullerton</span>
 						</div>
 
 						<div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-4">
 							<Link
-								href="https://www.linkedin.com/in/sherard-dalaguit"
+								href="https://www.linkedin.com/in/stephendalaguit/"
 								target="_blank"
 								rel="noopener noreferrer"
 								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
@@ -62,27 +56,11 @@ const AboutMe = () => {
 								LinkedIn
 							</Link>
 							<Link
-								href="https://www.github.com/sherard-dalaguit"
-								target="_blank"
-								rel="noopener noreferrer"
-								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
-							>
-								<IconBrandGithub className="h-5 w-5" />
-								GitHub
-							</Link>
-							<Link
-								href="mailto:me@sherarddalaguit.com"
+								href="mailto:sdalaguit1@csu.fullerton.edu"
 								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
 							>
 								<IconMail className="h-5 w-5" />
 								Email
-							</Link>
-							<Link
-								href="/resume"
-								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
-							>
-								<IconFileDescription className="h-5 w-5" />
-								Resume
 							</Link>
 						</div>
 					</div>

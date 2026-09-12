@@ -7,9 +7,9 @@ import {socialMedia} from "@/data";
 const Footer = () => {
 	return (
 		<footer className="w-full h-[80vh] px-4 sm:px-20 relative flex flex-col" id="contact">
-			<div className="h-48 overflow-hidden">
-				<SpotlightReverse/>
-			</div>
+			{/*<div className="h-48 overflow-hidden">*/}
+			{/*	<SpotlightReverse/>*/}
+			{/*</div>*/}
 
 			<div className="w-full absolute left-0 -bottom-72 min-h-96 pointer-events-none">
 				<Image
@@ -28,7 +28,7 @@ const Footer = () => {
 				</h1>
 				<p className="text-white-200 text-md lg:text-lg xl:text-2xl text-center">Feel free to reach out! I&apos;m eager to network and
 					explore opportunities to grow together.</p>
-				<a href="mailto:sherarddalaguit.dev@gmail.com">
+				<a href="mailto:sdalaguit1@csu.fullerton.edu">
 					<MagicButton title="Let's get in touch" icon={<IconLocationFilled width={15}/>} position="right"/>
 				</a>
 			</div>

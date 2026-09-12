@@ -27,9 +27,9 @@ const Hero = () => {
 
 	return (
 		<div className="w-screen min-h-screen pb-24 pt-36 dark:bg-black">
-			<div className="relative z-10" style={{transform: "translateY(-120px)"}}>
-				<Spotlight/>
-			</div>
+			{/*<div className="relative z-10" style={{transform: "translateY(-120px)"}}>*/}
+			{/*	<Spotlight/>*/}
+			{/*</div>*/}
 
 			<div className="w-full absolute left-0 top-0 min-h-96 pointer-events-none">
 				<Image
@@ -54,48 +54,46 @@ const Hero = () => {
 					<TextGenerateEffect
 						className="font-semibold text-center text-[44px] md:text-5xl lg:text-7xl xl:text-8xl 2xl:text-9xl"
 						duration={1.6}
-						words="Sherard Dalaguit"
+						words="Stephen Dalaguit"
 					/>
 
 					<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-md md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">
 						<TextGenerateEffect
 							className="text-center ml-2.5 md:tracking-wider mb-4"
-							// words="Remote Mid-Level Software Engineer | Trusted By 20+ Clients Across Startups, Nonprofits, & SaaS Platforms"
-							words="Remote Full-Stack Software Engineer | Building Production-Ready SaaS Platforms & AI-Driven Applications"
-							// words="Remote Software Engineer | Ex-Panasonic Avionics | Building Scalable SaaS Platforms & AI-Driven Applications"
+							words="Marketing Student at California State University, Fullerton"
 						/>
 					</div>
 
-					<div className="w-[30rem] sm:w-[40rem] h-40 mt-4 relative">
-						{/* Gradients */}
-						<motion.div
-							initial={{opacity: 0}}
-							animate={{opacity: 1}}
-							transition={{duration: 1}}
-						>
-							<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-[2px] w-3/4 blur-sm"/>
-							<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-px w-3/4"/>
-							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-[5px] w-1/4 blur-sm"/>
-							<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-px w-1/4"/>
-						</motion.div>
+					{/*<div className="w-[30rem] sm:w-[40rem] h-40 mt-4 relative">*/}
+						{/*/!* Gradients *!/*/}
+						{/*<motion.div*/}
+						{/*	initial={{opacity: 0}}*/}
+						{/*	animate={{opacity: 1}}*/}
+						{/*	transition={{duration: 1}}*/}
+						{/*>*/}
+						{/*	<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-[2px] w-3/4 blur-sm"/>*/}
+						{/*	<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-px w-3/4"/>*/}
+						{/*	<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-[5px] w-1/4 blur-sm"/>*/}
+						{/*	<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-px w-1/4"/>*/}
+						{/*</motion.div>*/}
 
-						<div
-							className="w-full h-full origin-top transform scale-65 sm:scale-80 lg:scale-100"
-							style={{
-								WebkitMaskImage: "radial-gradient(350px 200px at top, white 60%, transparent 80%)",
-								maskImage: "radial-gradient(350px 200px at top, white 60%, transparent 80%)",
-							}}
-						>
-							<SparklesCore
-								background={"transparent"}
-								minSize={0.4}
-								maxSize={1}
-								particleDensity={1200}
-								className="w-full h-full"
-								particleColor="#FFFFFF"
-							/>
-						</div>
-					</div>
+					{/*	<div*/}
+					{/*		className="w-full h-full origin-top transform scale-65 sm:scale-80 lg:scale-100"*/}
+					{/*		style={{*/}
+					{/*			WebkitMaskImage: "radial-gradient(350px 200px at top, white 60%, transparent 80%)",*/}
+					{/*			maskImage: "radial-gradient(350px 200px at top, white 60%, transparent 80%)",*/}
+					{/*		}}*/}
+					{/*	>*/}
+					{/*		<SparklesCore*/}
+					{/*			background={"transparent"}*/}
+					{/*			minSize={0.4}*/}
+					{/*			maxSize={1}*/}
+					{/*			particleDensity={1200}*/}
+					{/*			className="w-full h-full"*/}
+					{/*			particleColor="#FFFFFF"*/}
+					{/*		/>*/}
+					{/*	</div>*/}
+					{/*</div>*/}
 
 					{renderButton()}
 
