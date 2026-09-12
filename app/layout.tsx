@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Stephen's Portfolio",
   description: "Portfolio of Stephen Dalaguit, a marketing student focused on outreach, branding, and community engagement. Showcasing experience, certifications, and creative work.",
   icons: {
-    icon: "/selfie.jpg",
+    icon: "/stephen-avatar.jpg",
   }
 };
 
