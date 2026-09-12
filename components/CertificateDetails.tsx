@@ -3,7 +3,7 @@
 import Image from "next/image";
 import clsx from "clsx";
 
-export const ProjectDetails = ({
+export const CertificateDetails = ({
 	children,
 }: {
   children?: React.ReactNode;
@@ -13,24 +13,18 @@ export const ProjectDetails = ({
 	);
 };
 
-export const ProjectItems = ({
+export const CertificateItems = ({
 	id,
 	title,
   subheader,
   des,
   img,
-  iconLists,
-  delayed,
 }: {
   id: number;
   title: string;
   subheader: string;
   des: string;
   img: string;
-  iconLists: string[];
-  githubLink: string;
-  deployedLink: string;
-  delayed?: string;
 }) => {
   const position = id % 2 === 0 ? "right" : "left";
 
@@ -38,36 +32,15 @@ export const ProjectItems = ({
     <div className="relative mt-10 px-4 sm:px-6 lg:px-12 py-8 grid items-center gap-8 container lg:grid-cols-3 lg:gap-0">
       <div className={
 				clsx(
-					"hidden lg:block absolute aspect-square w-full max-w-xl rounded-full bg-[#C1C2D3]/30 blur-3xl filter",
+					"hidden lg:block absolute aspect-square w-full max-w-xl rounded-full bg-[#d4d4d8]/25 blur-3xl filter",
 					position === "right" ? "lg:right-0" : "lg:left-0"
 				)}
 			/>
 
 			<div className="flex h-full flex-col justify-center self-stretch">
-				<div className="flex space-x-2">
-					{iconLists && iconLists.map((icon, index) => (
-						<div key={index} className="w-fit rounded-2xl bg-black p-4 text-3xl">
-							<Image
-								loading="lazy"
-								blurDataURL={img}
-								src={icon}
-								alt={`icon-${index}`}
-								width={24}
-								height={24}
-							/>
-						</div>
-					))}
-				</div>
-
 				<h1 className="mt-6 text-4xl font-bold">{title}</h1>
 				<h2 className="mt-6 text-xl font-normal">{subheader}</h2>
 				<h3 className="prose prose-invert mt-4 max-w-xl">{des}</h3>
-
-				{delayed && (
-					<p className="mt-4 text-red-500 font-semibold">
-						{`Note: This project is still in development. Expected completion: ${delayed}`}
-					</p>
-				)}
 			</div>
 
 			<Image

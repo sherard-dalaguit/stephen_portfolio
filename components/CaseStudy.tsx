@@ -67,7 +67,7 @@ const CaseStudy = ({ btnName, link, name, steps }: CaseStudyProps) => {
 							target="_blank"
 							rel="noopener noreferrer"
 							aria-label={`Read ${name}'s full case study`}
-							className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#d1b3ff] hover:decoration-[#a17eff] cursor-pointer"
+							className="underline underline-offset-4 decoration-2 decoration-wavy decoration-[#e5e5e5] hover:decoration-[#ffffff] cursor-pointer"
 						>
 							{name}&apos;s Full Case Study
 						</Link>
@@ -104,7 +104,7 @@ const CaseStudy = ({ btnName, link, name, steps }: CaseStudyProps) => {
 						disabled={step === 0}
 						className="relative inline-flex h-12 w-32 overflow-hidden rounded-lg p-[1px] focus:outline-none disabled:opacity-50 self-start"
 					>
-						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] pointer-events-none z-0"/>
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D3D3D3_0%,#A9A9A9_50%,#D3D3D3_100%)] pointer-events-none z-0"/>
 						<span className="relative z-10 inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 py-1 text-md font-medium text-white gap-2">
 							Back
 						</span>
@@ -115,7 +115,7 @@ const CaseStudy = ({ btnName, link, name, steps }: CaseStudyProps) => {
 						disabled={step === steps.length - 1}
 						className="relative inline-flex h-12 w-32 overflow-hidden rounded-lg p-[1px] focus:outline-none disabled:opacity-50 self-end"
 					>
-						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#E2CBFF_0%,#393BB2_50%,#E2CBFF_100%)] pointer-events-none z-0"/>
+						<span className="absolute inset-[-1000%] animate-[spin_2s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#D3D3D3_0%,#A9A9A9_50%,#D3D3D3_100%)] pointer-events-none z-0"/>
 						<span className="relative z-10 inline-flex h-full w-full items-center justify-center rounded-lg bg-slate-950 px-7 py-1 text-md font-medium text-white gap-2">
 							Next
 						</span>

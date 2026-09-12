@@ -19,7 +19,7 @@ const Hero = () => {
 				transition={{duration: 2}}
 			>
 				<Link href="/#experience">
-					<MagicButton title="Show my work" icon={<IconAward/>} position="right"/>
+					<MagicButton title="My Experiences" icon={<IconAward/>} position="right"/>
 				</Link>
 			</motion.div>
 		)
@@ -60,7 +60,7 @@ const Hero = () => {
 					<div className="max-w-sm md:max-w-3xl flex flex-row text-sm sm:text-md md:text-lg lg:text-2xl xl:text-3xl lg:max-w-5xl">
 						<TextGenerateEffect
 							className="text-center ml-2.5 md:tracking-wider mb-4"
-							words="Marketing Student at California State University, Fullerton"
+							words="Results-Driven Marketing Student | Building Creative Campaigns & Data-Driven Brand Strategies"
 						/>
 					</div>
 
@@ -71,10 +71,10 @@ const Hero = () => {
 						{/*	animate={{opacity: 1}}*/}
 						{/*	transition={{duration: 1}}*/}
 						{/*>*/}
-						{/*	<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-[2px] w-3/4 blur-sm"/>*/}
-						{/*	<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#d1b3ff] to-transparent h-px w-3/4"/>*/}
-						{/*	<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-[5px] w-1/4 blur-sm"/>*/}
-						{/*	<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ff46c5] to-transparent h-px w-1/4"/>*/}
+						{/*	<div className="absolute inset-x-30 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#e5e5e5] to-transparent h-[2px] w-3/4 blur-sm"/>*/}
+						{/*	<div className="absolute inset-x-15 sm:inset-x-20 top-0 bg-gradient-to-r from-transparent via-[#e5e5e5] to-transparent h-px w-3/4"/>*/}
+						{/*	<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ffffff] to-transparent h-[5px] w-1/4 blur-sm"/>*/}
+						{/*	<div className="absolute inset-x-45 sm:inset-x-60 top-0 bg-gradient-to-r from-transparent via-[#ffffff] to-transparent h-px w-1/4"/>*/}
 						{/*</motion.div>*/}
 
 					{/*	<div*/}

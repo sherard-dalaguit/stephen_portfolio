@@ -24,7 +24,7 @@ const Footer = () => {
 			<div className="flex-1 flex flex-col items-center justify-center max-w-screen-2xl mx-auto w-full md:px-4 space-y-8">
 				<h1 className="text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl">
 					Interested in <span className="primary-text-gradient">networking</span> or <span
-					className="primary-text-gradient">collaborating</span> on tech projects?
+					className="primary-text-gradient">collaborating</span> on your next campaign?
 				</h1>
 				<p className="text-white-200 text-md lg:text-lg xl:text-2xl text-center">Feel free to reach out! I&apos;m eager to network and
 					explore opportunities to grow together.</p>
@@ -34,7 +34,7 @@ const Footer = () => {
 			</div>
 
 			<div className="py-10 flex md:flex-row flex-col max-w-screen-xl mx-auto justify-between items-center w-full">
-				<p className="md:text-base text-sm md:font-normal font-light">Copyright © 2026 Sherard</p>
+				<p className="md:text-base text-sm md:font-normal font-light">Copyright © 2026 Stephen</p>
 
 				<div className="flex items-center justify-center md:gap-3 gap-6 mt-5 md:mt-0">
 					{socialMedia.map((profile) => (

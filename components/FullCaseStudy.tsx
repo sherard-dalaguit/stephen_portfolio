@@ -109,7 +109,7 @@ function Bullets({ items }: { items: string[] }) {
     <ul className="mt-2 space-y-2">
       {items.map((item, idx) => (
         <li key={`${idx}-${item}`} className="flex gap-3">
-          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#d1b3ff]" />
+          <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#e5e5e5]" />
           <span className="text-zinc-200/90 md:text-lg leading-relaxed">
             {item}
           </span>
@@ -269,7 +269,7 @@ export default function FullCaseStudy(props: CaseStudyProps) {
                 <LinkButton link={{ ...props.links.home, icon: props.links.home.icon ?? "home" }} defaultIcon={<IconHome />} />
               ) : (
                 // Optional fallback if you still want it even when content doesn't specify it
-                <Link href="/#projects" className="inline-flex">
+                <Link href="/#certificates" className="inline-flex">
                   <MagicButton title="Return Home" icon={<IconHome />} position="right" />
                 </Link>
               )}

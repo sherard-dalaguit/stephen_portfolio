@@ -5,8 +5,8 @@ import { ThemeProvider } from "@/components/theme-provider";
 import {Analytics} from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
-  title: "Sherard's Portfolio",
-  description: "Portfolio of Sherard Dalaguit, a software engineer building full-stack and AI-powered products using TypeScript, React, Next.js, Node.js, and Python. Showcasing projects, systems design, and production-ready applications.",
+  title: "Stephen's Portfolio",
+  description: "Portfolio of Stephen Dalaguit, a marketing student focused on outreach, branding, and community engagement. Showcasing experience, certifications, and creative work.",
   icons: {
     icon: "/selfie.jpg",
   }

@@ -45,7 +45,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
           My <span className="primary-text-gradient">Experience</span>
         </h1>
         <p className="my-8 text-center text-md sm:text-lg lg:text-xl">
-          I&apos;ve been working as a Full-Stack Software Engineer for the past few months. <br />
+          I&apos;m a marketing student building experience in outreach, branding, and customer-facing work. <br />
           Here&apos;s a timeline of my journey so far.
         </p>
       </div>
@@ -106,7 +106,7 @@ export const Timeline = ({ data, limit }: { data: TimelineEntry[], limit?: numbe
               height: heightTransform,
               opacity: opacityTransform,
             }}
-            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-[#ff46c5] via-[#d1b3ff] to-transparent from-[0%] via-[10%] rounded-full"
+            className="absolute inset-x-0 top-0 w-[2px] bg-gradient-to-t from-white via-neutral-400 to-transparent from-[0%] via-[10%] rounded-full"
           />
         </div>
       </div>

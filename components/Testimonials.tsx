@@ -24,16 +24,16 @@ const TestimonialItems = ({
 				{Array.from({length: stars}).map((_, index) => (
 					<IconStarFilled
 						key={index}
-						className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]"
+						className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#e5e5e5]"
 					/>
 				))}
 				{hasHalfStar && (
-					<IconStarHalfFilled	className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]" />
+					<IconStarHalfFilled	className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#e5e5e5]" />
 				)}
 				{Array.from({length: 5 - stars}).map((_, index) => (
 					<IconStar
 						key={index}
-						className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#d1b3ff]"
+						className="top-4 h-4 w-4 lg:h-6 lg:w-6 mb-4 text-[#e5e5e5]"
 					/>
 				))}
 			</div>

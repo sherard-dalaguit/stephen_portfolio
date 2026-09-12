@@ -11,38 +11,61 @@ const AboutMe = () => {
 				About <span className="primary-text-gradient">Me</span>
 			</h1>
 			<div className="flex flex-col justify-center items-center mx-auto max-w-6xl sm:px-6 lg:px-12 pt-4 pb-8 sm:mt-4 container">
-				<div className="flex flex-col md:flex-row items-center lg:items-start h-full my-4 ">
-					<div className="w-[200px] h-[200px] flex-shrink-0 relative mb-6">
+				<div className="flex flex-col md:flex-row items-center h-full my-4 ">
+					<div className="w-[260px] h-[390px] flex-shrink-0 relative mb-6 md:mb-0">
 						<Image
-							src="/sherard.jpg"
-							alt="selfie"
-							width={200}
-							height={200}
-							className="rounded-[60px] border-2 border-[#d1b3ff] shadow-lg md:mt-8 mr-4"
+							src="/IMG_6299.jpeg"
+							alt="Stephen Dalaguit"
+							width={260}
+							height={390}
+							className="object-contain rounded-[60px] border-2 border-[#e5e5e5] shadow-lg"
 						/>
 					</div>
 
-					<div className="flex flex-col items-center sm:items-start md:pl-8 mt-2 gap-1">
-						<h1 className="text-2xl lg:text-3xl font-bold mt-4">
+					<div className="flex flex-col items-center sm:items-start md:pl-10 gap-1">
+						<h1 className="text-2xl lg:text-3xl font-bold">
 							Stephen Dalaguit
 						</h1>
 						<h2 className="text-md lg:text-lg text-zinc-400">
-							Full-Stack Software Engineer
+							Marketing Student
 						</h2>
 
 						<div className="flex flex-wrap justify-center sm:justify-start my-2 gap-2">
-							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#d1b3ff]/20 text-sm lg:text-md">
+							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#e5e5e5]/20 text-sm lg:text-md">
 								Los Angeles, California
 							</span>
 
-							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#d1b3ff]/20 text-sm lg:text-md">
+							<span className="px-3 py-1 rounded-full bg-white/5 border border-[#e5e5e5]/20 text-sm lg:text-md">
 								Manila, Philippines
 							</span>
 						</div>
 
 						<div className="max-sm:text-center text-md lg:text-[1rem] mt-2">
 							B.A. Business Administration, Marketing
-							<br />{" "}at <span className="lavender-text font-semibold">California State University, Fullerton</span>
+							<br />{" "}at <span className="accent-text font-semibold">California State University, Fullerton</span>
+						</div>
+
+						<div className="mt-4 max-w-[22rem] lg:max-w-[26rem]">
+							<h3 className="max-sm:text-center text-xs uppercase tracking-widest text-zinc-500 mb-2">
+								Related Coursework
+							</h3>
+							<div className="flex flex-wrap justify-center sm:justify-start gap-2">
+								{[
+									"Digital Marketing",
+									"Marketing Research",
+									"Marketing Technology",
+									"Business Writing",
+									"Financial Management",
+									"Business Analytics",
+								].map((course) => (
+									<span
+										key={course}
+										className="px-3 py-1 rounded-full bg-white/[0.03] border border-white/10 text-xs lg:text-sm text-neutral-400"
+									>
+										{course}
+									</span>
+								))}
+							</div>
 						</div>
 
 						<div className="flex flex-wrap justify-center sm:justify-start gap-2 mt-4">
@@ -50,14 +73,14 @@ const AboutMe = () => {
 								href="https://www.linkedin.com/in/stephendalaguit/"
 								target="_blank"
 								rel="noopener noreferrer"
-								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
+								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#e5e5e5] hover:text-white hover:bg-[#e5e5e5]/10 transition-all"
 							>
 								<IconBrandLinkedin className="h-5 w-5" />
 								LinkedIn
 							</Link>
 							<Link
 								href="mailto:sdalaguit1@csu.fullerton.edu"
-								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#d1b3ff] hover:text-white hover:bg-[#d1b3ff]/10 transition-all"
+								className="flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 text-sm text-neutral-300 hover:border-[#e5e5e5] hover:text-white hover:bg-[#e5e5e5]/10 transition-all"
 							>
 								<IconMail className="h-5 w-5" />
 								Email
@@ -66,25 +89,17 @@ const AboutMe = () => {
 					</div>
 				</div>
 
-				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-6 hidden sm:block">
+				<ul className="list-inside text-md md:text-lg lg:text-xl md:my-8 w-4/5 text-center space-y-6 hidden sm:block text-neutral-300">
 					<li>
-						I&apos;m a <span className="text-[#d1b3ff] font-bold">software engineer</span> who designs and ships
-						<span className="text-[#d1b3ff] font-bold"> production-grade full-stack systems</span>,
-						with a strong focus on architecture, data modeling, and reliability using TypeScript, Next.js, Node.js, and MongoDB.
+						I&apos;m a <span className="text-white font-bold">results-driven marketing student</span> with a strong foundation in
+						<span className="text-white font-bold"> market research, consumer behavior, and digital marketing strategy</span>&mdash;turning
+						market analysis into promotional plans that actually move the needle.
 					</li>
 					<li>
-						I build <span className="text-[#d1b3ff] font-bold">AI-powered and full-stack products</span> across
-						language learning, dating, and backend-heavy platforms—designed around real-world constraints like latency,
-						correctness, and failure handling.
+						I develop and execute <span className="text-white font-bold">creative marketing campaigns</span>, leveraging social media
+						and <span className="text-white font-bold">data analysis</span> to drive brand engagement&mdash;backed by hands-on
+						content creation and project management.
 					</li>
-
-					{/*<li>*/}
-					{/*	I&apos;m a <span className="primary-text-gradient font-bold">Mid-Level Software Engineer</span> with <span className="primary-text-gradient font-bold">3 years of experience</span>,*/}
-					{/*	specializing in modern full-stack development with TypeScript, React, Next.js, Node.js, and MongoDB.*/}
-					{/*</li>*/}
-					{/*<li>*/}
-					{/*	I&apos;ve worked with <span className="primary-text-gradient font-bold">20+ clients</span> across startups, nonprofits, and SaaS platforms, delivering high-quality software solutions that meet real-world needs.*/}
-					{/*</li>*/}
 				</ul>
 			</div>
 		</div>

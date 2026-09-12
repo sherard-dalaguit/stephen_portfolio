@@ -132,25 +132,25 @@ html {
 
 @layer components {
   .container {
-    @apply rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/15 to-slate-500/5;
+    @apply rounded-xl border border-white/15 bg-gradient-to-b from-white/10 to-slate-500/5;
   }
   .dark-container {
-    @apply rounded-xl border border-blue-50/20 bg-gradient-to-b from-[#d1b3ff]/10 to-slate-500/5;
+    @apply rounded-xl border border-white/15 bg-gradient-to-b from-white/[0.06] to-slate-500/5;
   }
 }
 
 @layer utilities {
-  .lavender-text {
-    @apply text-[#d1b3ff];
+  .accent-text {
+    @apply text-white;
   }
 }
 
 @utility primary-gradient {
-  background: linear-gradient(129deg, #ff46c5 20%, #d1b3ff 100%);
+  background: linear-gradient(129deg, #ffffff 20%, #9ca3af 100%);
 }
 
 @utility primary-text-gradient {
-  background: linear-gradient(129deg, #ff46c5 20%, #d1b3ff 100%);
+  background: linear-gradient(129deg, #ffffff 20%, #9ca3af 100%);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -3,8 +3,8 @@ import MagicButton from "@/components/ui/MagicButton";
 import {IconHome} from "@tabler/icons-react";
 
 export const metadata = {
-  title: 'Resume · Sherard Dalaguit',
-  description: 'View the full resume of Sherard Dalaguit — Full-Stack Software Engineer.',
+  title: 'Resume · Stephen Dalaguit',
+  description: 'View the full resume of Stephen Dalaguit — marketing student focused on outreach, branding, and community engagement.',
 }
 
 const ResumePage = () => {
@@ -12,14 +12,14 @@ const ResumePage = () => {
     <div className="mt-10 flex flex-col items-center w-full md:px-10 pt-24">
       <div className="max-w-7xl mx-auto px-4 md:px-8 lg:px-10">
         <h1 className="text-center font-bold text-[40px] md:text-5xl lg:text-6xl">
-          My <span className="text-[#d1b3ff]">Resume</span>
+          My <span className="text-[#e5e5e5]">Resume</span>
         </h1>
         <p className="mt-6 text-center text-md sm:text-lg lg:text-xl">
           Here&apos;s a full look at my background, skills, and experience.{" "}
           <a
             href="/Sherard_Dalaguit_Resume.pdf"
             download
-            className="text-[#d1b3ff] underline underline-offset-4 hover:opacity-80 transition-opacity"
+            className="text-[#e5e5e5] underline underline-offset-4 hover:opacity-80 transition-opacity"
           >
             Download a copy
           </a>{" "}
